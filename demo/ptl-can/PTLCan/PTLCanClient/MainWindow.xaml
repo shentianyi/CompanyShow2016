@@ -1,0 +1,24 @@
+﻿<Window x:Class="PTLCanClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PTLCanClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="Label1" Content="LightId" HorizontalAlignment="Left" Margin="57,45,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LightIdTB" 
+                 HorizontalAlignment="Left" Height="26" Margin="126,47,0,0" TextWrapping="Wrap"
+                 Text="" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="label" Content="Number" 
+               HorizontalAlignment="Left" Margin="57,92,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NumberTB" HorizontalAlignment="Left" Height="26" Margin="126,92,0,0"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="label2" Content="Color" HorizontalAlignment="Left" Margin="57,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.275,0.385"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="126,144,0,0"
+                 TextWrapping="Wrap"  VerticalAlignment="Top" Width="155" Text="FFFFFF"/>
+        <Button x:Name="SendBtn" Content="Send" HorizontalAlignment="Left" Margin="139,234,0,0" VerticalAlignment="Top" Width="142" Height="44" Click="SendBtn_Click"/>
+
+    </Grid>
+</Window>
