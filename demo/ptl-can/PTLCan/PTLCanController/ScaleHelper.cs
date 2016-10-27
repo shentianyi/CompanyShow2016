@@ -14,7 +14,7 @@ namespace PTLCanController
         /// <param name="upcase">是否大写字符</param>
         /// <param name="hexStringLength">十六进制字符串长度，长度为4的例子00FF,0001,FFFF...</param>
         /// <returns></returns>
-        public static string DecimalToHexString(int deci ,bool upcase = true, int? hexStringLength = 4)
+        public static string DecimalToHexString(int deci, bool upcase = true, int? hexStringLength = 4)
         {
             string hexString = Convert.ToString(deci, 16);
             if (hexStringLength.HasValue)
@@ -40,7 +40,7 @@ namespace PTLCanController
         /// <returns></returns>
         public static int HexByteToDecimal(byte data)
         {
-            return Convert.ToInt32(HexBytesToString(new byte[1] { data },false), 16);
+            return Convert.ToInt32(HexBytesToString(new byte[1] { data }, false), 16);
         }
 
 
@@ -51,7 +51,7 @@ namespace PTLCanController
         /// <returns></returns>
         public static int HexBytesToDecimal(byte[] data)
         {
-            return Convert.ToInt32(HexBytesToString(data,false), 16);
+            return Convert.ToInt32(HexBytesToString(data, false), 16);
         }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace PTLCanController
         /// <param name="hexBytes"></param>
         /// <param name="withBlank">是否已空格分隔</param>
         /// <returns></returns>
-        public static string HexBytesToString(byte[] hexBytes, bool withBlank=true)
+        public static string HexBytesToString(byte[] hexBytes, bool withBlank = true)
         {
             string hexString = string.Empty;
             if (hexBytes != null)
@@ -100,7 +100,7 @@ namespace PTLCanController
             }
             return hexString;
         }
-        
+
         /// <summary>
         /// 计算字节累加和，保留从低位到高位2字节数的结果
         /// </summary>
@@ -177,11 +177,11 @@ namespace PTLCanController
         /// </summary>
         /// <param name="pData"></param>
         /// <returns></returns>
-             public static bool IsCrc16Good(byte[] pData)
+        public static bool IsCrc16Good(byte[] pData)
         {
-           var crc =  GetCrc16(pData.Take(pData.Length - 2).ToArray());
+            var crc = GetCrc16(pData.Take(pData.Length - 2).ToArray());
 
-            var crcTo = HexBytesToDecimal( pData.Skip(pData.Length - 2).Take(2).ToArray());
+            var crcTo = HexBytesToDecimal(pData.Skip(pData.Length - 2).Take(2).ToArray());
             return crc == crcTo;
         }
         //public static bool IsCrc16Good(byte[] pData)
@@ -195,7 +195,7 @@ namespace PTLCanController
         //        nLength--;
         //        i++;
         //    }
-             
+
         //    return (fcs == 0xf0b8);  // 0xf0b8是CRC-ITU的"Magic Value"
         //}
     }
