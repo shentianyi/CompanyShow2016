@@ -20,36 +20,24 @@ namespace PTLCanClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        PTLCanController.Controller controller;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                controller = new PTLCanController.Controller(Settings.Default.com);
-                controller.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
-        private void SendBtn_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Signle 和 Multi 的点击事件都绑定同一个事件处理函数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void showLightWindowBtn_Click(object sender, RoutedEventArgs e)
         {
-            try
+            new LightWindow()
             {
-                controller.Send(int.Parse(LightIdTB.Text), int.Parse(NumberTB.Text), textBox.Text);
-
-            }
-            catch (Exception ex)
-            {
- MessageBox.Show(ex.Message);
-            }
+                lightMode = (sender as Button).Name == "singleBtn" ? LightMode.Sigle : LightMode.Multi
+            }.ShowDialog();
         }
+         
     }
 }
