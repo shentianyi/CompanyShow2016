@@ -43,7 +43,7 @@ namespace PTLCanController
             // 00 00 01 01, 01, C0, 01, 00 01, 01 00 00
             // 给1号，发显示为 00 01，RGB为010000
             string cmd = string.Format("{0}01C001{1}{2}",
-                ScaleHelper.DecimalToHexString(lightId + 256),
+                ScaleHelper.DecimalToHexString(lightId + 256,true,8),
                 ScaleHelper.DecimalToHexString(number, true, 4),
                 rgbColor.ToUpper());
 
@@ -100,7 +100,7 @@ namespace PTLCanController
             byte[] rdata = new byte[sp.BytesToRead];
             sp.Read(rdata, 0, rdata.Length);
 
-            LogUtil.Logger.Info("接收数据：" + ScaleHelper.HexBytesToString(sp));
+            LogUtil.Logger.Info("接收数据：" + ScaleHelper.HexBytesToString(rdata));
             LogUtil.Logger.Info(string.Format("接收数据Byte：{0}", rdata));
 
         }

@@ -41,7 +41,15 @@ namespace PTLCanClient
 
         private void SendBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                controller.Send(int.Parse(LightIdTB.Text), int.Parse(NumberTB.Text), textBox.Text);
+
+            }
+            catch (Exception ex)
+            {
+ MessageBox.Show(ex.Message);
+            }
         }
     }
 }
