@@ -81,6 +81,8 @@ namespace PTLCanController
                     this.sp.DataReceived += new SerialDataReceivedEventHandler(Sp_DataReceived);
                 }
                 this.sp.Open();
+                LogUtil.Logger.Info("Open Success.....");
+
                 return true;
             }
             catch (Exception ex)
@@ -118,7 +120,7 @@ namespace PTLCanController
                     if (this.sp.IsOpen)
                     {
                         this.sp.Close();
-                        LogUtil.Logger.Info("Close Success");
+                        LogUtil.Logger.Info("Close Success....");
                     }
                     return true;
                 }

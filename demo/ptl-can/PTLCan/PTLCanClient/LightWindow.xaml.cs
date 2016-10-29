@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Brilliantech.Framwork.Utils.LogUtil;
 using PTLCanClient.Properties;
+using System.Threading;
 
 namespace PTLCanClient
 {
@@ -52,7 +53,7 @@ namespace PTLCanClient
             // 初始化界面
             if (this.lightMode == LightMode.Sigle)
             {
-                tipLabel.Content = "请扫描或输入物料号：";
+                tipLabel.Content = "请扫描或输入物料SKU：";
             }
             else
             {
@@ -63,6 +64,7 @@ namespace PTLCanClient
             try
             {
                 controller = new PTLCanController.Controller(Settings.Default.com);
+                controller.Open();
             }
             catch (Exception ex)
             {
@@ -122,6 +124,11 @@ namespace PTLCanClient
                     foreach (Light light in getLights())
                     {
                         controller.Send(light.id, light.number, light.rgbColor);
+
+                        if (Settings.Default.sendSleep > 0)
+                        {
+                            Thread.Sleep(Settings.Default.sendSleep);
+                        }
                     }
 
                     // 是否自动清空输入框
@@ -146,26 +153,58 @@ namespace PTLCanClient
         private List<Light> getLights()
         {
             List<Light> lights = new List<Light>();
-            if (this.lightMode == LightMode.Sigle)
+            try
             {
-                lights.Add(new Light()
+                if (this.lightMode == LightMode.Sigle)
                 {
-                    id = int.Parse(this.scanText.Text),
-                    number = new Random().Next(0, 9999),
-                    rgbColor = Settings.Default.singleLightColor
-                });
-            }
-            else
-            {
-                foreach (var id in Settings.Default.multiLights.Split(','))
-                {
-                    lights.Add(new Light()
+                    Light l = new Light()
                     {
-                        id = int.Parse(id),
                         number = new Random().Next(0, 9999),
-                        rgbColor = Settings.Default.singleLightColor
-                    });
+                    };
+                    if (scanText.Text.Contains(';'))
+                    {
+                        string[] arr = scanText.Text.Split(';');
+                        l.id = int.Parse(arr[0]);
+                        l.rgbColor = arr[1];
+                    }
+                    else
+                    {
+                        l.id = int.Parse(scanText.Text);
+                        l.rgbColor = Settings.Default.singleLightColor;
+                    }
+                    lights.Add(l);
                 }
+                else
+                {
+                    if (scanText.Text.Contains(';'))
+                    {
+                        string[] arr = scanText.Text.Split(';');
+                        foreach (var id in arr[0].Split(','))
+                        {
+                            lights.Add(new Light()
+                            {
+                                id = int.Parse(id),
+                                number = new Random().Next(0, 9999),
+                                rgbColor = arr[1]
+                            });
+                        }
+                    }
+                    else {
+                        foreach (var id in Settings.Default.multiLights.Split(','))
+                        {
+                            lights.Add(new Light()
+                            {
+                                id = int.Parse(id),
+                                number = new Random().Next(0, 9999),
+                                rgbColor = Settings.Default.singleLightColor
+                            });
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
             return lights;
         }
@@ -185,7 +224,7 @@ namespace PTLCanClient
             }
             else
             {
-                if (this.lightMode == LightMode.Sigle)
+                if (this.lightMode == LightMode.Sigle && !this.scanText.Text.Contains(';'))
                 {
                     int id = 0;
                     if(!int.TryParse(this.scanText.Text,out id))
