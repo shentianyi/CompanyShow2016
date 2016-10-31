@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IF TECH</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/ddfullscreenslider.css"/>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/ddfullscreenslider.js"></script>
+</head>
+
+<body>
+
+<section id="dowebok" class="dd_fullscreenslider">
+    <header>
+        <div class="logo"></div>
+        <div class="go">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>返回首页</span>
+            </a>
+        </div>
+    </header>
+    <div class="slidewrapper">
+        <article class="slide titles" style="background-image: url(../img/bg3.jpg);">
+            <div class="overlay">
+                <div class="home-title">
+                    <h1 style="color: white;">如何按时按需进行全自动物料分发？</h1>
+                    <h2 style="color: white;">避免物料过剩或因缺料停机，按时按需全自动物料分发。</h2>
+                </div>
+            </div>
+        </article>
+        <article class="slide problems">
+            <h3>您可能遇到的问题？</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>配送混乱</span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>缺料停线</span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>物料堆积</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>仓库利用率低</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>自动化程度低</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="slide flowchart">
+            <h3>解决方案流程图</h3>
+            <div class="picf">
+                <img src="../img/s3.png" alt="" class="s"/>
+                <img src="../img/s3-1.jpg" alt="" class="s-"/>
+                <img src="../img/s3-2.JPG" alt="" class="s-">
+            </div>
+        </article>
+
+        <article class="slide solution">
+            <h3>What we do</h3>
+            <p>伊弗全自动物料分发方案旨在帮助生产型企业控制原材料在仓库和生产现场的流转避免现场缺料或物料堆积</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>自动化</h4>
+                    <h5>基于RFID的自动材料扣减。</h5>
+                    <h5>可以集成AGV的无人物料运输。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>精准配料</h4>
+                    <h5>按照生产计划为仓库自动生成计划到分钟的送料清单和时间计划。</h5>
+                    <h5>通过重量控制等方式的精准配料。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>风险预警</h4>
+                    <h5>通过数据判断可能存在的潜在风险（高报废率，错误的BOM清单，错误的材料使用）。</h5>
+                </div>
+            </div>
+        </article>
+
+        <article class="slide video">
+            <h3>视频资讯</h3>
+            <video src="../video/3.mp4" width="60%" controls></video>
+        </article>
+
+    </div>
+</section>
+
+<script>
+    var fss;
+    $(function () {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok',
+            addHash: false
+        });
+    });
+</script>
+
+</body>
+</html>

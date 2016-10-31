@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IF TECH</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/ddfullscreenslider.css"/>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/ddfullscreenslider.js"></script>
+</head>
+
+<body>
+
+<section id="dowebok" class="dd_fullscreenslider">
+    <header>
+        <div class="logo"></div>
+        <div class="go">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>返回首页</span>
+            </a>
+        </div>
+    </header>
+    <div class="slidewrapper">
+        <article class="slide titles" style="background-image: url(../img/bg9.jpg);">
+            <div class="overlay">
+                <div class="home-title">
+                    <h1 style="color: white;">如何把控成品包装过程?</h1>
+                    <h2 style="color: white;">产品包装质量问题及追溯</h2>
+                </div>
+            </div>
+        </article>
+        <article class="slide problems">
+            <h3>您可能遇到的问题？</h3>
+            <div class="row" style="text-align: left;padding-left: 26%">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>客户投诉多、信誉差</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>错装、漏装现象频繁</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>包装人工成本高</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>质量问题无法追溯</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="slide flowchart">
+            <h3>解决方案流程图</h3>
+            <div class="picf">
+                <img src="../img/s9.png" alt="" class="s"/>
+                <img src="../img/s9-1.jpg" alt="" class="s-"/>
+                <img src="../img/s9-2.JPG" alt="" class="s-">
+            </div>
+        </article>
+
+        <article class="slide solution">
+            <h3>我们做了什么？</h3>
+            <p>伊弗包装方案针对以上问题，旨在帮助生产型企业更好的把控和追溯成品包装过程，减少包装错误带来的损失，降低包装人工开销，减低客户投诉率，提升企业形象。</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>防错</h4>
+                    <h5>采用扫描防错计数系统，确保成品包装型号及包装数量的正确性。</h5>
+                    <h5>基于RFID的全自动化物料流动实时采集、过程精准管理。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>节省人工</h4>
+                    <h5>基于条码扫描或称重的半自动产品包装方案或基于码垛机器人的全自动包装方案。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>追溯</h4>
+                    <h5>基于唯一码的材料存储和分发，实现原材料、中间品和成品间的全追溯。</h5>
+                    <h5>完整的追溯数据库，确保每一个包装的动作都记录在案。</h5>
+                </div>
+
+            </div>
+        </article>
+
+        <article class="slide video">
+            <h3>视频资讯</h3>
+            <video src="../video/9.mp4" width="60%" controls></video>
+        </article>
+
+    </div>
+</section>
+
+<script>
+    var fss;
+    $(function () {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok',
+            addHash: false
+        });
+    });
+</script>
+
+</body>
+</html>

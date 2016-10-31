@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IF TECH</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/ddfullscreenslider.css"/>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/ddfullscreenslider.js"></script>
+</head>
+
+<body>
+
+<section id="dowebok" class="dd_fullscreenslider">
+    <header>
+        <div class="logo"></div>
+        <div class="go">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>返回首页</span>
+            </a>
+        </div>
+    </header>
+    <div class="slidewrapper">
+        <article class="slide titles" style="background-image: url(../img/bg7.jpg);">
+            <div class="overlay">
+                <div class="home-title">
+                    <h1 style="color: white;">如何及时应对生产计划的变更?</h1>
+                    <h2 style="color: white;">提高生产灵活性，及时应对生产变更</h2>
+                </div>
+            </div>
+        </article>
+        <article class="slide problems">
+            <h3>您可能遇到的问题？</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>客户订单变换频繁</span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>生产模式死板</span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>库存堆积</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>无法满足客户紧急需求</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>员工无法应对变更致错</span>
+                </div>
+
+            </div>
+        </article>
+
+        <article class="slide flowchart">
+            <h3>解决方案流程图</h3>
+            <div class="picf">
+                <img src="../img/s7.png" alt="" class="s"/>
+                <img src="../img/s7-1.JPG" alt="" class="s-"/>
+                <img src="../img/s7-2.JPG" alt="" class="s-">
+            </div>
+        </article>
+
+        <article class="slide solution">
+            <h3>我们做了什么？</h3>
+            <p>伊弗包装方案针对以上问题，旨在帮助生产型企业更好的把控和追溯成品包装过程，减少包装错误带来的损失，降低包装人工开销，减低客户投诉率，提升企业形象。</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>自动化</h4>
+                    <h5>自动接收处理客户电子订单，如EDI订单。</h5>
+                    <h5>自动分析客户需求进行模块组合，自动生成各工位工艺。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>及时生产</h4>
+                    <h5>生产计划变更时自动调整产线生产计划，测试计划和发货计划。生产计划变更后的现场物料调拨协调。</h5>
+                    <h5>JIT(零库存), JIS 排序生产发货。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>防错</h4>
+                    <h5>自动为每个订单在每个工位生成生产操作指导书。</h5>
+                    <h5>关键生产区域执行扫描检查。</h5>
+                </div>
+            </div>
+        </article>
+
+        <article class="slide video">
+            <h3>视频资讯</h3>
+            <video src="../video/7.mp4" width="60%" controls></video>
+        </article>
+
+    </div>
+</section>
+
+<script>
+    var fss;
+    $(function () {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok',
+            addHash: false
+        });
+    });
+</script>
+
+</body>
+</html>

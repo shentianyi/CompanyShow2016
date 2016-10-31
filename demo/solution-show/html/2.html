@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IF TECH</title>
+
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/ddfullscreenslider.css"/>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/ddfullscreenslider.js"></script>
+</head>
+
+<body>
+
+<section id="dowebok" class="dd_fullscreenslider">
+    <header>
+        <div class="logo"></div>
+        <div class="go">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>返回首页</span>
+            </a>
+        </div>
+    </header>
+    <div class="slidewrapper">
+        <article class="slide titles" style="background-image: url(../img/bg2.jpg);">
+            <div class="overlay">
+                <div class="home-title">
+                    <h1 style="color: white;">如何掌控生产进度？</h1>
+                    <h2 style="color: white;">实时准确掌控生产进度</h2>
+                </div>
+            </div>
+        </article>
+        <article class="slide problems">
+            <h3>您可能遇到的问题？</h3>
+            <div class="row" style="text-align: left;padding-left: 25%">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>统计费时费力</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>数据统计出错率高</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>错失最佳决策时机</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>数据展示死板、单一</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>部门间数据整合困难</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <i class="fa fa-frown-o"></i>
+                    <span>无法及时获取全面信息</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="slide flowchart">
+            <h3>解决方案流程图</h3>
+            <div class="picf">
+                <img src="../img/s2.png" alt="" class="s"/>
+                <img src="../img/s2-1.jpg" alt="" class="s-"/>
+                <img src="../img/s2-2.JPG" alt="" class="s-">
+            </div>
+        </article>
+
+        <article class="slide solution">
+            <h3>我们做了什么？</h3>
+            <p>伊弗生产进度控制方案旨在通过全自动的方式帮助管理人员实现快速、准确、高可视化的掌握生产进度的需求。</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>订单转化与控制。</h4>
+                    <h5>生产计划自动转化成生产订单。</h5>
+                    <h5>关键工位扫描。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>定制化展示</h4>
+                    <h5>便捷的KPI展现形式，支持多种访问形式（网页端、移动端、IPad、电子屏幕）。</h5>
+                    <h5>支持定制化设定KPI关键点及预警提醒功能（SNS、Email）。</h5>
+                    <h5>智能化KPI动态、多维度的分析、展示数据。</h5>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <h4>多途径采集数据</h4>
+                    <h5>支持多途径数据采集方式：人力、数据库、机器、扫描等。</h5>
+                    <h5>连接电气设备的全自动关键点数据。</h5>
+                </div>
+            </div>
+        </article>
+
+        <article class="slide video">
+            <h3>视频演示</h3>
+            <video src="../video/2.mp4" width="60%" controls></video>
+        </article>
+
+    </div>
+</section>
+
+<script>
+    var fss;
+    $(function () {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok',
+            addHash: false
+        });
+    });
+</script>
+
+</body>
+</html>
