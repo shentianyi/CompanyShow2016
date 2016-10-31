@@ -120,6 +120,7 @@
     <Resource Include="images\mul-lamp.png" />
     <Resource Include="images\cancel icon.png" />
     <Resource Include="images\confirm icon.png" />
+    <Resource Include="if logo.png" />
     <Content Include="log4.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

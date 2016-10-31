@@ -15,7 +15,10 @@
       <Value Profile="(Default)">FFFFFF</Value>
     </Setting>
     <Setting Name="autoCleanInput" Type="System.Boolean" Scope="Application">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="sendSleep" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">200</Value>
     </Setting>
   </Settings>
 </SettingsFile>

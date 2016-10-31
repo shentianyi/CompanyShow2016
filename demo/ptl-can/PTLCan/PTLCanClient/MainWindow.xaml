@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PTLCanClient"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="600" MinWidth="800" Width="800" Height="600">
-    <Grid Background="#0078C1">
+        Title="MainWindow" MinHeight="600" MinWidth="800" Width="800" Height="600" WindowStartupLocation="CenterScreen"  >
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFE2E2E2" Offset="0.993"/>
+            </RadialGradientBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -29,17 +35,18 @@
                  VerticalAlignment="Center" FontFamily="Solomon_Sans_Bold" BorderThickness="1" Background="#FFFFFEFE"  Click="showLightWindowBtn_Click" >
                     <DockPanel>
                         <Image Height="48" Width="48" Source="/images/signal-lamp.png"/>
-                        <Label FontFamily="Solomon_Sans_Bold" Margin="0 10 0 0" FontSize="20" Content="单个灯亮" Foreground="#FF769371"/>
+                        <Label FontFamily="Solomon_Sans_Bold" Margin="0 10 0 0" FontSize="20" Content="订单填充" Foreground="#FF769371"/>
                     </DockPanel>
                 </Button>
 
                 <Button Grid.Column="1" x:Name="multiBtn" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Solomon_Sans_Bold" BorderThickness="1" Background="#FFFFFEFE" Click="showLightWindowBtn_Click" >
                     <DockPanel>
                         <Image Height="48" Width="48" Source="/images/mul-lamp.png"/>
-                        <Label FontFamily="Solomon_Sans_Bold" Margin="0 10 0 0" FontSize="20" Content="多个灯亮" Foreground="#FF769371"/>
+                        <Label FontFamily="Solomon_Sans_Bold" Margin="0 10 0 0" FontSize="20" Content="按灯择货" Foreground="#FF769371"/>
                     </DockPanel>
                 </Button>
             </Grid>
         </Grid>
+        <Image x:Name="if_logo_png" Margin="42,42,572,114" Source="if logo.png" Stretch="Fill"/>
     </Grid>
 </Window>

@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PTLCanClient"
         mc:Ignorable="d"
-        Title="LightWindow" MinHeight="600" MinWidth="800" Width="800" Height="600" Loaded="Window_Loaded" Closing="Window_Closing">
-    <Grid Background="#0078C1">
+        Title="LightWindow" MinHeight="600" MinWidth="800" Width="800" Height="600" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFE2E2E2" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -26,7 +32,7 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label  Grid.Row="0" x:Name="tipLabel" Content="请扫描择货单:" Foreground="White" FontWeight="Bold" FontSize="22"  FontFamily="Solomon_Sans_Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label  Grid.Row="0" x:Name="tipLabel" Content="请扫描择货单:" Foreground="#FF4D4A4A" FontWeight="Bold" FontSize="22"  FontFamily="Solomon_Sans_Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
 
                 <Grid Grid.Row="1">
                     <TextBox x:Name="scanText" Focusable="True" MinWidth="300" MinHeight="55" HorizontalAlignment="Stretch" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" KeyUp="scanText_KeyUp" />
@@ -47,6 +53,8 @@
                     </Button>
                 </Grid>
             </Grid>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="77" Margin="-177,41,0,0" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="10"/>
         </Grid>
+        <Image x:Name="if_logo_png" Grid.ColumnSpan="2" Margin="43,42,364,492" Source="if logo.png" Stretch="Fill"/>
     </Grid>
 </Window>
