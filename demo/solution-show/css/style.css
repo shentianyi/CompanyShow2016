@@ -23,7 +23,7 @@
 }
 
 .dg-wrapper a {
-    width: 480px;
+    width: 0;
     height: 320px;
     display: block;
     position: absolute;
