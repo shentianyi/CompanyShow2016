@@ -35,7 +35,7 @@
                 <Label  Grid.Row="0" x:Name="tipLabel" Content="请扫描择货单:" Foreground="#FF4D4A4A" FontWeight="Bold" FontSize="22"  FontFamily="Solomon_Sans_Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
 
                 <Grid Grid.Row="1">
-                    <TextBox x:Name="scanText" Focusable="True" MinWidth="300" MinHeight="55" HorizontalAlignment="Stretch" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" KeyUp="scanText_KeyUp" />
+                    <TextBox x:Name="scanText" Focusable="True" MinWidth="300" MinHeight="55" HorizontalAlignment="Stretch" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" KeyUp="scanText_KeyUp" TextChanged="scanText_TextChanged" />
 
                     <Button x:Name="cleanBtn" HorizontalAlignment="Right" Margin="10 10 10 0" VerticalAlignment="Top" Click="cleanBtn_Click">
                         <DockPanel>

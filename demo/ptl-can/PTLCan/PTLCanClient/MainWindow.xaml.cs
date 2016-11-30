@@ -37,6 +37,7 @@ namespace PTLCanClient
             {
                 lightMode = (sender as Button).Name == "singleBtn" ? LightMode.Sigle : LightMode.Multi
             }.ShowDialog();
+         
         }
          
     }
