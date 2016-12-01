@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTLCanController", "PTLCanController\PTLCanController.csproj", "{2F61CC00-ACD6-4252-8F9D-6A79AEDA25D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTLCanClient", "PTLCanClient\PTLCanClient.csproj", "{24763F2E-1C11-496F-A5C5-A4A6580A4CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTLTest", "PTLTest\PTLTest.csproj", "{4B60A191-FB10-439F-8C52-F69BEA22F42C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{24763F2E-1C11-496F-A5C5-A4A6580A4CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24763F2E-1C11-496F-A5C5-A4A6580A4CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24763F2E-1C11-496F-A5C5-A4A6580A4CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B60A191-FB10-439F-8C52-F69BEA22F42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B60A191-FB10-439F-8C52-F69BEA22F42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B60A191-FB10-439F-8C52-F69BEA22F42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B60A191-FB10-439F-8C52-F69BEA22F42C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
