@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Lamp" Class="LampDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ZHANGLIN-PC;Initial Catalog=Lamp;Integrated Security=True" SettingsObjectName="PTLCanTest.Properties.Settings" SettingsPropertyName="LampConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ElabelOnPart" Member="ElabelOnPart">
+    <Type Name="ElabelOnPart">
+      <Column Name="LampId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PartNr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WorkstationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

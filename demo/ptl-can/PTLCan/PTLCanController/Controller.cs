@@ -42,7 +42,7 @@ namespace PTLCanController
         /// <param name="rgbColor">灯颜色, RGB, 如白色：FFFFFF </param>
         public void Send(int lightId,int number, string rgbColor)
         {
-           
+            Thread.Sleep(20);
             // 00 00 01 01, 01, C0, 01, 00 01, 01 00 00
             // 给1号，发显示为 00 01，RGB为010000
             string cmd = string.Format("{0}01C001{1}{2}",

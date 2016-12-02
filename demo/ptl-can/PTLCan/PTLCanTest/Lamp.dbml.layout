@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Lamp">
+  <DataContextMoniker Name="/LampDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c0bef73e-b62b-4902-9bf8-2f7ae84f17ae" absoluteBounds="2.625, 1.5, 2, 1.3805261230468751">
+      <DataClassMoniker Name="/LampDataContext/ElabelOnPart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfbc8e01-809f-45e2-8258-0be0ca274fc6" absoluteBounds="2.64, 1.96, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

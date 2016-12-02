@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4B60A191-FB10-439F-8C52-F69BEA22F42C}</ProjectGuid>
+    <ProjectGuid>{B928F955-2F45-4A47-8340-AC702A5D48D9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PTLTest</RootNamespace>
-    <AssemblyName>PTLTest</AssemblyName>
+    <RootNamespace>PTLCanTest</RootNamespace>
+    <AssemblyName>PTLCanTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -51,10 +51,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>51C819799FA463E084D97D1CCEEA9FCDCCA06A92</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>A43E9F74B854DFD0F05395AF843CE8E6385008BB</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>PTLTest_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>PTLCanTest_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -62,18 +62,13 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Brilliantech.Framwork">
-      <HintPath>..\..\ThirdPart\Brilliantech.Framwork.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\ThirdPart\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -92,35 +87,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CheckIdWindow.xaml.cs">
-      <DependentUpon>CheckIdWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ColorTestWindow.xaml.cs">
-      <DependentUpon>ColorTestWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="NumTestWindow.xaml.cs">
-      <DependentUpon>NumTestWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="OffTestWindow.xaml.cs">
-      <DependentUpon>OffTestWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Services\BuildSerialPort.cs" />
     <Compile Include="Services\OffConnTest.cs" />
     <Compile Include="Services\StabilityTest.cs" />
-    <Compile Include="SetIdWindow.xaml.cs">
-      <DependentUpon>SetIdWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StabilityTestWindow.xaml.cs">
-      <DependentUpon>StabilityTestWindow.xaml</DependentUpon>
-    </Compile>
-    <Page Include="CheckIdWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ColorTestWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -129,26 +98,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Lamp.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lamp.dbml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NumTestWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="OffTestWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SetIdWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StabilityTestWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -164,24 +122,35 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Lamp.dbml.layout">
+      <DependentUpon>Lamp.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Lamp.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Lamp.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="PTLTest_TemporaryKey.pfx" />
+    <None Include="PTLCanTest_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PTLCanClient\PTLCanClient.csproj">
-      <Project>{24763f2e-1c11-496f-a5c5-a4a6580a4cbb}</Project>
-      <Name>PTLCanClient</Name>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Brilliantech.Framwork\Brilliantech.Framwork.csproj">
+      <Project>{9b5f850a-5136-4095-8955-6c4f7747c48a}</Project>
+      <Name>Brilliantech.Framwork</Name>
     </ProjectReference>
     <ProjectReference Include="..\PTLCanController\PTLCanController.csproj">
       <Project>{2f61cc00-acd6-4252-8f9d-6a79aeda25d1}</Project>
