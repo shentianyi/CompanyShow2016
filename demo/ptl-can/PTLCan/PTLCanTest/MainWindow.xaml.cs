@@ -43,6 +43,7 @@ namespace PTLCanTest
         /// <param name="e"></param>
         private void StartTestbutton_Click(object sender, RoutedEventArgs e)
         {
+            /*
             OffConnTest();
             SetId();
             CheckId();
@@ -50,6 +51,11 @@ namespace PTLCanTest
             ColorTest(LampId);
             StabilityTest ss = new StabilityTest();
             ss.Stability(LampId);
+            */
+            
+            PressAfterShow PAS = new PressAfterShow();
+            PAS.Stability(0);
+            
         }
 
 

@@ -89,6 +89,7 @@
     </ApplicationDefinition>
     <Compile Include="Services\BuildSerialPort.cs" />
     <Compile Include="Services\OffConnTest.cs" />
+    <Compile Include="Services\PressAfterShow.cs" />
     <Compile Include="Services\StabilityTest.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
