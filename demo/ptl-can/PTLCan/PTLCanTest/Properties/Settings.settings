@@ -1,0 +1,32 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PTLCanTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="singleLightColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FFFFFF</Value>
+    </Setting>
+    <Setting Name="multiLights" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1,3</Value>
+    </Setting>
+    <Setting Name="multiLightColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FFFFFF</Value>
+    </Setting>
+    <Setting Name="autoCleanInput" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="sendSleep" Type="System.String" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="com" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM5</Value>
+    </Setting>
+    <Setting Name="LampConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=ZHANGLIN-PC;Initial Catalog=Lamp;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=ZHANGLIN-PC;Initial Catalog=Lamp;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

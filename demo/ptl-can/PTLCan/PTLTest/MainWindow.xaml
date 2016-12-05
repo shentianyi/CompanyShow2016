@@ -1,0 +1,17 @@
+﻿<Window x:Class="PTLTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PTLTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="Testbutton" Content="下线连通测试" HorizontalAlignment="Left" Margin="189,25,0,0" VerticalAlignment="Top" Width="91" Click="Testbutton_Click"/>
+        <Button x:Name="SetIdbutton" Content="设置Id" HorizontalAlignment="Left" Margin="189,69,0,0" VerticalAlignment="Top" Width="91" Click="SetIdbutton_Click"/>
+        <Button x:Name="Checkbutton" Content="按钮测试" HorizontalAlignment="Left" Margin="189,110,0,0" VerticalAlignment="Top" Width="91" Click="Checkbutton_Click"/>
+        <Button x:Name="NumShowbutton" Content="数字测试" HorizontalAlignment="Left" Margin="189,150,0,0" VerticalAlignment="Top" Width="91" Click="NumShowbutton_Click"/>
+        <Button x:Name="ColorShowbutton" Content="颜色测试" HorizontalAlignment="Left" Margin="189,195,0,0" VerticalAlignment="Top" Width="91" Click="ColorShowbutton_Click"/>
+        <Button x:Name="Stabilitybutton" Content="稳定性测试Button" HorizontalAlignment="Left" Margin="189,239,0,0" VerticalAlignment="Top" Width="91" Click="Stabilitybutton_Click"/>
+    </Grid>
+</Window>

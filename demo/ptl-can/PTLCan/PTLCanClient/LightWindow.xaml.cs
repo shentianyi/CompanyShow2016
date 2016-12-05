@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -204,7 +205,7 @@ namespace PTLCanClient
             }
             catch (Exception ex)
             {
-
+                LogUtil.Logger.Info(ex.Message);
             }
             return lights;
         }

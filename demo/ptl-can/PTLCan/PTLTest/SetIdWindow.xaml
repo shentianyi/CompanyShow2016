@@ -1,0 +1,17 @@
+﻿<Window x:Class="PTLTest.SetIdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PTLTest"
+        mc:Ignorable="d"
+        Title="SetIdWindow" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="SetIdbutton" Content="确定" HorizontalAlignment="Left" Margin="194,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.988,0.753" Click="SetIdbutton_Click"/>
+        <Label x:Name="SetIdlabel" Content="目标ID： " HorizontalAlignment="Left" Margin="34,81,0,0" VerticalAlignment="Top" Width="63"/>
+        <TextBox x:Name="SetIdtextBox" HorizontalAlignment="Left" Height="23" Margin="125,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="SetIdtextBox_TextChanged"/>
+        <Label x:Name="OldIdlabel" Content="现在ID:" HorizontalAlignment="Left" Margin="34,34,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="OldtextBox" HorizontalAlignment="Left" Height="23" Margin="125,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="OldtextBox_TextChanged"/>
+
+    </Grid>
+</Window>

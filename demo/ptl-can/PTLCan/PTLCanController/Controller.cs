@@ -1,4 +1,4 @@
-﻿using Brilliantech.Framwork.Utils.LogUtil;
+using Brilliantech.Framwork.Utils.LogUtil;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
@@ -42,7 +42,7 @@ namespace PTLCanController
         /// <param name="rgbColor">灯颜色, RGB, 如白色：FFFFFF </param>
         public void Send(int lightId,int number, string rgbColor)
         {
-           
+            Thread.Sleep(20);
             // 00 00 01 01, 01, C0, 01, 00 01, 01 00 00
             // 给1号，发显示为 00 01，RGB为010000
             string cmd = string.Format("{0}01C001{1}{2}",
@@ -54,6 +54,29 @@ namespace PTLCanController
             byte[] bcmd = ScaleHelper.HexStringToHexByte(cmd);
 
             LogUtil.Logger.Info(string.Format("发送 命令Byte：{0}",bcmd) );
+            if (!IsOpen())
+            {
+                this.Open();
+            }
+            sp.Write(bcmd, 0, bcmd.Length);
+        }
+
+
+
+        public void Set(int OldId,int lightId)
+        {
+
+            // 00 00 01 01, 01, C0, 01, 00 01, 01 00 00
+            // 给1号，发显示为 00 01，RGB为010000
+            string cmd = string.Format("{0}01C201{1}",
+                ScaleHelper.DecimalToHexString(OldId+ 256, true, 8) ,
+                 ScaleHelper.DecimalToHexString(lightId, true, 2)
+                );
+
+            LogUtil.Logger.Info("设置 命令：" + cmd);
+            byte[] bcmd = ScaleHelper.HexStringToHexByte(cmd);
+
+           // LogUtil.Logger.Info(string.Format("发送 命令Byte：{0}", bcmd));
             if (!IsOpen())
             {
                 this.Open();
@@ -132,6 +155,48 @@ namespace PTLCanController
 
 
         }
+
+
+
+        /*
+        public string DataReceived()
+        {
+            Thread.Sleep(15);
+            byte[] rdata = new byte[sp.BytesToRead];
+            sp.Read(rdata, 0, rdata.Length);
+
+            LogUtil.Logger.Info("接收数据：" + ScaleHelper.HexBytesToString(rdata));
+
+            LogUtil.Logger.Info(string.Format("接收数据Byte：{0}", rdata));
+
+            
+
+            if (rdata[5] == 209)
+            {
+                int LampId = rdata[3];
+                string back = string.Format("{0}{1}B0010000000000",
+               ScaleHelper.DecimalToHexString(LampId + 256, true, 8),
+               ScaleHelper.DecimalToHexString(rdata[4], true, 2));
+
+                byte[] bback = ScaleHelper.HexStringToHexByte(back);
+                if (!IsOpen())
+                {
+                    this.Open();
+                }
+                sp.Write(bback, 0, bback.Length);
+                LogUtil.Logger.Info(string.Format("发送回复: " + ScaleHelper.HexBytesToString(bback)));
+                
+
+            }
+
+            
+            return ScaleHelper.HexBytesToString(rdata);
+
+
+
+        }
+    */
+
 
         /// <summary>
         /// 关闭串口
