@@ -5,6 +5,7 @@ using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace PTLCanController
 {
@@ -17,6 +18,7 @@ namespace PTLCanController
         private string com { get; set; }
         private int baudRate;
         private Parity parity;
+        
         
         /// <summary>
         /// 
@@ -39,7 +41,8 @@ namespace PTLCanController
         /// <param name="number">显示数, 0~9999</param>
         /// <param name="rgbColor">灯颜色, RGB, 如白色：FFFFFF </param>
         public void Send(int lightId,int number, string rgbColor)
-        {   
+        {
+           
             // 00 00 01 01, 01, C0, 01, 00 01, 01 00 00
             // 给1号，发显示为 00 01，RGB为010000
             string cmd = string.Format("{0}01C001{1}{2}",
@@ -99,11 +102,34 @@ namespace PTLCanController
         /// <param name="e"></param>
         private void Sp_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
+            Thread.Sleep(15);
             byte[] rdata = new byte[sp.BytesToRead];
             sp.Read(rdata, 0, rdata.Length);
 
             LogUtil.Logger.Info("接收数据：" + ScaleHelper.HexBytesToString(rdata));
+         
             LogUtil.Logger.Info(string.Format("接收数据Byte：{0}", rdata));
+           
+            
+
+            if (rdata[5] == 209)
+            {
+                int LampId = rdata[3];
+                string back = string.Format("{0}{1}B0010000000000",
+               ScaleHelper.DecimalToHexString(LampId+256, true, 8),
+               ScaleHelper.DecimalToHexString(rdata[4], true, 2));
+              
+                byte[] bback = ScaleHelper.HexStringToHexByte(back);
+                if (!IsOpen())
+                {
+                    this.Open();
+                }
+                sp.Write(bback, 0, bback.Length);
+                LogUtil.Logger.Info(string.Format("发送回复: "+ ScaleHelper.HexBytesToString(bback)));
+
+            }
+           
+
 
         }
 

@@ -266,5 +266,10 @@ namespace PTLCanClient
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void scanText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
