@@ -16,19 +16,20 @@ namespace PTLCanTest.Services
    public class PressAfterShow
     {
         private bool BtnTest = false;
-        private int LampId = 0;
+      //  private int LampId = 0;
         private int i;
         private SerialPort sp;
         private int j = 1;
         private int count = 100;
         private bool SendFlag = true;
         private bool StabilityPass = false;
+        private string[] colors = new string[3] { "FF0000", "FFFFFF", "000000" };
 
 
 
-
-        public void Stability(int LampId)
+        public void Stability(List<int> LampIds,int times=100)
         {
+            count = times == -1 ? int.MaxValue : times;
 
             MessageBox.Show("测试即将开始，请耐心等待结果");
 
@@ -39,6 +40,7 @@ namespace PTLCanTest.Services
                     if (this.sp == null)
                     {
                         this.sp = new SerialPort(Settings.Default.com, 9600, Parity.None);
+                        this.sp.DataReceived += new SerialDataReceivedEventHandler(Sp_DataReceived);
                         this.sp.Open();
 
                         LogUtil.Logger.Info("Open Success.....");
@@ -52,15 +54,15 @@ namespace PTLCanTest.Services
                             {
                                 for (i = 1; i <= count; i++)
                                 {
-                                    this.Send(LampId, i, "FF0000");
-                                    BtnTest = false;
-                                    CheckId();
-
-                                   
+                                    foreach (var LampId in LampIds)
+                                    {
+                                        this.Send(LampId, i, colors[i%3]);
+                                        Thread.Sleep(300);
+                                        //BtnTest = false;
+                                        //CheckId();
+                                    }
 
                                 }
-                                SendFlag = false;
-
 
 
                                 if (SendFlag == false && StabilityPass == true)
@@ -118,7 +120,7 @@ namespace PTLCanTest.Services
 
         public void CheckId()
         {
-            this.sp.DataReceived += new SerialDataReceivedEventHandler(Sp_DataReceived);
+            
             while (BtnTest == false)
             {
                 try
@@ -128,7 +130,7 @@ namespace PTLCanTest.Services
                     {
                         this.sp = new SerialPort(Settings.Default.com, 9600, Parity.None);
                         this.sp.Open();
-                        
+                        this.sp.DataReceived += new SerialDataReceivedEventHandler(Sp_DataReceived);
 
                         LogUtil.Logger.Info("Open Success.....");
                     }

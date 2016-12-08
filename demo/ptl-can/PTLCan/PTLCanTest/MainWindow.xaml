@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="StartTestbutton" Content="开始测试" HorizontalAlignment="Left" Margin="170,112,0,0" VerticalAlignment="Top" Width="75" Click="StartTestbutton_Click"/>
+        <Button x:Name="StartTestbutton" Content="开始测试" 
+                HorizontalAlignment="Left" Margin="102,192,0,0" VerticalAlignment="Top" Width="92" Click="StartTestbutton_Click" Height="34" RenderTransformOrigin="0.25,1.735"/>
+        <Label x:Name="label" Content="Ids:" HorizontalAlignment="Left" Margin="67,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lightIdText" HorizontalAlignment="Left" Height="26" Margin="102,67,0,0" TextWrapping="Wrap" Text="1,2,0" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="label1" Content="Times:" HorizontalAlignment="Left" Margin="50,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="timesTB" HorizontalAlignment="Left" Height="23" Margin="102,112,0,0" TextWrapping="Wrap" Text="-1" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="startAtLabel" Content="Label" HorizontalAlignment="Left" Margin="324,67,0,0" VerticalAlignment="Top" Height="68" Width="152" FontWeight="Bold" FontSize="13.333"/>
 
     </Grid>
 </Window>

@@ -12,13 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Brilliantech.Framwork.Utils.LogUtil;
-using Brilliantech.Framwork.Utils.ConvertUtil;
 using System.Threading;
 using PTLCanTest.Properties;
 using System.IO.Ports;
 using PTLCanTest.Services;
-
+using Brilliantech.Framwork.Utils.LogUtil;
+using Brilliantech.Framwork.Utils.ConvertUtil;
 
 namespace PTLCanTest
 {
@@ -27,6 +26,8 @@ namespace PTLCanTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        //System.Timers.Timer timer;
+      
         private bool BtnTest = false;
         private int LampId = 0;
         PTLCanController.Controller controller;
@@ -52,10 +53,26 @@ namespace PTLCanTest
             StabilityTest ss = new StabilityTest();
             ss.Stability(LampId);
             */
-            
+            //timer = new System.Timers.Timer();
+            //timer.Interval = 1000;
+            //timer.Elapsed += Timer_Elapsed;
+            //timer.Enabled = true;
+            //timer.Start();
             PressAfterShow PAS = new PressAfterShow();
-            PAS.Stability(0);
-            
+            List<int> ids = new List<int>();
+            foreach (var id in lightIdText.Text.Split(','))
+            {
+                ids.Add(int.Parse(id));
+            }
+            PAS.Stability(ids,int.Parse(timesTB.Text));
+          this.startAtLabel.Content = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        }
+
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            //this.Dispatcher.Invoke(new Action(()=> {
+               
+            //}));
         }
 
 
@@ -71,7 +88,7 @@ namespace PTLCanTest
                 try
                 {
                     this.controller.Close();
-
+                    
                 }
                 catch (Exception ex)
                 {

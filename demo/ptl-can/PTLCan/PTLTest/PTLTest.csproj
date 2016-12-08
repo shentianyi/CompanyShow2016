@@ -66,9 +66,6 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Brilliantech.Framwork">
-      <HintPath>..\..\ThirdPart\Brilliantech.Framwork.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\ThirdPart\log4net.dll</HintPath>
     </Reference>
@@ -104,9 +101,6 @@
     <Compile Include="OffTestWindow.xaml.cs">
       <DependentUpon>OffTestWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Services\BuildSerialPort.cs" />
-    <Compile Include="Services\OffConnTest.cs" />
-    <Compile Include="Services\StabilityTest.cs" />
     <Compile Include="SetIdWindow.xaml.cs">
       <DependentUpon>SetIdWindow.xaml</DependentUpon>
     </Compile>
@@ -173,12 +167,15 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="PTLTest_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Brilliantech.Framwork\Brilliantech.Framwork.csproj">
+      <Project>{9b5f850a-5136-4095-8955-6c4f7747c48a}</Project>
+      <Name>Brilliantech.Framwork</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PTLCanClient\PTLCanClient.csproj">
       <Project>{24763f2e-1c11-496f-a5c5-a4a6580a4cbb}</Project>
       <Name>PTLCanClient</Name>
@@ -199,6 +196,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

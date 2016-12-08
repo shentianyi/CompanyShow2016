@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Brilliantech.Framwork.Utils.LogUtil;
-using Brilliantech.Framwork.Utils.ConvertUtil;
 using PTLCanTest.Properties;
 using System.IO.Ports;
 using System.Windows;
-
-
+using Brilliantech.Framwork.Utils.ConvertUtil;
+using Brilliantech.Framwork.Utils.LogUtil;
 
 namespace PTLCanTest.Services
 {

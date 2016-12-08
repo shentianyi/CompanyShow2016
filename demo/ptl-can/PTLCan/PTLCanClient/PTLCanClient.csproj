@@ -52,9 +52,6 @@
     <ApplicationIcon>ptl.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Brilliantech.Framwork">
-      <HintPath>..\..\ThirdPart\Brilliantech.Framwork.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\ThirdPart\log4net.dll</HintPath>
     </Reference>
@@ -132,6 +129,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Brilliantech.Framwork\Brilliantech.Framwork.csproj">
+      <Project>{9b5f850a-5136-4095-8955-6c4f7747c48a}</Project>
+      <Name>Brilliantech.Framwork</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PTLCanController\PTLCanController.csproj">
       <Project>{2f61cc00-acd6-4252-8f9d-6a79aeda25d1}</Project>
       <Name>PTLCanController</Name>

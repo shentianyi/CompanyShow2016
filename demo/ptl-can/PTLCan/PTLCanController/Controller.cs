@@ -1,4 +1,4 @@
-﻿using Brilliantech.Framwork.Utils.LogUtil;
+using Brilliantech.Framwork.Utils.LogUtil;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
