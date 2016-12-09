@@ -1,0 +1,15 @@
+1.记事本打开PTLTest.exe.config 
+
+<setting name="com" serializeAs="String">
+                <value>COM5</value>
+
+COM5改为对应的COM口
+
+2.双击PTLTest.exe开始使用程序
+
+说明：连通性测试 功能 默认刚下线的板子编号为0
+若与实际编号不符，可以通过设置Id功能改变板子编号。
+
+ps:
+命令会写入log文件夹中的Log.log日志中，便于查看。
+

@@ -93,7 +93,7 @@ namespace TcpDemoWPF
                 {
                     //System_CAPS_pubmethod	Dequeue()	 移除并返回位于 Queue 开始处的对象 保证先进先出
                     sendMsg(CmdQueue.Dequeue() as byte[]);
-                    Thread.Sleep(200);
+                    Thread.Sleep(300);
                 }
             }
         }
@@ -202,16 +202,19 @@ namespace TcpDemoWPF
 
         private void Stabilitybutton_Click(object sender, RoutedEventArgs e)
         {
-           
-        
-            for (int Nr = 0; Nr <=255; Nr++)
+
+            for (int Id = 0; Id <= 1; Id++)
             {
-                byte[] msg = new byte[] { 0x88,0x00, 0x00, 0x01, 0x00, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
-                msg[5] = (byte)Nr;
-                msg[9] = (byte)Nr;
-                //Thread.Sleep(1000);
-                // sendMsg(msg);
-                CmdQueue.Enqueue(msg);
+                for (int Nr = 0; Nr <= 10; Nr++)
+                {
+                    byte[] msg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x00, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
+                    msg[4] = (byte)Id;
+                    msg[5] = (byte)Nr;
+                    msg[9] = (byte)Nr;
+                    //Thread.Sleep(1000);
+                    // sendMsg(msg);
+                    CmdQueue.Enqueue(msg);
+                }
             }
 
 

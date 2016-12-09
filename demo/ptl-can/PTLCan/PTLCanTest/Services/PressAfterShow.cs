@@ -189,7 +189,7 @@ namespace PTLCanTest.Services
                             sp.Write(bback, 0, bback.Length);
                             LogUtil.Logger.Info(string.Format("发送回复: " + ScaleConvertor.HexBytesToString(bback)));
                             int ShowNum = (rdata[7] << 8 | rdata[8]);
-                            MessageBoxResult MSBOXRE = MessageBox.Show("是否发送了数码管数字为" + ShowNum + "的确认指令?", "按键测试结果", MessageBoxButton.YesNo);
+                            MessageBoxResult MSBOXRE = MessageBox.Show("灯编号：" + rdata[3] +" 是否发送了数码管数字为" + ShowNum + "的确认指令?", "按键测试结果", MessageBoxButton.YesNo);
 
                             if (MSBOXRE == MessageBoxResult.Yes)
                             {
@@ -221,7 +221,7 @@ namespace PTLCanTest.Services
                             sp.Write(bback, 0, bback.Length);
                             LogUtil.Logger.Info(string.Format("发送回复: " + ScaleConvertor.HexBytesToString(bback)));
                             int ShowNum = (rdata[7] << 8 | rdata[8]);
-                            MessageBoxResult MSBOXRE = MessageBox.Show("是否发送了数码管数字为" + ShowNum + "的取消指令?", "按键测试结果", MessageBoxButton.YesNo);
+                            MessageBoxResult MSBOXRE = MessageBox.Show("灯编号：" + rdata[3] + " 是否发送了数码管数字为" + ShowNum + "的取消指令?", "按键测试结果", MessageBoxButton.YesNo);
 
                             if (MSBOXRE == MessageBoxResult.Yes)
                             {
