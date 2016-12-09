@@ -35,7 +35,15 @@ namespace TcpDemoWPF
         Thread ClientRecieveThread;
         Queue CmdQueue = new Queue();
         Thread ClientSendThread;
-        
+        private int ReceCount=0;
+        private int SendNr = 0;
+       
+        private int IdCount = 5;
+        private int SendCount = 255;
+        private int Count;
+       
+
+
         private void MakeConnect_Click(object sender, RoutedEventArgs e)
         {
            
@@ -55,6 +63,7 @@ namespace TcpDemoWPF
 
         private void Listen()
         {
+            
             while (runflag)
             {
                 try
@@ -62,10 +71,44 @@ namespace TcpDemoWPF
                     //固定字节数13
                     byte[] result = new byte[13];
                     int dataLength = tcpClient.Receive(result);
+                    
+                       
+
+
+                    
                     tcpClient.ReceiveTimeout = -1;
                     byte[] MessageBytes = result.Take(dataLength).ToArray();
+                    
                     string Receivemeans = ReadMessage.Parser.readMessage(MessageBytes);
-                    this.Dispatcher.Invoke(new Action(() => { ReceiveMessageText.AppendText(Receivemeans + "\n"); }));
+                   
+                    this.Dispatcher.Invoke(new Action(() => {
+                        ReceiveMessageText.AppendText(Receivemeans + "\n");
+                        ReceiveMessageText.ScrollToEnd();
+                        LogUtil.Logger.Info("【Receive数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
+                        ReceCount = ReceCount + 1;
+
+                    }));
+
+                    if (SendNr == Count)
+                    {
+                        if (ReceCount == Count)
+                        {
+
+
+                            LogUtil.Logger.Info(MessageBytes[4] + "稳定性测试通过");
+                            this.Dispatcher.Invoke(new Action(() => { MessageBox.Show("编号" + MessageBytes[4] + ": 稳定性测试通过"); runflag = false; }));
+                        }
+                        else
+                        {
+                            LogUtil.Logger.Info("【稳定性测试】" + ReceCount);
+                        }
+                    }
+                 
+                  
+
+
+
+
                 }
                 catch (SocketException ex)
                 {
@@ -93,7 +136,8 @@ namespace TcpDemoWPF
                 {
                     //System_CAPS_pubmethod	Dequeue()	 移除并返回位于 Queue 开始处的对象 保证先进先出
                     sendMsg(CmdQueue.Dequeue() as byte[]);
-                    Thread.Sleep(300);
+                    SendNr = SendNr + 1;
+                    Thread.Sleep(580);
                 }
             }
         }
@@ -133,6 +177,8 @@ namespace TcpDemoWPF
 
         byte[] currentCmd = null;
         int resendCount = 0;
+       
+
         /// <summary>
         /// 发送消息
         /// </summary>
@@ -162,7 +208,7 @@ namespace TcpDemoWPF
                 {
                     //tcpClient.Send(msg, msg.Length, SocketFlags.None);
                     //Thread.Sleep(1000);
-                    this.Dispatcher.Invoke(new Action(() => { tcpClient.Send(msg, msg.Length, SocketFlags.None); SendMessageText.AppendText(ReadMessage.Parser.readMessage(msg) + "\n"); LogUtil.Logger.Info("【send数据】" + ScaleConvertor.HexBytesToString(msg)); }));
+                    this.Dispatcher.Invoke(new Action(() => { tcpClient.Send(msg, msg.Length, SocketFlags.None); SendMessageText.AppendText(ReadMessage.Parser.readMessage(msg) + "\n");SendMessageText.ScrollToEnd(); LogUtil.Logger.Info("【send数据】" + ScaleConvertor.HexBytesToString(msg)); }));
 
                
                 // tcpClient.ReceiveTimeout = 5000;
@@ -202,17 +248,17 @@ namespace TcpDemoWPF
 
         private void Stabilitybutton_Click(object sender, RoutedEventArgs e)
         {
-
-            for (int Id = 0; Id <= 1; Id++)
+             Count = IdCount * SendCount;
+          
+            for (int Id = 0; Id < IdCount; Id++)
             {
-                for (int Nr = 0; Nr <= 10; Nr++)
+               
+                for (int SendNr=0; SendNr <SendCount; SendNr++)
                 {
-                    byte[] msg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x00, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
-                    msg[4] = (byte)Id;
-                    msg[5] = (byte)Nr;
-                    msg[9] = (byte)Nr;
-                    //Thread.Sleep(1000);
-                    // sendMsg(msg);
+                    byte[] msg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x02, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
+                    //msg[4] = (byte)Id;
+                    msg[5] = (byte)SendNr;
+                    msg[9] = (byte)SendNr;
                     CmdQueue.Enqueue(msg);
                 }
             }

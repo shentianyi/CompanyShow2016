@@ -32,7 +32,7 @@ namespace ReadMessage
                 {
                     case (byte)176:
                         {
-                            mean = "编号为" + LampId + ",数码管数字为" + Num + "的第" + SN + "条设置指令";
+                            mean = "编号为" + LampId + ",STU为" + STU + "的第" + SN + "条肯定回答指令";
                             break;
                         }
                     case (byte)192:

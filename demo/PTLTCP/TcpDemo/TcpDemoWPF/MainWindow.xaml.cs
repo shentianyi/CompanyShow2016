@@ -18,6 +18,8 @@ using System.Net.Sockets;
 using System.Net;
 using System.Threading;
 
+
+
 namespace TcpDemoWPF
 {
     /// <summary>
@@ -29,7 +31,7 @@ namespace TcpDemoWPF
         {
             InitializeComponent();
         }
-    //    private static int myProt = 8080;   //端口  
+        //    private static int myProt = 8080;   //端口  
         Socket tcpServer;
         Thread ClientRecieveThread;
         bool runflag = true;
@@ -58,7 +60,7 @@ namespace TcpDemoWPF
             while (runflag)
             {
                 Socket client = tcpServer.Accept();
-                
+
                 try
                 {
                     this.Dispatcher.Invoke(new Action(() => { clientLB.Items.Add(client.RemoteEndPoint.ToString()); }));
@@ -94,14 +96,41 @@ namespace TcpDemoWPF
                     if (dataLength > 0)
                     {
                         byte[] MessageBytes = result.Take(dataLength).ToArray();
-                        string Receivemeans = ReadMessage.Parser.readMessage(MessageBytes);
-                        this.Dispatcher.Invoke(new Action(() => { ReceiveText.AppendText(Receivemeans + "\n"); sendMsgToClient(client.RemoteEndPoint.ToString(), MessageBytes); LogUtil.Logger.Info("【数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
-                            LogUtil.Logger.Info("【解析】" + Receivemeans);
-                        }));
+                        //发送回复
+                        switch (result[6])
+                        {
+                            case (byte)209:
+                                {
+                                    byte[] ResponeBytes = Responese(MessageBytes);
+                                    sendMsgToClient(client.RemoteEndPoint.ToString(), ResponeBytes);
+                                    LogUtil.Logger.Info(string.Format("发送提交指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
+                                    break;
+                                }
+                            case (byte)210:
+                                {
+                                    byte[] ResponeBytes = Responese(MessageBytes);
+                                    sendMsgToClient(client.RemoteEndPoint.ToString(), ResponeBytes);
+                                    LogUtil.Logger.Info(string.Format("发送取消指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
+                                    break;
+                                }
+                            default: break;
 
-                       
-                        //回馈信息
-                       
+                        }
+
+
+
+                        //接收数据解析
+                        string Receivemeans = ReadMessage.Parser.readMessage(MessageBytes);
+                        this.Dispatcher.Invoke(new Action(() =>
+                        {
+                            ReceiveText.AppendText(Receivemeans + "\n");
+                        }));
+                        LogUtil.Logger.Info("【数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
+                        LogUtil.Logger.Info("【解析】" + Receivemeans);
+
+
+
+
                     }
                 }
             }
@@ -118,11 +147,13 @@ namespace TcpDemoWPF
         /// </summary>
         /// <param name="clientIP"></param>
         /// <param name="msgBody"></param>
-        private void sendMsgToClient(string clientIP, byte[] msgBody)
+        private void sendMsgToClient(string clientIP, byte[] msg)
         {
-            byte[] msg = msgBody;
+
             clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
             string SendMeans = ReadMessage.Parser.readMessage(msg);
+            LogUtil.Logger.Info("【解析】" + SendMeans);
+
             this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); }));
         }
 
@@ -195,6 +226,49 @@ namespace TcpDemoWPF
         {
             //获得Client的IP和端口
             return client.RemoteEndPoint.ToString();
+        }
+
+
+
+        /// <summary>
+        /// 主动汇报或取消时 发送回复
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public byte[] Responese(byte[] msg)
+        {
+            if (msg.Count() == 13)
+            {
+                string mean = string.Empty;
+
+                int LampId = msg[4];
+               
+
+                string back = string.Format("88{0}{1}B0{2}{3}{4}000000",
+                   ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),
+                   ScaleConvertor.DecimalToHexString(msg[5], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[7], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[8], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[9], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[10], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[11], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[12], true, 2));
+
+                byte[] bback = ScaleConvertor.HexStringToHexByte(back);
+                
+                return bback;
+            }
+
+
+            else
+            {
+                return null;
+            }
+        }
+
+        private void serverIPTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

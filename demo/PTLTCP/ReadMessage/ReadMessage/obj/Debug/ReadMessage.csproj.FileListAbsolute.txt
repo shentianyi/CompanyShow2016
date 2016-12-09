@@ -16,3 +16,12 @@ C:\Users\ZhangLin\git\PTLTCP\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Fram
 C:\Users\ZhangLin\git\PTLTCP\ReadMessage\ReadMessage\obj\Debug\ReadMessage.csprojResolveAssemblyReference.cache
 C:\Users\ZhangLin\git\PTLTCP\ReadMessage\ReadMessage\obj\Debug\ReadMessage.dll
 C:\Users\ZhangLin\git\PTLTCP\ReadMessage\ReadMessage\obj\Debug\ReadMessage.pdb
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\bin\Debug\ReadMessage.dll
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\bin\Debug\ReadMessage.pdb
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Framwork.dll
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\bin\Debug\log4net.dll
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\bin\Debug\Nini.dll
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Framwork.pdb
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\obj\Debug\ReadMessage.csprojResolveAssemblyReference.cache
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\obj\Debug\ReadMessage.dll
+C:\Users\ZhangLin\git\CompanyShow2016\demo\PTLTCP\ReadMessage\ReadMessage\obj\Debug\ReadMessage.pdb
