@@ -19,13 +19,13 @@ namespace ReadMessage
             string mean = "";
             if (MessageCount == 13)
             {
-                byte[] LampBytes = new byte[4] { MessageBytes[1], MessageBytes[2], MessageBytes[3], MessageBytes[4] };
                
-                int LampId = ScaleConvertor.HexBytesToDecimal(LampBytes);
+               
+                int LampId =MessageBytes[4];
 
                 int SN = MessageBytes[5];
                 int STU = MessageBytes[7];
-                int Num = (MessageBytes[8] << 8 | MessageBytes[9]);
+                int Num = (MessageBytes[8]<<8|MessageBytes[9]);
 
 
                 switch (MessageBytes[6])

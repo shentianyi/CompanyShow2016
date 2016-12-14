@@ -37,10 +37,10 @@ namespace TcpDemoWPF
         Thread ClientSendThread;
         private int ReceCount=0;
         private int SendNr = 0;
-       
-        private int IdCount = 5;
-        private int SendCount = 255;
+        private int IdCount;
+        private byte[] NumBytes;
         private int Count;
+
        
 
 
@@ -96,11 +96,11 @@ namespace TcpDemoWPF
 
 
                             LogUtil.Logger.Info(MessageBytes[4] + "稳定性测试通过");
-                            this.Dispatcher.Invoke(new Action(() => { MessageBox.Show("编号" + MessageBytes[4] + ": 稳定性测试通过"); runflag = false; }));
+                            this.Dispatcher.Invoke(new Action(() => { MessageBox.Show("稳定性测试通过"); runflag = false;ReceiveMessageText.Clear();SendMessageText.Clear(); }));
                         }
                         else
                         {
-                            LogUtil.Logger.Info("【稳定性测试】" + ReceCount);
+                            LogUtil.Logger.Info("【稳定性测试接收:】" + ReceCount+"条");
                         }
                     }
                  
@@ -137,7 +137,7 @@ namespace TcpDemoWPF
                     //System_CAPS_pubmethod	Dequeue()	 移除并返回位于 Queue 开始处的对象 保证先进先出
                     sendMsg(CmdQueue.Dequeue() as byte[]);
                     SendNr = SendNr + 1;
-                    Thread.Sleep(580);
+                   Thread.Sleep(Properties.Settings.Default.SleepTime);
                 }
             }
         }
@@ -248,18 +248,24 @@ namespace TcpDemoWPF
 
         private void Stabilitybutton_Click(object sender, RoutedEventArgs e)
         {
-             Count = IdCount * SendCount;
-          
-            for (int Id = 0; Id < IdCount; Id++)
+            IdCount = (Properties.Settings.Default.IdMax) - (Properties.Settings.Default.IdMin)+1;
+             Count = IdCount * (Properties.Settings.Default.SendCount);
+            for (int SendNr = 0; SendNr < Properties.Settings.Default.SendCount; SendNr++)
             {
+                for (int Id = Properties.Settings.Default.IdMin; Id <= Properties.Settings.Default.IdMax; Id++)
+            {
+                    NumBytes = new byte[2];
+                    NumBytes = ScaleConvertor.DecimalToByte((ushort)SendNr);
+                    
                
-                for (int SendNr=0; SendNr <SendCount; SendNr++)
-                {
+              
                     byte[] msg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x02, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
-                    //msg[4] = (byte)Id;
+                    msg[4] = (byte)Id;
                     msg[5] = (byte)SendNr;
-                    msg[9] = (byte)SendNr;
+                    msg[8] = NumBytes[0];
+                    msg[9] = NumBytes[1];
                     CmdQueue.Enqueue(msg);
+                    
                 }
             }
 

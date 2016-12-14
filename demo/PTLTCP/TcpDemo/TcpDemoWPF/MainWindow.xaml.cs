@@ -124,6 +124,7 @@ namespace TcpDemoWPF
                         this.Dispatcher.Invoke(new Action(() =>
                         {
                             ReceiveText.AppendText(Receivemeans + "\n");
+                            ReceiveText.ScrollToEnd();
                         }));
                         LogUtil.Logger.Info("【数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
                         LogUtil.Logger.Info("【解析】" + Receivemeans);
@@ -154,7 +155,7 @@ namespace TcpDemoWPF
             string SendMeans = ReadMessage.Parser.readMessage(msg);
             LogUtil.Logger.Info("【解析】" + SendMeans);
 
-            this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); }));
+            this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
         }
 
         /// <summary>

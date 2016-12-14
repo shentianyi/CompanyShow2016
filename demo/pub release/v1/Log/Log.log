@@ -1,0 +1,44 @@
+[2016-11-29 17:36:44,853]  1 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Open] -- Open Success.....
+[2016-11-29 17:36:47,724]  1 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Send] -- 发送 命令：0000016401C0011F5CFFFFFF
+[2016-11-29 17:36:47,755]  1 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Send] -- 发送 命令Byte：System.Byte[]
+[2016-11-29 17:36:47,827]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00 00
+[2016-11-29 17:36:47,828]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,828]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00 64
+[2016-11-29 17:36:47,829]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,829]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：01
+[2016-11-29 17:36:47,829]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,831]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：B0
+[2016-11-29 17:36:47,831]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,832]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：01
+[2016-11-29 17:36:47,832]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,833]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,833]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,834]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,834]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,835]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,835]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,836]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,836]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,837]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,837]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,907]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,907]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,908]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,908]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,909]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,909]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,910]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：64
+[2016-11-29 17:36:47,910]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,912]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：01
+[2016-11-29 17:36:47,912]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,915]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：B0 01
+[2016-11-29 17:36:47,915]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,915]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,915]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,916]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,916]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,918]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00 00
+[2016-11-29 17:36:47,918]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:36:47,919]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据：00
+[2016-11-29 17:36:47,919]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Sp_DataReceived] -- 接收数据Byte：System.Byte[]
+[2016-11-29 17:37:08,263]  1 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [Close] -- Close Success....
