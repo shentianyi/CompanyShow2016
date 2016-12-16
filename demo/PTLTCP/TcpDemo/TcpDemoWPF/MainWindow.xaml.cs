@@ -17,6 +17,7 @@ using System.Windows.Shapes;
 using System.Net.Sockets;
 using System.Net;
 using System.Threading;
+using ReadMessage.ENUM;
 
 
 
@@ -42,6 +43,7 @@ namespace TcpDemoWPF
 
         private void MakeConnection_Click(object sender, RoutedEventArgs e)
         {
+            //设置服务器地址
             IPAddress ip = IPAddress.Parse(serverIPTB.Text);
             tcpServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             tcpServer.Bind(new IPEndPoint(ip, int.Parse(serverPortTB.Text)));  //绑定IP地址：端口  
@@ -49,12 +51,17 @@ namespace TcpDemoWPF
 
             MessageBox.Show(string.Format("启动监听{0}成功", tcpServer.LocalEndPoint.ToString()));
             MakeConnection.Content = "【服务器已启动】";
-            // SocketTcpAccept.Send(serversay);
+           
+
             ClientRecieveThread = new Thread(ListenConnnect);
             ClientRecieveThread.IsBackground = true;
             ClientRecieveThread.Start();
         }
 
+
+        /// <summary>
+        /// 获取client的IP并且加入到clients池
+        /// </summary>
         private void ListenConnnect()
         {
             while (runflag)
@@ -71,6 +78,7 @@ namespace TcpDemoWPF
                     clientThread.IsBackground = true;
                     clientThread.Start(client);
                     clientThreads.Add(key, clientThread);
+
 
                 }
                 catch (Exception ee)
@@ -99,6 +107,14 @@ namespace TcpDemoWPF
                         //发送回复
                         switch (result[6])
                         {
+                            case (byte)255:
+                                {
+                                    byte[] ResponeBytes = Transmit(MessageBytes);
+                                    string TransmitIp = ReadMessage.Parser.GetIpByValue(MessageBytes[0]);
+                                    sendMsgToClient(TransmitIp, ResponeBytes);
+                                    break;
+
+                                }
                             case (byte)209:
                                 {
                                     byte[] ResponeBytes = Responese(MessageBytes);
@@ -257,6 +273,39 @@ namespace TcpDemoWPF
 
                 byte[] bback = ScaleConvertor.HexStringToHexByte(back);
                 
+                return bback;
+            }
+
+
+            else
+            {
+                return null;
+            }
+        }
+
+
+        public byte[] Transmit(byte[] msg)
+        {
+            if (msg.Count() == 13)
+            {
+                string mean = string.Empty;
+
+                int LampId = msg[4];
+                
+
+
+                string back = string.Format("88{0}{1}C0{2}{3}{4}000000",
+                   ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),
+                   ScaleConvertor.DecimalToHexString(msg[5], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[7], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[8], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[9], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[10], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[11], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[12], true, 2));
+
+                byte[] bback = ScaleConvertor.HexStringToHexByte(back);
+
                 return bback;
             }
 

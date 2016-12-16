@@ -248,10 +248,14 @@ namespace TcpDemoWPF
 
         private void Stabilitybutton_Click(object sender, RoutedEventArgs e)
         {
+            Random Rnd = new Random();
             IdCount = (Properties.Settings.Default.IdMax) - (Properties.Settings.Default.IdMin)+1;
              Count = IdCount * (Properties.Settings.Default.SendCount);
             for (int SendNr = 0; SendNr < Properties.Settings.Default.SendCount; SendNr++)
             {
+                byte Red =(byte)Rnd.Next( 0, 2);
+                byte Grenn= (byte)Rnd.Next(0, 2);
+                byte Blue= (byte)Rnd.Next(0, 2);
                 for (int Id = Properties.Settings.Default.IdMin; Id <= Properties.Settings.Default.IdMax; Id++)
             {
                     NumBytes = new byte[2];
@@ -260,10 +264,14 @@ namespace TcpDemoWPF
                
               
                     byte[] msg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x02, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
+
                     msg[4] = (byte)Id;
                     msg[5] = (byte)SendNr;
                     msg[8] = NumBytes[0];
                     msg[9] = NumBytes[1];
+                    msg[10] = Red;
+                    msg[11] = Grenn;
+                    msg[12] = Blue;
                     CmdQueue.Enqueue(msg);
                     
                 }
