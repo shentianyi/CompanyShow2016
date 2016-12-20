@@ -14,15 +14,63 @@ namespace ReadMessage
 {
     public class Parser
     {
-        public static string GetIpByValue(int EnumValue)
+        public static string GetIpByValue(string EnumValue)
         {
-            string name = typeof(NumForIp).GetEnumName(EnumValue);
+            int EnumValueNum = int.Parse(EnumValue);
+            string name = typeof(NumForIp).GetEnumName(EnumValueNum);
             FieldInfo fieldinfo = typeof(NumForIp).GetField(name);
             Object obj = fieldinfo.GetCustomAttribute(typeof(DescriptionAttribute), false);
-            DescriptionAttribute da = (DescriptionAttribute)obj;
-            string ds = da.Description;
-            return ds;
+            DescriptionAttribute ds = (DescriptionAttribute)obj;
+
+            return ds.Description;
+
+
         }
+
+        /// <summary>
+        /// 通过Name获取Description
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static string GetIpByName(string name)
+        {
+
+            FieldInfo fieldinfo = typeof(NumForIp).GetField(name);
+            Object obj = fieldinfo.GetCustomAttribute(typeof(DescriptionAttribute), false);
+            DescriptionAttribute ds = (DescriptionAttribute)obj;
+
+
+            return ds.Description;
+
+
+
+
+        }
+
+
+        /// <summary>
+        /// 通过Description得到Value
+        /// </summary>
+        /// <param name="Ip"></param>
+        /// <returns></returns>
+        public static string GetValueByIp(string Ip)
+        {
+            string value = string.Empty;
+            var AllNames = typeof(NumForIp).GetEnumNames();
+            foreach (string SingleName in AllNames)
+            {
+                if (GetIpByName(SingleName).Equals(Ip))
+                {
+                    int ValueNum = (int)Enum.Parse(typeof(NumForIp), SingleName);
+                    value = ValueNum.ToString();
+                    return value;
+
+                }
+
+            }
+            return value;
+        }
+
 
 
         public static string GetColor(int R,int G,int B)
@@ -48,12 +96,12 @@ namespace ReadMessage
             switch(Count)
             {
                 case 0: Color = "灯灭"; break;
-                case 1: Color = "蓝色"; break;
+                case 1: Color = "红色"; break;
                 case 2: Color = "绿色"; break;
-                case 3: Color = "青色"; break;//蓝绿
-                case 4: Color = "红色"; break;
-                case 5: Color = "紫色"; break;//红蓝
-                case 6: Color = "黄色"; break;//红绿
+                case 3: Color = "黄色"; break;//红绿
+                case 4: Color = "蓝色"; break;
+                case 5: Color = "紫色"; break;//蓝红
+                case 6: Color = "青色"; break;//蓝绿
                 case 7: Color = "白色"; break;
 
             }
@@ -76,52 +124,50 @@ namespace ReadMessage
                 int STU = MessageBytes[7];
                 int Num = (MessageBytes[8] << 8 | MessageBytes[9]);
                 string Color = GetColor(MessageBytes[10], MessageBytes[11], MessageBytes[12]);
-               
 
 
-                if (MessageBytes[0] != 136 && MessageBytes[6] == 255)
-                {
-                    string AimedIp = GetIpByValue(MessageBytes[0]);
+
+                //if (MessageBytes[0] != 136)
+                //{
 
 
-                    mean = "转发给" + AimedIp + ",编号为" + LampId + ",STU为" + STU + "的第" + SN + "条指令";
+
+                //    mean += "转发给:" + GetIpByValue(MessageBytes[0].ToString())+",";
 
 
-                }
+                //}
 
-                else
-                {
 
-                    switch (MessageBytes[6])
+                switch (MessageBytes[6])
                     {
                         case (byte)176:
                             {
-                                mean = "编号为" + LampId + ",STU为" + STU + "的第" + SN + "条肯定回答指令";
+                                mean += "编号为" + LampId + ",STU为" + STU + "的第" + SN + "条肯定回答指令";
                                 break;
                             }
                         case (byte)192:
                             {
-                                mean = "编号为" + LampId + ",数码管数字为" + Num + ",颜色为"+Color+",的第" + SN + "条设置指令";
+                                mean += "编号为" + LampId + ",数码管数字为" + Num + ",颜色为"+Color+",的第" + SN + "条设置指令";
                                 break;
                             }
 
                         case (byte)209:
                             {
 
-                                mean = "编号为" + LampId + ",数码管数字为" + Num + ",颜色为" + Color + ",的第" + SN + "条确认指令";
+                                mean += "编号为" + LampId + ",数码管数字为" + Num + ",颜色为" + Color + ",的第" + SN + "条确认指令";
                                 break;
 
                             }
                         case (byte)210:
                             {
-                                mean = mean = "编号为" + LampId + ",数码管数字为" + ",颜色为" + Color + ",的第" + SN + "条取消指令";
+                                mean += mean = "编号为" + LampId + ",数码管数字为" + ",颜色为" + Color + ",的第" + SN + "条取消指令";
 
                                 break;
                             }
                     }
                 }
                 
-            }
+            
 
             return mean;
         }

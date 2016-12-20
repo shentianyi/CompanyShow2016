@@ -3,21 +3,11 @@ using Brilliantech.Framwork.Utils.ConvertUtil;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Net.Sockets;
 using System.Net;
 using System.Threading;
-using ReadMessage.ENUM;
 
 
 
@@ -39,6 +29,11 @@ namespace TcpDemoWPF
 
         Dictionary<string, Socket> clients = new Dictionary<string, Socket>();
         Dictionary<string, Thread> clientThreads = new Dictionary<string, Thread>();
+        private string PTLIp = string.Empty;
+        private string WMSIp = string.Empty;
+        private string PTLKey = string.Empty;
+        private string WMSKey = string.Empty;
+        private string CenterKey = "6";
 
 
         private void MakeConnection_Click(object sender, RoutedEventArgs e)
@@ -51,7 +46,7 @@ namespace TcpDemoWPF
 
             MessageBox.Show(string.Format("启动监听{0}成功", tcpServer.LocalEndPoint.ToString()));
             MakeConnection.Content = "【服务器已启动】";
-           
+
 
             ClientRecieveThread = new Thread(ListenConnnect);
             ClientRecieveThread.IsBackground = true;
@@ -71,8 +66,11 @@ namespace TcpDemoWPF
                 try
                 {
                     this.Dispatcher.Invoke(new Action(() => { clientLB.Items.Add(client.RemoteEndPoint.ToString()); }));
-                    string key = GetClientKey(client);
-
+                    string key = GetKeyByValue(client.RemoteEndPoint.ToString());
+                    if (string.IsNullOrEmpty(key))
+                    {
+                        return;
+                    }
                     clients.Add(key, client);
                     Thread clientThread = new Thread(ListenClientMsg);
                     clientThread.IsBackground = true;
@@ -104,48 +102,62 @@ namespace TcpDemoWPF
                     if (dataLength > 0)
                     {
                         byte[] MessageBytes = result.Take(dataLength).ToArray();
-                        //发送回复
+                        //接收数据解析
+                        string ClientIp = client.RemoteEndPoint.ToString();
+                        string Receivemeans = "来自:" + ClientIp + "," + ReadMessage.Parser.readMessage(MessageBytes);
+                        this.Dispatcher.Invoke(new Action(() =>
+                        {
+                            ReceiveText.AppendText(Receivemeans + "\n");
+                            ReceiveText.ScrollToEnd();
+                        }));
+                        LogUtil.Logger.Info("【接收数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
+                        LogUtil.Logger.Info("【接收解析】" + Receivemeans);
+
+
+                        ///数据转发
+                        string keys = GetKeyByValue(client.RemoteEndPoint.ToString());
+                        if (MessageBytes[0] != 136)
+                        {
+                            byte[] ResponeBytes = Transmit(MessageBytes);
+                            WMSIp = client.RemoteEndPoint.ToString();
+                            WMSKey = ReadMessage.Parser.GetValueByIp(WMSIp);
+                            PTLKey = MessageBytes[0].ToString();
+                            sendMsgToClient(PTLKey, ResponeBytes);
+                        }
+
+
+                        ///缺货报警
                         switch (result[6])
                         {
-                            case (byte)255:
+                            case (byte)176:
                                 {
-                                    byte[] ResponeBytes = Transmit(MessageBytes);
-                                    string TransmitIp = ReadMessage.Parser.GetIpByValue(MessageBytes[0]);
-                                    sendMsgToClient(TransmitIp, ResponeBytes);
+                                    MessageBytes[0] = Convert.ToByte(PTLKey);
+                                    sendMsgToWMS(WMSKey, MessageBytes);
                                     break;
-
                                 }
+
                             case (byte)209:
                                 {
-                                    byte[] ResponeBytes = Responese(MessageBytes);
-                                    sendMsgToClient(client.RemoteEndPoint.ToString(), ResponeBytes);
-                                    LogUtil.Logger.Info(string.Format("发送提交指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
+                                    byte[] ResponeBytes = Responese(true, MessageBytes);
+                                    sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
+                                    MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
+                                    sendMsgToWMS(CenterKey, MessageBytes);
+                                    LogUtil.Logger.Info(string.Format("发送确认指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
+
                                     break;
                                 }
                             case (byte)210:
                                 {
-                                    byte[] ResponeBytes = Responese(MessageBytes);
-                                    sendMsgToClient(client.RemoteEndPoint.ToString(), ResponeBytes);
+                                    byte[] ResponeBytes = Responese(true, MessageBytes);
+                                    sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
+                                    MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
+                                    sendMsgToWMS(CenterKey, MessageBytes);
                                     LogUtil.Logger.Info(string.Format("发送取消指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
                                     break;
                                 }
                             default: break;
 
                         }
-
-
-
-                        //接收数据解析
-                        string Receivemeans = ReadMessage.Parser.readMessage(MessageBytes);
-                        this.Dispatcher.Invoke(new Action(() =>
-                        {
-                            ReceiveText.AppendText(Receivemeans + "\n");
-                            ReceiveText.ScrollToEnd();
-                        }));
-                        LogUtil.Logger.Info("【数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
-                        LogUtil.Logger.Info("【解析】" + Receivemeans);
-
-
 
 
                     }
@@ -168,8 +180,19 @@ namespace TcpDemoWPF
         {
 
             clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
-            string SendMeans = ReadMessage.Parser.readMessage(msg);
-            LogUtil.Logger.Info("【解析】" + SendMeans);
+            string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(clientIP) + "," + ReadMessage.Parser.readMessage(msg);
+            LogUtil.Logger.Info("【发送解析】" + SendMeans);
+
+            this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
+        }
+
+
+        private void sendMsgToWMS(string IPKey, byte[] msg)
+        {
+
+            clients[IPKey].Send(msg, msg.Length, SocketFlags.None);
+            string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(IPKey) + "," + ReadMessage.Parser.readMessage(msg);
+            LogUtil.Logger.Info("【发送解析】" + SendMeans);
 
             this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
         }
@@ -180,7 +203,7 @@ namespace TcpDemoWPF
         /// <param name="client"></param>
         private void RemoveClient(Socket client)
         {
-            string key = GetClientKey(client);
+            string key = GetRandomKey(client);
             if (this.clients.Keys.Contains(key))
             {
                 if (this.clients[key].Connected)
@@ -221,10 +244,15 @@ namespace TcpDemoWPF
                 }
             }
 
-            /// 停止线程
-            if (ClientRecieveThread != null && ClientRecieveThread.IsAlive)
+          
+
+
+            foreach(var n in clients)
             {
-                ClientRecieveThread.Abort();
+                if(n.Value !=null)
+                {
+                    n.Value.Close();
+                }
             }
 
             /// 关闭server
@@ -232,6 +260,13 @@ namespace TcpDemoWPF
             {
                 tcpServer.Close();
             }
+            runflag = false;
+        
+            if (ClientRecieveThread != null )
+           {
+                ClientRecieveThread.Abort();
+            }
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -239,27 +274,48 @@ namespace TcpDemoWPF
             new ClientWindow().Show();
         }
 
-        private string GetClientKey(Socket client)
+        private string GetRandomKey(Socket client)
         {
-            //获得Client的IP和端口
-            return client.RemoteEndPoint.ToString();
+            string KeyNum = string.Empty;
+            bool GetKey = true;
+            while (GetKey)
+            {
+                Random key = new Random();
+                KeyNum = key.Next(0, 255).ToString();
+                if (this.clients.ContainsKey(KeyNum))
+                {
+                    GetKey = true;
+
+                }
+                else
+                {
+                    GetKey = false;
+                }
+            }
+            return KeyNum;
+
+
         }
 
+        private string GetKeyByValue(string value)
+        {
 
+            return ReadMessage.Parser.GetValueByIp(value);
+        }
 
         /// <summary>
         /// 主动汇报或取消时 发送回复
         /// </summary>
         /// <param name="msg"></param>
         /// <returns></returns>
-        public byte[] Responese(byte[] msg)
+        public byte[] Responese(bool pre, byte[] msg)
         {
             if (msg.Count() == 13)
             {
                 string mean = string.Empty;
 
                 int LampId = msg[4];
-               
+
 
                 string back = string.Format("88{0}{1}B0{2}{3}{4}000000",
                    ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),
@@ -272,7 +328,7 @@ namespace TcpDemoWPF
                    ScaleConvertor.DecimalToHexString(msg[12], true, 2));
 
                 byte[] bback = ScaleConvertor.HexStringToHexByte(back);
-                
+
                 return bback;
             }
 
@@ -291,10 +347,10 @@ namespace TcpDemoWPF
                 string mean = string.Empty;
 
                 int LampId = msg[4];
-                
 
 
-                string back = string.Format("88{0}{1}C0{2}{3}{4}000000",
+
+                string back = string.Format("88{0}{1}C0{2}{3}{4}{5}{6}{7}",
                    ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),
                    ScaleConvertor.DecimalToHexString(msg[5], true, 2),
                    ScaleConvertor.DecimalToHexString(msg[7], true, 2),

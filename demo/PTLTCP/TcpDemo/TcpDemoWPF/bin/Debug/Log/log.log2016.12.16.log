@@ -1,0 +1,50 @@
+[2016-12-16 12:32:07,759]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 00 01 D0 01 00 00 FF 00 FF
+[2016-12-16 12:32:07,802]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】
+[2016-12-16 12:32:24,926]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 00 01 01 D0 01 00 00 FF 00 FF
+[2016-12-16 12:32:24,927]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】
+[2016-12-16 12:32:26,252]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 00 01 01 D0 01 00 00 FF 00 FF
+[2016-12-16 12:32:26,252]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】
+[2016-12-16 12:32:40,786]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为1,STU为1的第1条肯定回答指令
+[2016-12-16 12:32:40,788]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 发送取消指令的回复: 88 00 00 01 01 01 B0 01 00 00 00 00 00
+[2016-12-16 12:32:40,789]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 00 01 01 D2 01 00 00 FF 00 FF
+[2016-12-16 12:32:40,789]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】编号为1,数码管数字为0的第1条取消指令
+[2016-12-16 12:32:47,718]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为1,STU为1的第1条肯定回答指令
+[2016-12-16 12:32:47,720]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 发送提交指令的回复: 88 00 00 01 01 01 B0 01 00 00 00 00 00
+[2016-12-16 12:32:47,721]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 00 01 01 D1 01 00 00 FF 00 FF
+[2016-12-16 12:32:47,721]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】编号为1,数码管数字为0的第1条确认指令
+[2016-12-16 13:15:35,181]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 13:15:35,204]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 01 00 01 FF 01 00 00 0F 0F
+[2016-12-16 13:15:35,204]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】
+[2016-12-16 13:16:06,049]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 13:16:06,050]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 01 00 01 FF 01 00 10 FF FF 00
+[2016-12-16 13:16:06,050]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】
+[2016-12-16 13:16:21,129]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-16 13:16:21,711]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-16 13:16:22,680]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-16 13:16:23,490]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-16 15:04:30,432]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 15:05:21,643]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 01 00 01 FF 01 00 10 FF FF 00
+[2016-12-16 15:05:21,643]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】
+[2016-12-16 15:06:13,601]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 15:07:12,212]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 15:08:07,530]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 15:09:14,930]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为1的第1条设置指令
+[2016-12-16 15:09:45,478]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】01 00 00 01 00 01 FF 01 00 10 FF FF 00
+[2016-12-16 15:09:45,478]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】转发给10.10.10.18:8000,编号为0,STU为1的第1条指令
+[2016-12-16 15:16:32,018]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为16的第1条设置指令
+[2016-12-16 15:16:32,039]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】01 00 00 01 00 01 FF 01 00 10 FF FF 00
+[2016-12-16 15:16:32,039]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】转发给10.10.10.18:8000,编号为0,STU为1的第1条指令
+[2016-12-16 15:26:55,903]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为0,数码管数字为16的第1条设置指令
+[2016-12-16 15:26:55,924]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】01 00 00 01 00 01 FF 01 00 10 FF FF 00
+[2016-12-16 15:26:55,924]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】转发给10.10.10.18:8000,编号为0,STU为1的第1条指令
+[2016-12-16 15:27:12,500]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【解析】编号为7,数码管数字为16的第1条设置指令
+[2016-12-16 15:27:12,503]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】01 00 00 01 07 01 FF 01 00 10 FF FF 00
+[2016-12-16 15:27:12,503]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】转发给10.10.10.18:8000,编号为7,STU为1的第1条指令
+[2016-12-16 15:27:35,931]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-16 15:49:33,662]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 01 00 01 C0 01 00 10 FF FF 00
+[2016-12-16 15:49:33,679]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】编号为0,数码管数字为16,颜色为黄色 的第1条设置指令
+[2016-12-16 15:49:44,278]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 01 00 01 C0 01 00 10 FF FF FF
+[2016-12-16 15:49:44,278]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】编号为0,数码管数字为16,颜色为白色 的第1条设置指令
+[2016-12-16 15:50:06,264]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【数据】88 00 00 01 00 01 C0 01 00 10 FF 00 00
+[2016-12-16 15:50:06,264]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【解析】编号为0,数码管数字为16,颜色为红色 的第1条设置指令
+[2016-12-16 15:50:13,197]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。

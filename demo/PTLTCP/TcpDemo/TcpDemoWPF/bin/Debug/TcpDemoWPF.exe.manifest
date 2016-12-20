@@ -78,26 +78,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadMessage.dll" size="6144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadMessage.dll" size="6656">
       <assemblyIdentity name="ReadMessage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wvO0RYD4kXr5eWyyJtR079Y3rMglKWFnDaQ/adTnSNA=</dsig:DigestValue>
+        <dsig:DigestValue>CkU08KbEjy15f+CtNgkCcqDZwUnwRl0l4GJm6V+J9gk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpDemoWPF.exe" size="24576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpDemoWPF.exe" size="26112">
       <assemblyIdentity name="TcpDemoWPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gghXGPcmi16UAuw1TA1cG1X/p9iFTfCW4hVeR6uKJg4=</dsig:DigestValue>
+        <dsig:DigestValue>yc7LpOZARpzqvthBXUP88IbpJYalmTPof0AWJWQSC60=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
