@@ -12,7 +12,7 @@ namespace ReadMessage.ENUM
     {
         [Description("192.168.1.111:4001")]
         FirstBus= 1,
-        [Description("10.10.10.18:8001")]
+        [Description("192.168.1.113:4001")]
         SecBus=2,
         [Description("10.10.10.18:8002")]
         ThiBus=3,

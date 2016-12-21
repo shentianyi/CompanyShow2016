@@ -38,6 +38,10 @@ namespace TcpDemoWPF
         private bool IsReSent = false;
         private int ReSentCount = 0;
         private bool IsSent = false;
+        private bool IsResp = false;
+        private bool IsReResp = false;
+        private bool IsReceResp = false;
+        private int RespCount = 0;
 
 
 
@@ -115,6 +119,10 @@ namespace TcpDemoWPF
                     {
                         IsReceived = true;
                     }
+                    if(IsResp&&(result[6]==254))
+                    {
+                        IsReceResp = true;
+                    }
 
                     if (dataLength > 0&&result[6]!=0)
                     {
@@ -135,7 +143,7 @@ namespace TcpDemoWPF
                         ///数据转发
 
                         string keys = GetKeyByValue(client.RemoteEndPoint.ToString());
-                        if (MessageBytes[0] != 136)
+                        if (MessageBytes[0] != 136 &&MessageBytes[6]!=176)
                         {
                             byte[] ResponeBytes = Transmit(MessageBytes);
                             WMSIp = client.RemoteEndPoint.ToString();
@@ -154,24 +162,36 @@ namespace TcpDemoWPF
                         }
 
 
-                        ///缺货报警
+                        
                         switch (result[6])
                         {
                             case (byte)176:
                                 {
+                                    if(string.IsNullOrEmpty(PTLKey))
+                                {
+                                    return;
+                                }
                                     MessageBytes[0] = Convert.ToByte(PTLKey);
-                                 
                                     sendMsgToWMS(WMSKey, MessageBytes);
+                                    while (IsReceResp == false && IsReResp == true)
+                                    {
+                                        sendMsgToWMS(WMSKey, MessageBytes);
+                                    }
+                                    
                                     break;
                                 }
-
+                            ///缺货报警
                             case (byte)209:
                                 {
                                     byte[] ResponeBytes = Responese(true, MessageBytes);
                                     sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
                                     MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
                                     sendMsgToWMS(CenterKey, MessageBytes);
-                                    LogUtil.Logger.Info(string.Format("发送确认指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
+                                    while (IsReceResp == false && IsReResp == true)
+                                    {
+                                        sendMsgToWMS(CenterKey, MessageBytes);
+                                    }
+                                   
 
                                     break;
                                 }
@@ -181,7 +201,10 @@ namespace TcpDemoWPF
                                     sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
                                     MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
                                     sendMsgToWMS(CenterKey, MessageBytes);
-                                    LogUtil.Logger.Info(string.Format("发送取消指令的回复: " + ScaleConvertor.HexBytesToString(ResponeBytes)));
+                                    while (IsReceResp == false && IsReResp == true)
+                                    {
+                                        sendMsgToWMS(CenterKey, MessageBytes);
+                                    }
                                     break;
                                 }
                             default: break;
@@ -201,15 +224,19 @@ namespace TcpDemoWPF
                     IsReSent = false;
                     IsReceived = false;
                     ReSentCount = 0;
-                }
+                    IsReResp = false;
+                    IsResp = false;
+                    IsReceResp = false;
+                    RespCount = 0;
             }
+        }
             catch (Exception ee)
             {
                 MessageBox.Show(ee.Message);
                 LogUtil.Logger.Info(ee.Message);
                 RemoveClient(client.RemoteEndPoint.ToString());
             }
-        }
+}
 
 
         /// <summary>
@@ -235,7 +262,28 @@ namespace TcpDemoWPF
            
         }
 
-         
+
+        private void SetReTimer()
+        {
+            if (IsResp)
+            {
+                IsReResp = false;
+                Thread.Sleep(600);
+
+                if (IsReceResp)
+                {
+                    IsReResp = false;
+                }
+                else
+                {
+                    IsReResp  = true;
+
+                }
+            }
+
+        }
+
+
         /// <summary>
         /// 向客户端发送消息
         /// </summary>
@@ -262,7 +310,11 @@ namespace TcpDemoWPF
             }
             else
             {
-                
+                if(!clients.Keys.Contains(clientIP))
+                {
+                    MessageBox.Show("目标地址未在程序中定义");
+                    return;
+                }
                 clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
                 string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(clientIP) + "," + ReadMessage.Parser.readMessage(msg);
                 LogUtil.Logger.Info("【发送解析】" + SendMeans);
@@ -281,14 +333,34 @@ namespace TcpDemoWPF
         /// <param name="msg"></param>
         private void sendMsgToWMS(string IPKey, byte[] msg)
         {
-           
-                SetTimer();
+            if (IsReResp)
+            {
+                RespCount++;
+            }
+            else
+            {
+                RespCount = 0;
+            }
+            if (RespCount > 2)
+            {
+                LogUtil.Logger.Error("超时重发超过最大次数");
+                IsReceResp = false;
+                IsReResp = false;
+                IsResp = false;
+                RespCount = 0;
+            }
+            else
+            {
+
+
                 clients[IPKey].Send(msg, msg.Length, SocketFlags.None);
                 string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(IPKey) + "," + ReadMessage.Parser.readMessage(msg);
                 LogUtil.Logger.Info("【发送解析】" + SendMeans);
+                IsResp = true;
+                SetReTimer();
+                this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
 
-            this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
-            
+            }
         }
 
         /// <summary>

@@ -85,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CkU08KbEjy15f+CtNgkCcqDZwUnwRl0l4GJm6V+J9gk=</dsig:DigestValue>
+        <dsig:DigestValue>prm0WpeLeGlN3wvs2TD5Y7hJ5Q2vvKXs0zbqHURvqZQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpDemoWPF.exe" size="26112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpDemoWPF.exe" size="26624">
       <assemblyIdentity name="TcpDemoWPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9gO18WbynG9BPhNRG9utOjNuUOIyy6MxawQVD2GyDRM=</dsig:DigestValue>
+        <dsig:DigestValue>qVLhsnOHc0kTH4lAm5ZbD8UxnPu2WIXS/wF4mIau71c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
