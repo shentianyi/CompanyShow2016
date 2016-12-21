@@ -38,7 +38,7 @@ namespace TcpDemoWPF
         private bool IsReSent = false;
         private int ReSentCount = 0;
         private bool IsSent = false;
-        private bool TimerFlag = true;
+
 
 
         private void MakeConnection_Click(object sender, RoutedEventArgs e)
@@ -75,7 +75,7 @@ namespace TcpDemoWPF
                     if (string.IsNullOrEmpty(key))
                     {
                         MessageBox.Show("未定义的IP地址，无法加入IP池");
-                        TimerFlag = false;
+                       
                     }
                     clients.Add(key, client);
                     Thread clientThread = new Thread(ListenClientMsg);
@@ -107,14 +107,18 @@ namespace TcpDemoWPF
             {
                 while (true)
                 {
+                    IsReceived = false;
                     byte[] result = new byte[13];
                     int dataLength = client.Receive(result);
-                    if (dataLength > 0)
+                    
+                    if (IsSent&&(dataLength>0)&&(result[6]!=0))
                     {
-                        if (IsSent)
-                        {
-                            IsReceived = true;
-                        }
+                        IsReceived = true;
+                    }
+
+                    if (dataLength > 0&&result[6]!=0)
+                    {
+                       
                         byte[] MessageBytes = result.Take(dataLength).ToArray();
                         //接收数据解析
                         string ClientIp = client.RemoteEndPoint.ToString();
@@ -129,18 +133,26 @@ namespace TcpDemoWPF
 
 
                         ///数据转发
-                        
-                            string keys = GetKeyByValue(client.RemoteEndPoint.ToString());
-                            if (MessageBytes[0] != 136)
+
+                        string keys = GetKeyByValue(client.RemoteEndPoint.ToString());
+                        if (MessageBytes[0] != 136)
+                        {
+                            byte[] ResponeBytes = Transmit(MessageBytes);
+                            WMSIp = client.RemoteEndPoint.ToString();
+                            WMSKey = ReadMessage.Parser.GetValueByIp(WMSIp);
+                            PTLKey = MessageBytes[0].ToString();
+                            sendMsgToClient(PTLKey, ResponeBytes);
+
+
+                            while (IsReceived == false && IsReSent == true)
                             {
-                                byte[] ResponeBytes = Transmit(MessageBytes);
-                                WMSIp = client.RemoteEndPoint.ToString();
-                                WMSKey = ReadMessage.Parser.GetValueByIp(WMSIp);
-                                PTLKey = MessageBytes[0].ToString();
                                 sendMsgToClient(PTLKey, ResponeBytes);
-                                IsSent = true;
+
                             }
-                        
+                            IsReSent = false;
+
+                        }
+
 
                         ///缺货报警
                         switch (result[6])
@@ -148,6 +160,7 @@ namespace TcpDemoWPF
                             case (byte)176:
                                 {
                                     MessageBytes[0] = Convert.ToByte(PTLKey);
+                                 
                                     sendMsgToWMS(WMSKey, MessageBytes);
                                     break;
                                 }
@@ -184,6 +197,10 @@ namespace TcpDemoWPF
 
                         }
                     }
+                    IsSent = false;
+                    IsReSent = false;
+                    IsReceived = false;
+                    ReSentCount = 0;
                 }
             }
             catch (Exception ee)
@@ -202,21 +219,20 @@ namespace TcpDemoWPF
         {
             if (IsSent)
             {
-                while (ReSentCount > 2)
-            {
-                Thread.Sleep(500);
+                IsReSent = false;
+                Thread.Sleep(600);
                
                     if (IsReceived)
                     {
-                        return;
+                    IsReSent = false;
                     }
                     else
                     {
                         IsReSent = true;
-
+                      
                     }
                 }
-            }
+           
         }
 
          
@@ -227,7 +243,7 @@ namespace TcpDemoWPF
         /// <param name="msgBody"></param>
         private void sendMsgToClient(string clientIP, byte[] msg)
         {
-            Thread SetTimeThread = new Thread(SetTimer);
+           
 
             if (IsReSent)
             {
@@ -240,17 +256,22 @@ namespace TcpDemoWPF
             if(ReSentCount>2)
             {
                 LogUtil.Logger.Error("超时重发超过最大次数");
+                IsReceived = false;
+                IsSent = false;
+                IsReSent = false;
             }
             else
             {
+                
                 clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
                 string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(clientIP) + "," + ReadMessage.Parser.readMessage(msg);
                 LogUtil.Logger.Info("【发送解析】" + SendMeans);
-
+                IsSent = true;
+                SetTimer();
                 this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
             }
            
-            SetTimeThread.Start();
+           
         }
 
         /// <summary>
@@ -260,12 +281,14 @@ namespace TcpDemoWPF
         /// <param name="msg"></param>
         private void sendMsgToWMS(string IPKey, byte[] msg)
         {
-
-            clients[IPKey].Send(msg, msg.Length, SocketFlags.None);
-            string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(IPKey) + "," + ReadMessage.Parser.readMessage(msg);
-            LogUtil.Logger.Info("【发送解析】" + SendMeans);
+           
+                SetTimer();
+                clients[IPKey].Send(msg, msg.Length, SocketFlags.None);
+                string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(IPKey) + "," + ReadMessage.Parser.readMessage(msg);
+                LogUtil.Logger.Info("【发送解析】" + SendMeans);
 
             this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
+            
         }
 
         /// <summary>
@@ -433,9 +456,7 @@ namespace TcpDemoWPF
                 string mean = string.Empty;
 
                 int LampId = msg[4];
-
-
-
+                
                 string back = string.Format("88{0}{1}C0{2}{3}{4}{5}{6}{7}",
                    ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),
                    ScaleConvertor.DecimalToHexString(msg[5], true, 2),
