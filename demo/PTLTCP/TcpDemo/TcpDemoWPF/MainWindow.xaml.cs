@@ -34,6 +34,11 @@ namespace TcpDemoWPF
         private string PTLKey = string.Empty;
         private string WMSKey = string.Empty;
         private string CenterKey = "6";
+        private bool IsReceived = false;
+        private bool IsReSent = false;
+        private int ReSentCount = 0;
+        private bool IsSent = false;
+        private bool TimerFlag = true;
 
 
         private void MakeConnection_Click(object sender, RoutedEventArgs e)
@@ -47,7 +52,7 @@ namespace TcpDemoWPF
             MessageBox.Show(string.Format("启动监听{0}成功", tcpServer.LocalEndPoint.ToString()));
             MakeConnection.Content = "【服务器已启动】";
 
-
+           
             ClientRecieveThread = new Thread(ListenConnnect);
             ClientRecieveThread.IsBackground = true;
             ClientRecieveThread.Start();
@@ -69,7 +74,8 @@ namespace TcpDemoWPF
                     string key = GetKeyByValue(client.RemoteEndPoint.ToString());
                     if (string.IsNullOrEmpty(key))
                     {
-                        return;
+                        MessageBox.Show("未定义的IP地址，无法加入IP池");
+                        TimerFlag = false;
                     }
                     clients.Add(key, client);
                     Thread clientThread = new Thread(ListenClientMsg);
@@ -83,12 +89,16 @@ namespace TcpDemoWPF
                 {
                     MessageBox.Show(ee.Message);
                     LogUtil.Logger.Info(ee.Message);
-                    RemoveClient(client);
+                    RemoveClient(client.RemoteEndPoint.ToString());
                 }
 
             }
 
         }
+        /// <summary>
+        /// 数据接收 
+        /// </summary>
+        /// <param name="cliento"></param>
 
         private void ListenClientMsg(object cliento)
         {
@@ -101,6 +111,10 @@ namespace TcpDemoWPF
                     int dataLength = client.Receive(result);
                     if (dataLength > 0)
                     {
+                        if (IsSent)
+                        {
+                            IsReceived = true;
+                        }
                         byte[] MessageBytes = result.Take(dataLength).ToArray();
                         //接收数据解析
                         string ClientIp = client.RemoteEndPoint.ToString();
@@ -115,16 +129,18 @@ namespace TcpDemoWPF
 
 
                         ///数据转发
-                        string keys = GetKeyByValue(client.RemoteEndPoint.ToString());
-                        if (MessageBytes[0] != 136)
-                        {
-                            byte[] ResponeBytes = Transmit(MessageBytes);
-                            WMSIp = client.RemoteEndPoint.ToString();
-                            WMSKey = ReadMessage.Parser.GetValueByIp(WMSIp);
-                            PTLKey = MessageBytes[0].ToString();
-                            sendMsgToClient(PTLKey, ResponeBytes);
-                        }
-
+                        
+                            string keys = GetKeyByValue(client.RemoteEndPoint.ToString());
+                            if (MessageBytes[0] != 136)
+                            {
+                                byte[] ResponeBytes = Transmit(MessageBytes);
+                                WMSIp = client.RemoteEndPoint.ToString();
+                                WMSKey = ReadMessage.Parser.GetValueByIp(WMSIp);
+                                PTLKey = MessageBytes[0].ToString();
+                                sendMsgToClient(PTLKey, ResponeBytes);
+                                IsSent = true;
+                            }
+                        
 
                         ///缺货报警
                         switch (result[6])
@@ -161,16 +177,49 @@ namespace TcpDemoWPF
 
 
                     }
+                    else
+                    {
+                        if(IsReSent)
+                        {
+
+                        }
+                    }
                 }
             }
             catch (Exception ee)
             {
                 MessageBox.Show(ee.Message);
                 LogUtil.Logger.Info(ee.Message);
-                RemoveClient(client);
+                RemoveClient(client.RemoteEndPoint.ToString());
             }
         }
 
+
+        /// <summary>
+        /// 定时器 发送给PTL后开启  等待接收
+        /// </summary>
+        private void SetTimer()
+        {
+            if (IsSent)
+            {
+                while (ReSentCount > 2)
+            {
+                Thread.Sleep(500);
+               
+                    if (IsReceived)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        IsReSent = true;
+
+                    }
+                }
+            }
+        }
+
+         
         /// <summary>
         /// 向客户端发送消息
         /// </summary>
@@ -178,15 +227,37 @@ namespace TcpDemoWPF
         /// <param name="msgBody"></param>
         private void sendMsgToClient(string clientIP, byte[] msg)
         {
+            Thread SetTimeThread = new Thread(SetTimer);
 
-            clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
-            string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(clientIP) + "," + ReadMessage.Parser.readMessage(msg);
-            LogUtil.Logger.Info("【发送解析】" + SendMeans);
+            if (IsReSent)
+            {
+                ReSentCount++;                
+            }
+            else
+            {
+                ReSentCount = 0;
+            }
+            if(ReSentCount>2)
+            {
+                LogUtil.Logger.Error("超时重发超过最大次数");
+            }
+            else
+            {
+                clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
+                string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(clientIP) + "," + ReadMessage.Parser.readMessage(msg);
+                LogUtil.Logger.Info("【发送解析】" + SendMeans);
 
-            this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
+                this.Dispatcher.Invoke(new Action(() => { SendText.AppendText(SendMeans + "\n"); SendText.ScrollToEnd(); }));
+            }
+           
+            SetTimeThread.Start();
         }
 
-
+        /// <summary>
+        /// 将从PTL接受到的消息转发给WMS
+        /// </summary>
+        /// <param name="IPKey"></param>
+        /// <param name="msg"></param>
         private void sendMsgToWMS(string IPKey, byte[] msg)
         {
 
@@ -201,9 +272,9 @@ namespace TcpDemoWPF
         /// 移除Client
         /// </summary>
         /// <param name="client"></param>
-        private void RemoveClient(Socket client)
+        private void RemoveClient(string clientIp)
         {
-            string key = GetRandomKey(client);
+            string key = GetKeyByValue(clientIp);
             if (this.clients.Keys.Contains(key))
             {
                 if (this.clients[key].Connected)
@@ -269,34 +340,44 @@ namespace TcpDemoWPF
 
         }
 
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             new ClientWindow().Show();
         }
 
-        private string GetRandomKey(Socket client)
-        {
-            string KeyNum = string.Empty;
-            bool GetKey = true;
-            while (GetKey)
-            {
-                Random key = new Random();
-                KeyNum = key.Next(0, 255).ToString();
-                if (this.clients.ContainsKey(KeyNum))
-                {
-                    GetKey = true;
-
-                }
-                else
-                {
-                    GetKey = false;
-                }
-            }
-            return KeyNum;
 
 
-        }
+        //private string GetRandomKey(Socket client)
+        //{
+        //    string KeyNum = string.Empty;
+        //    bool GetKey = true;
+        //    while (GetKey)
+        //    {
+        //        Random key = new Random();
+        //        KeyNum = key.Next(0, 255).ToString();
+        //        if (this.clients.ContainsKey(KeyNum))
+        //        {
+        //            GetKey = true;
 
+        //        }
+        //        else
+        //        {
+        //            GetKey = false;
+        //        }
+        //    }
+        //    return KeyNum;
+
+
+        //}
+
+
+
+            /// <summary>
+            /// 通过IP查询key
+            /// </summary>
+            /// <param name="value"></param>
+            /// <returns></returns>
         private string GetKeyByValue(string value)
         {
 
@@ -340,6 +421,11 @@ namespace TcpDemoWPF
         }
 
 
+        /// <summary>
+        /// WMS发送给PTL
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
         public byte[] Transmit(byte[] msg)
         {
             if (msg.Count() == 13)
