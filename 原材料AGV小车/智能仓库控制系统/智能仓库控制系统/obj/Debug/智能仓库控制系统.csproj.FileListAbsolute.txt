@@ -1,0 +1,118 @@
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.csprojResolveAssemblyReference.cache
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.csproj.GenerateResource.Cache
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+G:\余超的项目\杂项\智能仓库控制系统\智能仓库控制系统\bin\Debug\Config.xml
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\bin\Debug\Config.xml
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\bin\Debug\Config.xml
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\智能仓库控制系统 2\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\SimaticNET.OPC.BrowseControls.dll
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\SimaticNET.OPC.BrowseControls.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\SimaticNET.OPC.OpcClient.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\SimaticNET.OPC.Common.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\SimaticNET.OPC.DAConnector.dll
+C:\Users\Administrator\Desktop\智能仓库控制系统 3\智能仓库控制系统\bin\Debug\SimaticNET.OPC.DAConnector.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Line.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Line.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Line.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\bin\Debug\line.png
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\智能仓库控制系统\bin\Debug\智能仓库控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Debug\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Debug\line.png
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Debug\AGV小车控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Debug\AGV小车控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\AGV小车控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\AGV小车控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Debug\AGV小车控制系统.pdb
+F:\if-project\原材料AGV小车\智能仓库控制系统\智能仓库控制系统\obj\Debug\AGV小车控制系统.exe
+F:\if-project\原材料AGV小车\智能仓库控制系统\智能仓库控制系统\obj\Debug\AGV小车控制系统.pdb

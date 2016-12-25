@@ -1,0 +1,35 @@
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\bin\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\bin\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.Form1.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\bin\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\bin\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.Form1.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统 4\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\bin\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\bin\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.Form1.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统5\智能仓库控制系统 4\路径绘图\路径绘图\obj\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\bin\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\bin\Debug\路径绘图.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\路径绘图.Form1.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\路径绘图.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\路径绘图.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统6\智能仓库控制系统\路径绘图\路径绘图\obj\Debug\路径绘图.pdb

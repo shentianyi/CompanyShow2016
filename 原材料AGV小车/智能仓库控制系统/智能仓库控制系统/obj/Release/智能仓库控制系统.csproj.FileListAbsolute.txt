@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Release\Config.xml
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Release\line.png
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\智能仓库控制系统.Control.AGVinfoPan.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\智能仓库控制系统.frmMain.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Release\AGV小车控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\bin\Release\AGV小车控制系统.pdb
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\AGV小车控制系统.Properties.Resources.resources
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\AGV小车控制系统.exe
+C:\Users\Administrator\Desktop\智能仓库控制系统7\智能仓库控制系统\智能仓库控制系统\obj\Release\AGV小车控制系统.pdb

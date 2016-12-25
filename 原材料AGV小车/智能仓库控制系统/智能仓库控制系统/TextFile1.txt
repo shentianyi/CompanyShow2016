@@ -1,0 +1,119 @@
+﻿任务：
+
+如果获取路线！=设置路线，则挪动了，清相关标志
+
+大箱，小箱计数
+在成品工位+1，在十字路口待进位或在路线中+1
+如果 《2 则优先调配到该空箱流水线，大小箱值小的优先，相同则小箱优先
+	否则不调配到流水线上
+
+IPAddress local = IPAddress.Any;
+IPEndPoint iep = new IPEndPoint(local, 9000);
+server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+server.Bind(iep);
+server.Listen(20);
+
+Thread tcpThread = new Thread(new ThreadStart(TcpListen));
+tcpThread.Start();
+
+
+
+
+private void TcpListen()
+{
+    while (true)
+    {
+        try
+        {
+            Socket client = server.Accept();
+            ClientThread newClient = new ClientThread(client);
+            Thread newThread = new Thread(new ThreadStart(newClient.ClientService));
+            newThread.Start();
+        }
+        catch { }
+    }
+}
+
+
+
+
+class ClientThread
+    {
+        public Socket client = null;
+        int i;
+        public ClientThread(Socket k)
+        {
+            client = k;
+        }
+        public void ClientService()
+        {
+            string data = null;
+            byte[] bytes = new byte[4096];
+            Console.WriteLine("新用户的连接。。。");
+            try
+            {
+                while ((i = client.Receive(bytes)) != 0)
+                {
+                    if (i < 0)
+                    {
+                        break;
+                    }
+                    data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
+                    Console.WriteLine("收到数据: {0}", data);
+                    data = data.ToUpper();
+                    bytes = System.Text.Encoding.ASCII.GetBytes(data);
+                    client.Send(bytes);
+                }
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.ToString());
+            }
+            client.Close();
+            Console.WriteLine("用户断开连接。。。");
+			//=====================================
+
+
+
+			委托
+
+			using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Threading;
+namespace test1
+{
+    public partial class Form1 : Form
+    {
+        Thread thread = null;
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            thread = new Thread(testFunc);
+            WriteTimeEvent += new wt(wtFunc);
+            thread.Start();
+        }
+        public void testFunc() {
+            //this.Text = DateTime.Now.ToString();
+            while (true)
+            {
+                this.Invoke(WriteTimeEvent,DateTime.Now.ToString());
+                Thread.Sleep(500);
+            }
+        }
+        delegate void wt(string time);
+        event wt WriteTimeEvent;
+        public void wtFunc(string time){
+            this.Text = time;
+        }
+    }
+}

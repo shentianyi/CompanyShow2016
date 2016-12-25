@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <soft>
+    <auto_start>0</auto_start>
+  </soft>
+  <opc>
+    <!--<ip>127.0.0.1</ip>-->
+    <ip>192.168.0.105</ip>
+    <name>OPC.SimaticNET.1</name>
+  </opc>
+  <agv>
+    <!--<ip>127.0.0.1</ip>-->
+    <ip>192.168.0.105</ip>
+    <port>9000</port>
+    <lowU>232</lowU>
+    <agv_list>
+      <ip id="1">192.168.0.21</ip>
+      <ip id="2">192.168.0.22</ip>
+      <ip id="3">192.168.0.23</ip>
+      <ip id="4">192.168.0.24</ip>
+      <ip id="5">192.168.0.25</ip>
+      <ip id="6">192.168.0.26</ip>
+    </agv_list>
+  </agv>
+  <opc_dat>
+    <!--1-6号小车状态，有变更时写入OPC即可-->
+    <AGV_1_stu z="AGV1运行状态">S7:[S7 connection_1]DB309,B0,AGV_1_stu</AGV_1_stu>
+    <AGV_1_step z="AGV1运行步骤">S7:[S7 connection_1]DB309,B1,AGV_1_step</AGV_1_step>
+    <AGV_1_err z="AGV1故障码">S7:[S7 connection_1]DB309,B2,AGV_1_err</AGV_1_err>
+    <AGV_1_box z="AGV1箱子状态">S7:[S7 connection_1]DB309,B3,AGV_1_box</AGV_1_box>
+    <AGV_1_gun z="AGV1滚筒状态">S7:[S7 connection_1]DB309,B4,AGV_1_gun</AGV_1_gun>
+    <AGV_1_point z="AGV1地标位置">S7:[S7 connection_1]DB309,W6,AGV_1_point</AGV_1_point>
+    <AGV_2_stu z="AGV2运行状态">S7:[S7 connection_1]DB309,B8,AGV_2_stu</AGV_2_stu>
+    <AGV_2_step z="AGV2运行步骤">S7:[S7 connection_1]DB309,B9,AGV_2_step</AGV_2_step>
+    <AGV_2_err z="AGV2故障码">S7:[S7 connection_1]DB309,B10,AGV_2_err</AGV_2_err>
+    <AGV_2_box z="AGV2箱子状态">S7:[S7 connection_1]DB309,B11,AGV_2_box</AGV_2_box>
+    <AGV_2_gun z="AGV2滚筒状态">S7:[S7 connection_1]DB309,B12,AGV_2_gun</AGV_2_gun>
+    <AGV_2_point z="AGV2地标位置">S7:[S7 connection_1]DB309,W14,AGV_2_point</AGV_2_point>
+    <AGV_3_stu z="AGV3运行状态">S7:[S7 connection_1]DB309,B16,AGV_3_stu</AGV_3_stu>
+    <AGV_3_step z="AGV3运行步骤">S7:[S7 connection_1]DB309,B17,AGV_3_step</AGV_3_step>
+    <AGV_3_err z="AGV3故障码">S7:[S7 connection_1]DB309,B18,AGV_3_err</AGV_3_err>
+    <AGV_3_box z="AGV3箱子状态">S7:[S7 connection_1]DB309,B19,AGV_3_box</AGV_3_box>
+    <AGV_3_gun z="AGV3滚筒状态">S7:[S7 connection_1]DB309,B20,AGV_3_gun</AGV_3_gun>
+    <AGV_3_point z="AGV3地标位置">S7:[S7 connection_1]DB309,W22,AGV_3_point</AGV_3_point>
+    <AGV_4_stu z="AGV4运行状态">S7:[S7 connection_1]DB309,B24,AGV_4_stu</AGV_4_stu>
+    <AGV_4_step z="AGV4运行步骤">S7:[S7 connection_1]DB309,B25,AGV_4_step</AGV_4_step>
+    <AGV_4_err z="AGV4故障码">S7:[S7 connection_1]DB309,B26,AGV_4_err</AGV_4_err>
+    <AGV_4_box z="AGV4箱子状态">S7:[S7 connection_1]DB309,B27,AGV_4_box</AGV_4_box>
+    <AGV_4_gun z="AGV4滚筒状态">S7:[S7 connection_1]DB309,B28,AGV_4_gun</AGV_4_gun>
+    <AGV_4_point z="AGV4地标位置">S7:[S7 connection_1]DB309,W30,AGV_4_point</AGV_4_point>
+    <AGV_5_stu z="AGV5运行状态">S7:[S7 connection_1]DB309,B32,AGV_5_stu</AGV_5_stu>
+    <AGV_5_step z="AGV5运行步骤">S7:[S7 connection_1]DB309,B33,AGV_5_step</AGV_5_step>
+    <AGV_5_err z="AGV5故障码">S7:[S7 connection_1]DB309,B34,AGV_5_err</AGV_5_err>
+    <AGV_5_box z="AGV5箱子状态">S7:[S7 connection_1]DB309,B35,AGV_5_box</AGV_5_box>
+    <AGV_5_gun z="AGV5滚筒状态">S7:[S7 connection_1]DB309,B36,AGV_5_gun</AGV_5_gun>
+    <AGV_5_point z="AGV5地标位置">S7:[S7 connection_1]DB309,W38,AGV_5_point</AGV_5_point>
+    <AGV_6_stu z="AGV6运行状态">S7:[S7 connection_1]DB309,B40,AGV_6_stu</AGV_6_stu>
+    <AGV_6_step z="AGV6运行步骤">S7:[S7 connection_1]DB309,B41,AGV_6_step</AGV_6_step>
+    <AGV_6_err z="AGV6故障码">S7:[S7 connection_1]DB309,B42,AGV_6_err</AGV_6_err>
+    <AGV_6_box z="AGV6箱子状态">S7:[S7 connection_1]DB309,B43,AGV_6_box</AGV_6_box>
+    <AGV_6_gun z="AGV6滚筒状态">S7:[S7 connection_1]DB309,B44,AGV_6_gun</AGV_6_gun>
+    <AGV_6_point z="AGV6地标位置">S7:[S7 connection_1]DB309,W46,AGV_6_point</AGV_6_point>
+    <!--判断写入-->
+    <ssj_1_AGVstu z="1#输送机-大箱空工位AGV车到达">S7:[S7 connection_1]DB309,B48,ssj_1_AGVstu</ssj_1_AGVstu>
+    <ssj_1_AGVgun z="1#输送机-大箱空工位AGV滚筒状态">S7:[S7 connection_1]DB309,B49,ssj_1_AGVgun</ssj_1_AGVgun>
+    <ssj_1_AGVnum z="1#输送机-大箱空工位到达的AGV车号">S7:[S7 connection_1]DB309,B50,ssj_1_AGVnum</ssj_1_AGVnum>
+    <ssj_2_AGVstu z="2#输送机-小箱空工位AGV车到达">S7:[S7 connection_1]DB309,B52,ssj_2_AGVstu</ssj_2_AGVstu>
+    <ssj_2_AGVgun z="2#输送机-小箱空工位AGV滚筒状态">S7:[S7 connection_1]DB309,B53,ssj_2_AGVgun</ssj_2_AGVgun>
+    <ssj_2_AGVnum z="2#输送机-小箱空工位到达的AGV车号">S7:[S7 connection_1]DB309,B54,ssj_2_AGVnum</ssj_2_AGVnum>
+    <ssj_3_AGVstu z="3#输送机-大箱空工位AGV车到达">S7:[S7 connection_1]DB309,B56,ssj_3_AGVstu</ssj_3_AGVstu>
+    <ssj_3_AGVgun z="3#输送机-大箱空工位AGV滚筒状态">S7:[S7 connection_1]DB309,B57,ssj_3_AGVgun</ssj_3_AGVgun>
+    <ssj_3_AGVnum z="3#输送机-大箱空工位到达的AGV车号">S7:[S7 connection_1]DB309,B58,ssj_3_AGVnum</ssj_3_AGVnum>
+    <ssj_4_AGVstu z="4#输送机-小箱空工位AGV车到达">S7:[S7 connection_1]DB309,B60,ssj_4_AGVstu</ssj_4_AGVstu>
+    <ssj_4_AGVgun z="4#输送机-小箱空工位AGV滚筒状态">S7:[S7 connection_1]DB309,B61,ssj_4_AGVgun</ssj_4_AGVgun>
+    <ssj_4_AGVnum z="4#输送机-小箱空工位到达的AGV车号">S7:[S7 connection_1]DB309,B62,ssj_4_AGVnum</ssj_4_AGVnum>
+    <scan_AGVstu z="AGV扫描车到达">S7:[S7 connection_1]DB309,B64,scan_AGVstu</scan_AGVstu>
+    <scan_AGVnum z="AGV扫描车号">S7:[S7 connection_1]DB309,B65,scan_AGVnum</scan_AGVnum>
+    <in_AGVstu z="AGV入库车到达">S7:[S7 connection_1]DB309,B66,in_AGVstu</in_AGVstu>
+    <in_AGVnum z="AGV入库车号">S7:[S7 connection_1]DB309,B67,in_AGVnum</in_AGVnum>
+    <AGV_stop z="AGV外部停指令">S7:[S7 connection_1]DB309,B68,AGV_stop</AGV_stop>
+    <AGV_reset z="AGV外部复位指令">S7:[S7 connection_1]DB309,B69,AGV_reset</AGV_reset>
+    <AGV_stop_num z="AGV外部停车号">S7:[S7 connection_1]DB309,B70,AGV_stop_num</AGV_stop_num>
+    <AGV_reset_num z="AGV外部复位车号">S7:[S7 connection_1]DB309,B71,AGV_reset_num</AGV_reset_num>
+    <ssj_1_call z="1#输送机空大箱呼叫">S7:[S7 connection_1]DB309,B72,ssj_1_call</ssj_1_call>
+    <ssj_1_en z="1#输送机-大箱空工位控制">S7:[S7 connection_1]DB309,B73,ssj_1_en</ssj_1_en>
+    <ssj_2_call z="2#输送机空小箱呼叫">S7:[S7 connection_1]DB309,B74,ssj_2_call</ssj_2_call>
+    <ssj_2_en z="2#输送机-小箱空工位控制">S7:[S7 connection_1]DB309,B75,ssj_2_en</ssj_2_en>
+    <ssj_3_call z="3#输送机成品大箱呼叫">S7:[S7 connection_1]DB309,B76,ssj_3_call</ssj_3_call>
+    <ssj_3_en z="3#输送机-成品大箱工位控制">S7:[S7 connection_1]DB309,B77,ssj_3_en</ssj_3_en>
+    <ssj_4_call z="4#输送机成品小箱呼叫">S7:[S7 connection_1]DB309,B78,ssj_4_call</ssj_4_call>
+    <ssj_4_en z="4#输送机-成品小箱工位控制">S7:[S7 connection_1]DB309,B79,ssj_4_en</ssj_4_en>
+    <scan_call z="扫描工位呼叫">S7:[S7 connection_1]DB309,B80,scan_call</scan_call>
+    <scan_en z="扫描工位控制">S7:[S7 connection_1]DB309,B81,scan_en</scan_en>
+    <in_call z="入库工位呼叫">S7:[S7 connection_1]DB309,B82,in_call</in_call>
+    <in_en z="入库工位控制">S7:[S7 connection_1]DB309,B83,in_en</in_en>
+  </opc_dat>
+  <agv_path_dat>
+    <size>819.460</size>
+    <!--路径，用逗号隔开的坐标点，可以有多条路径,绘图上全部绘制-->
+    <path color="100,20,20" name="到空大箱路线">611.72,437.72</path>
+    <path color="150,20,20" name="到空小箱路线">611.72,377.72</path>
+    <path color="200,20,20" name="大箱十字路口待机位进">377.72,316.73,315.210,247.210</path>
+    <path color="250,20,20" name="小箱十字路口待机位进">377.72,316.73,315.157</path>
+    <path color="50,200,20" name="大箱成品位">246.207,181.249,183.326</path>
+    <path color="50,200,20" name="小箱成品位">317.158,48.155</path>
+    <path color="50,200,20" name="大箱交通管制位出">182.327,181.247</path>
+    <path color="50,200,20" name="小箱交通管制位出">46.155,133.158</path>
+    <path color="50,200,20" name="大箱交通管制位-扫描点">183.247,181.22,439.20</path>
+    <path color="50,200,20" name="小箱交通管理位-扫描点">133.357,183.157,181.22,439.20</path>
+    <!--路线，有颜色属性，路径名称，中文描述-->
+    <line color="20,20,200" id="1" name="测试1">到空大箱路线,到空小箱路线</line>
+    <line color="20,20,200" id="2" name="测试2">大箱十字路口待机位进,小箱十字路口待机位进</line>
+    <!--站点，路标点，坐标点及站号ID-->
+    <station id="1" name="入库工位">236.73</station>
+
+  </agv_path_dat>
+  <agv_path_name>
+    <line>
+      0 未知路线* 0
+      1 到大箱流水线待机位 8
+      2 到小箱流水线待机位 9
+      3 大箱十字路口待机位进 15
+      4 小箱十字路口待机位进 11
+      5 大箱成品位 18
+      6 小箱成品位 14
+      7 大箱交通管制位出 17
+      8 小箱交通管制位出 13
+      9 大箱交通管制位-扫描点 21
+      10 小箱交通管理位-扫描点 21
+      11 到入库点 1
+      12 到总待机工位 6
+      13 到充电工位 3
+    </line>
+    <station>
+      0 未知路标*
+      1 入库工位
+      6 总待机工位
+      4 充电完成待机工位
+      8 大空箱工位
+      9 小空箱工位
+      7 进空箱管制区解除锁定点
+      11 空小箱等待点
+      15 空小箱等待点
+      18 大箱成品工位
+      14 小箱成品工位
+      19 成品管制解除位置
+      13 小箱成品出管制位置
+      17 大箱成品出管制位置
+      21 扫描工位
+      31 拐点待候
+      30 拐点继续
+    </station>
+  </agv_path_name>
+</Config>

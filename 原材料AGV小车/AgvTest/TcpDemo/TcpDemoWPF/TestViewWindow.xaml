@@ -1,0 +1,62 @@
+﻿<Window x:Class="TcpDemoWPF.TestViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TcpDemoWPF"
+        mc:Ignorable="d"
+        Title="轨道测试窗口" Height="461.75" Width="974" Loaded="TestViewWindow_Loaded">
+    <Grid>
+        <Button x:Name="dingwei" Content="定位" HorizontalAlignment="Left" Margin="35,103,0,0" VerticalAlignment="Top" Width="75" Click="dingwei_Click"/>
+        <Label x:Name="label" Content="端口：" HorizontalAlignment="Left" Margin="258,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="clientPortTB" HorizontalAlignment="Left" Height="23" Margin="309,25,0,0" TextWrapping="Wrap" Text="9000" VerticalAlignment="Top" Width="65" RenderTransformOrigin="-0.1,-0.217"/>
+        <CheckBox x:Name="isManualCB" Content="手动输入" HorizontalAlignment="Left" Margin="37,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cmdTB" HorizontalAlignment="Left" Height="23" Margin="121,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="379"/>
+        <Label x:Name="label1" Content="客户端IP：" HorizontalAlignment="Left" Margin="34,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="clientIpTB" HorizontalAlignment="Left" Height="23" Margin="120,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ckeckClientBT" Content="检查客户端连接" HorizontalAlignment="Left" Margin="425,26,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="-0.16,0.636" Click="button_Click"/>
+        <Button x:Name="station1BT" Content="站点1" HorizontalAlignment="Left" Margin="28,356,0,0" VerticalAlignment="Top" Width="44" Click="station1_click"/>
+        <Button x:Name="station2BT" Content="站点2" HorizontalAlignment="Left" Margin="92,356,0,0" VerticalAlignment="Top" Width="44" Click="station2BT_Click"/>
+        <Button x:Name="station3BT" Content="站点3" HorizontalAlignment="Left" Margin="150,356,0,0" VerticalAlignment="Top" Width="44" Click="station3BT_Click"/>
+        <Button x:Name="station4BT" Content="站点4" HorizontalAlignment="Left" Margin="212,356,0,0" VerticalAlignment="Top" Width="44" Click="station4BT_Click"/>
+        <Button x:Name="station5BT" Content="站点5" HorizontalAlignment="Left" Margin="273,356,0,0" VerticalAlignment="Top" Width="44" Click="station5BT_Click"/>
+        <Button x:Name="station6BT" Content="站点6" HorizontalAlignment="Left" Margin="333,356,0,0" VerticalAlignment="Top" Width="44" Click="station6BT_Click"/>
+        <Button x:Name="station7BT" Content="站点7" HorizontalAlignment="Left" Margin="397,356,0,0" VerticalAlignment="Top" Width="44" Click="station7BT_Click"/>
+        <Button x:Name="station8BT" Content="站点8" HorizontalAlignment="Left" Margin="455,356,0,0" VerticalAlignment="Top" Width="44" Click="station8BT_Click"/>
+        <Button x:Name="station9BT" Content="站点9" HorizontalAlignment="Left" Margin="517,356,0,0" VerticalAlignment="Top" Width="44" Click="station9BT_Click"/>
+        <Button x:Name="station10BT" Content="站点10" HorizontalAlignment="Left" Margin="578,356,0,0" VerticalAlignment="Top" Width="44" Click="station10BT_Click"/>
+        <Button x:Name="station11BT" Content="站点11" HorizontalAlignment="Left" Margin="639,356,0,0" VerticalAlignment="Top" Width="44" Click="station11BT_Click"/>
+        <Button x:Name="station12BT" Content="站点12" HorizontalAlignment="Left" Margin="703,356,0,0" VerticalAlignment="Top" Width="44" Click="station12BT_Click"/>
+        <Button x:Name="station13BT" Content="站点13" HorizontalAlignment="Left" Margin="761,356,0,0" VerticalAlignment="Top" Width="44" Click="station13BT_Click"/>
+        <Button x:Name="station14BT" Content="站点14" HorizontalAlignment="Left" Margin="823,356,0,0" VerticalAlignment="Top" Width="44" Click="station14BT_Click"/>
+        <Button x:Name="station15BT" Content="站点15" HorizontalAlignment="Left" Margin="884,356,0,0" VerticalAlignment="Top" Width="44" Click="station15BT_Click"/>
+        <Button x:Name="station16BT" Content="站点16" HorizontalAlignment="Left" Margin="28,270,0,0" VerticalAlignment="Top" Width="44" Click="station16BT_Click"/>
+        <Button x:Name="station17BT" Content="站点17" HorizontalAlignment="Left" Margin="92,270,0,0" VerticalAlignment="Top" Width="44" Click="station17BT_Click"/>
+        <Button x:Name="station18BT" Content="站点18" HorizontalAlignment="Left" Margin="150,270,0,0" VerticalAlignment="Top" Width="44" Click="station18BT_Click"/>
+        <Button x:Name="station19BT" Content="站点19" HorizontalAlignment="Left" Margin="212,270,0,0" VerticalAlignment="Top" Width="44" Click="station19BT_Click"/>
+        <Button x:Name="station20BT" Content="站点20" HorizontalAlignment="Left" Margin="273,270,0,0" VerticalAlignment="Top" Width="44" Click="station20BT_Click"/>
+        <Button x:Name="station21BT" Content="站点21" HorizontalAlignment="Left" Margin="333,270,0,0" VerticalAlignment="Top" Width="44" Click="station21BT_Click"/>
+        <Button x:Name="station22BT" Content="站点22" HorizontalAlignment="Left" Margin="397,270,0,0" VerticalAlignment="Top" Width="44" Click="station22BT_Click"/>
+        <Button x:Name="station23BT" Content="站点23" HorizontalAlignment="Left" Margin="455,270,0,0" VerticalAlignment="Top" Width="44" Click="station23BT_Click"/>
+        <Button x:Name="station24BT" Content="站点24" HorizontalAlignment="Left" Margin="517,270,0,0" VerticalAlignment="Top" Width="44" Click="station24BT_Click"/>
+        <Button x:Name="station25BT" Content="站点25" HorizontalAlignment="Left" Margin="578,270,0,0" VerticalAlignment="Top" Width="44" Click="station25BT_Click"/>
+        <Button x:Name="station26BT" Content="站点26" HorizontalAlignment="Left" Margin="639,270,0,0" VerticalAlignment="Top" Width="44" Click="station26BT_Click"/>
+        <Button x:Name="station27BT" Content="站点27" HorizontalAlignment="Left" Margin="703,270,0,0" VerticalAlignment="Top" Width="44" Click="station27BT_Click"/>
+        <Button x:Name="station28BT" Content="站点28" HorizontalAlignment="Left" Margin="761,270,0,0" VerticalAlignment="Top" Width="44" Click="station28BT_Click"/>
+        <Button x:Name="station29BT" Content="站点29" HorizontalAlignment="Left" Margin="823,270,0,0" VerticalAlignment="Top" Width="44" Click="station29BT_Click"/>
+        <Button x:Name="station30BT" Content="站点30" HorizontalAlignment="Left" Margin="884,270,0,0" VerticalAlignment="Top" Width="44" Click="station30BT_Click"/>
+        <Button x:Name="station31BT" Content="站点31" HorizontalAlignment="Left" Margin="28,187,0,0" VerticalAlignment="Top" Width="44" Click="station31BT_Click"/>
+        <Button x:Name="station32BT" Content="站点32" HorizontalAlignment="Left" Margin="92,187,0,0" VerticalAlignment="Top" Width="44" Click="station32BT_Click"/>
+        <Button x:Name="station33BT" Content="站点33" HorizontalAlignment="Left" Margin="150,187,0,0" VerticalAlignment="Top" Width="44" Click="station33BT_Click"/>
+        <Button x:Name="station34BT" Content="站点34" HorizontalAlignment="Left" Margin="212,187,0,0" VerticalAlignment="Top" Width="44" Click="station34BT_Click"/>
+        <Button x:Name="station35BT" Content="站点35" HorizontalAlignment="Left" Margin="273,187,0,0" VerticalAlignment="Top" Width="44" Click="station35BT_Click"/>
+        <Button x:Name="resetBT" Content="复位" HorizontalAlignment="Left" Margin="165,103,0,0" VerticalAlignment="Top" Width="75" Click="resetBT_Click"/>
+        <Button x:Name="stopBT" Content="停止" HorizontalAlignment="Left" Margin="299,103,0,0" VerticalAlignment="Top" Width="75" Click="stopBT_Click"/>
+        <Button x:Name="startBT" Content="启动" HorizontalAlignment="Left" Margin="425,103,0,0" VerticalAlignment="Top" Width="75" Click="startBT_Click"/>
+        <Button x:Name="workOnBT" Content="开始上货" HorizontalAlignment="Left" Margin="547,103,0,0" VerticalAlignment="Top" Width="75" Click="workOnBT_Click"/>
+        <Button x:Name="workOffBT" Content="停止上货" HorizontalAlignment="Left" Margin="672,103,0,0" VerticalAlignment="Top" Width="75" Click="workOffBT_Click"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="499,187,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="label2" Content="前进方向：" HorizontalAlignment="Left" Margin="431,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.8,0.962"/>
+
+    </Grid>
+</Window>
