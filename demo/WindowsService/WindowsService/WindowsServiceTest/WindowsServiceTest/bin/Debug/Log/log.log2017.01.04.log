@@ -1,0 +1,69 @@
+[2017-01-04 10:53:56,537]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 10:53:56
+[2017-01-04 10:53:56,619]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2017-01-04 10:54:37,727]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 10:54:37
+[2017-01-04 10:54:37,750]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 10:55:14,407]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1310已连接服务器
+[2017-01-04 10:55:17,195]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1311，无法加入IP池
+[2017-01-04 10:55:21,445]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:4001，无法加入IP池
+[2017-01-04 10:55:27,916]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1312，无法加入IP池
+[2017-01-04 10:55:30,748]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1313，无法加入IP池
+[2017-01-04 10:55:32,901]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1314，无法加入IP池
+[2017-01-04 10:55:48,300]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1317，无法加入IP池
+[2017-01-04 10:56:59,705]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 10:56:59
+[2017-01-04 10:56:59,743]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 10:57:03,627]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:4001已连接服务器
+[2017-01-04 10:57:07,021]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1388，无法加入IP池
+[2017-01-04 10:57:36,718]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 10:57:36,719]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:4001,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 10:57:36,721]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+[2017-01-04 10:58:51,156]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 10:58:51,156]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:4001,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 10:59:32,442]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+[2017-01-04 16:24:10,156]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:24:10
+[2017-01-04 16:24:10,538]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 在其上下文中，该请求的地址无效。
+[2017-01-04 16:24:33,522]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:24:33
+[2017-01-04 16:24:33,553]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 16:25:12,367]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:4001已连接服务器
+[2017-01-04 16:25:18,979]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.233:1191，无法加入IP池
+[2017-01-04 16:26:51,628]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:26:51
+[2017-01-04 16:26:51,659]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 16:27:33,412]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:27:33
+[2017-01-04 16:27:33,437]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 16:27:45,603]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1340已连接服务器
+[2017-01-04 16:28:51,463]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:28:51
+[2017-01-04 16:28:51,506]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 16:29:01,183]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:4001已连接服务器
+[2017-01-04 16:29:03,031]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1410已连接服务器
+[2017-01-04 16:29:06,880]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 16:29:06,881]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:1410,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 16:29:06,883]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+[2017-01-04 16:29:10,552]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1411已连接服务器
+[2017-01-04 16:29:11,936]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 16:29:11,936]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:1411,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 16:29:11,936]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+[2017-01-04 16:35:01,629]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:35:01
+[2017-01-04 16:35:01,656]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 16:35:06,957]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1594已连接服务器
+[2017-01-04 16:35:15,349]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1595已连接服务器
+[2017-01-04 16:35:16,434]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 16:35:16,435]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:1595,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 16:35:16,437]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+[2017-01-04 16:35:19,501]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1596已连接服务器
+[2017-01-04 16:35:20,538]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 16:35:20,538]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:1596,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 16:35:20,538]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+
+
+
+test
+
+[2017-01-04 16:35:58,503]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/4 16:35:58
+[2017-01-04 16:35:58,533]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.233:8001成功
+[2017-01-04 16:36:14,877]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1666已连接服务器
+[2017-01-04 16:36:17,098]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 16:36:17,099]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:1666,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 16:36:17,101]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接
+[2017-01-04 16:36:22,164]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.233:1667已连接服务器
+[2017-01-04 16:36:25,182]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 C0 01 00 09 FF FF FF
+[2017-01-04 16:36:25,182]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.233:1667,转发给:192.168.1.233:4001,编号为12,数码管数字为9,颜色为白色,的第1条设置指令
+[2017-01-04 16:36:25,182]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址5未连接

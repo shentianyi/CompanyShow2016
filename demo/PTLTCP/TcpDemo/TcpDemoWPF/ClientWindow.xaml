@@ -17,6 +17,11 @@
         <Label x:Name="label1" Content="端口:" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="serverPortTB" HorizontalAlignment="Left" Height="23" Margin="301,12,0,0" TextWrapping="Wrap" Text="4001" VerticalAlignment="Top" Width="178"/>
         <Button x:Name="Stabilitybutton" Content="稳定性测试" HorizontalAlignment="Left" Margin="161,120,0,0" VerticalAlignment="Top" Width="75" Click="Stabilitybutton_Click"/>
+        <Button x:Name="SetIdbutton" Content="设置Id" HorizontalAlignment="Left" Margin="375,201,0,0" VerticalAlignment="Top" Width="75" Click="SetIdbutton_Click"/>
+        <TextBox x:Name="OriginIdtextBox" HorizontalAlignment="Left" Height="23" Margin="413,68,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="66" TextChanged="OriginIdtextBox_TextChanged"/>
+        <TextBlock x:Name="OriginIdtextBlock" HorizontalAlignment="Left" Margin="337,71,0,0" TextWrapping="Wrap" Text="初始id:" VerticalAlignment="Top" RenderTransformOrigin="0.436,1.312"/>
+        <TextBlock x:Name="AimedIdtextBlock" HorizontalAlignment="Left" Margin="337,120,0,0" TextWrapping="Wrap" Text="目标Id：" VerticalAlignment="Top"/>
+        <TextBox x:Name="AimedIdtextBox" HorizontalAlignment="Left" Height="23" Margin="413,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" TextChanged="AimedIdtextBox_TextChanged"/>
 
     </Grid>
 </Window>

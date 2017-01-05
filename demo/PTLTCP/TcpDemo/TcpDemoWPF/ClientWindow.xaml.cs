@@ -52,9 +52,9 @@ namespace TcpDemoWPF
                 return;
             }
 
-            ClientRecieveThread = new Thread( Listen);
-            ClientRecieveThread.IsBackground = true;
-            ClientRecieveThread.Start();
+            //ClientRecieveThread = new Thread( Listen);
+            //ClientRecieveThread.IsBackground = true;
+            //ClientRecieveThread.Start();
 
             ClientSendThread = new Thread(Send);
             ClientSendThread.IsBackground = true;
@@ -276,6 +276,39 @@ namespace TcpDemoWPF
                     
                 }
             }
+
+
+        }
+
+        private void OriginIdtextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void AimedIdtextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void SetIdbutton_Click(object sender, RoutedEventArgs e)
+        {
+            if(string.IsNullOrEmpty(OriginIdtextBox.Text))
+            {
+                MessageBox.Show("请输入初始Id");
+
+            }
+            if(string.IsNullOrEmpty(AimedIdtextBox.Text))
+            {
+                MessageBox.Show("请输入目标Id");
+            }
+
+            byte[] msg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x64, 0x01, 0xC2, 0x01, 0x00 };
+            msg[4] = Convert.ToByte(OriginIdtextBox.Text);
+            msg[8] = Convert.ToByte(AimedIdtextBox.Text);
+            CmdQueue.Enqueue(msg);
+            byte[] testmsg = new byte[] { 0x88, 0x00, 0x00, 0x01, 0x02, 0x01, 0xC0, 0x01, 0x00, 0x1B, 0xFF, 0xFF, 0x00 };
+            msg[4] = Convert.ToByte(AimedIdtextBox.Text);
+            CmdQueue.Enqueue(testmsg);
 
 
         }

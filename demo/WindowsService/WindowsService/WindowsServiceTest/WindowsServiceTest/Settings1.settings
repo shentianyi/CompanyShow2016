@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsServiceTest" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8001</Value>
+    </Setting>
+    <Setting Name="WMSKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">255</Value>
+    </Setting>
+    <Setting Name="ServerIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.233</Value>
+    </Setting>
+    <Setting Name="WMSIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.233</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,26 @@
+[2016-12-29 16:53:07,810]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:53:07
+[2016-12-29 16:53:07,825]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:53:15,779]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:53:15
+[2016-12-29 17:19:13,493]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:19:13
+[2016-12-29 17:19:13,509]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:19:15,351]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:19:15,369]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:19:15,370]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:19:15,370]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:19:39,203]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:19:39
+[2016-12-29 17:19:39,204]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-29 17:19:39,205]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 已添加了具有相同键的项。
+[2016-12-29 17:24:39,320]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:24:39
+[2016-12-29 17:24:39,338]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:24:40,810]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:24:40,816]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:24:40,816]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:24:40,817]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:24:51,752]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:24:51
+[2016-12-29 17:27:43,674]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:27:43
+[2016-12-29 17:27:43,698]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:27:43,852]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:27:43,853]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:27:43,854]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:27:43,855]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:28:34,300]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:28:34

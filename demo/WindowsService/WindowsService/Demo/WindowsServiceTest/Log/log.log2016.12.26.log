@@ -1,0 +1,26 @@
+[2016-12-26 12:59:37,096]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/26 12:59:37
+[2016-12-26 13:02:39,058]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/26 13:02:39
+[2016-12-26 13:02:39,084]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 在其上下文中，该请求的地址无效。
+[2016-12-26 13:06:37,235]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/26 13:06:37
+[2016-12-26 13:06:38,687]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/26 13:06:38
+[2016-12-26 13:06:38,706]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 在其上下文中，该请求的地址无效。
+[2016-12-26 13:07:19,210]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/26 13:07:19
+[2016-12-26 13:09:22,375]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/26 13:09:22
+[2016-12-26 13:09:22,394]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.108:4000成功
+[2016-12-26 13:09:42,359]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址，无法加入IP池
+[2016-12-26 13:11:47,721]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/26 13:11:47
+[2016-12-26 13:11:47,721]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。
+[2016-12-26 13:32:18,514]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/26 13:32:18
+[2016-12-26 13:32:18,535]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.108:4000成功
+[2016-12-26 13:32:34,259]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0A 00 00 01 58 01 B0 01 00 00 FF 00 00
+[2016-12-26 13:32:34,259]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.106:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-26 13:32:53,594]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0A 00 00 01 58 01 C0 01 00 00 FF 00 00
+[2016-12-26 13:32:53,594]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.106:4001,编号为88,数码管数字为0,颜色为蓝色,的第1条设置指令
+[2016-12-26 13:32:53,596]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.106:4001,编号为88,数码管数字为0,颜色为蓝色,的第1条设置指令
+[2016-12-26 13:32:54,196]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.106:4001,编号为88,数码管数字为0,颜色为蓝色,的第1条设置指令
+[2016-12-26 13:32:54,796]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.106:4001,编号为88,数码管数字为0,颜色为蓝色,的第1条设置指令
+[2016-12-26 13:32:55,396]  8 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-26 13:32:55,397]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.106:4001,编号为88,STU为1的第1条错误指令,错误原因：PTL灯无反馈
+[2016-12-26 13:48:07,978]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/26 13:48:07
+[2016-12-26 13:48:07,979]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-26 13:48:07,979]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。

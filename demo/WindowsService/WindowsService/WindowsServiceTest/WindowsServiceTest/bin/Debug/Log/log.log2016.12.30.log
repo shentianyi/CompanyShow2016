@@ -1,0 +1,15 @@
+[2016-12-30 13:16:30,957]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:16:30
+[2016-12-30 13:16:31,026]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-30 13:16:49,174]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:16:49
+[2016-12-30 13:16:49,212]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-30 13:17:30,433]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:17:30
+[2016-12-30 13:17:30,496]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2016-12-30 13:18:24,665]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:18:24
+[2016-12-30 13:18:24,689]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2016-12-30 13:18:37,247]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:18:37
+[2016-12-30 13:18:37,274]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2016-12-30 13:19:36,380]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:19:36
+[2016-12-30 13:19:36,405]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2016-12-30 13:20:11,153]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/30 13:20:11
+[2016-12-30 13:20:11,186]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2016-12-30 13:20:34,351]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.184:6000已连接服务器

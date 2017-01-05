@@ -65,21 +65,21 @@ namespace PTLTest
             {
                 Thread.Sleep(Settings.Default.sendSleep);
             }
-            controller.Send(LampId, 9876, "FF0000");
+            controller.Send(LampId, 9876, "FFFFFF");
 
-            string tempa = string.Empty;          
-            MessageBoxResult MSBOXRE = MessageBox.Show("是否显示数字为9876,颜色为蓝色", "测试结果", MessageBoxButton.YesNo);
-            if (MSBOXRE == MessageBoxResult.Yes)
-            {
-                tempa = "设置成功";
+            //string tempa = string.Empty;          
+            //MessageBoxResult MSBOXRE = MessageBox.Show("是否显示数字为9876,颜色为白色", "测试结果", MessageBoxButton.YesNo);
+            //if (MSBOXRE == MessageBoxResult.Yes)
+            //{
+            //    tempa = "设置成功";
 
-            }
-            else
-            {
-                tempa = "设置失败";
-            }
+            //}
+            //else
+            //{
+            //    tempa = "设置失败";
+            //}
 
-            MessageBox.Show(tempa);
+            //MessageBox.Show(tempa);
 
         }
 

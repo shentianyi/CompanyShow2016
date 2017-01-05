@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -175,10 +175,6 @@
     <ProjectReference Include="..\..\Brilliantech.Framwork\Brilliantech.Framwork.csproj">
       <Project>{9b5f850a-5136-4095-8955-6c4f7747c48a}</Project>
       <Name>Brilliantech.Framwork</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PTLCanClient\PTLCanClient.csproj">
-      <Project>{24763f2e-1c11-496f-a5c5-a4a6580a4cbb}</Project>
-      <Name>PTLCanClient</Name>
     </ProjectReference>
     <ProjectReference Include="..\PTLCanController\PTLCanController.csproj">
       <Project>{2f61cc00-acd6-4252-8f9d-6a79aeda25d1}</Project>

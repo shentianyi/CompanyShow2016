@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpDemoWPF.exe" size="26624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpDemoWPF.exe" size="28160">
       <assemblyIdentity name="TcpDemoWPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qVLhsnOHc0kTH4lAm5ZbD8UxnPu2WIXS/wF4mIau71c=</dsig:DigestValue>
+        <dsig:DigestValue>DQdwy5z3XldFS0VRO0nAMKLC3YWDaw0EfREZixO19ro=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

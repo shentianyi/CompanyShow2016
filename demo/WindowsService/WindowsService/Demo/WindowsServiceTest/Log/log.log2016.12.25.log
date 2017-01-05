@@ -1,0 +1,69 @@
+[2016-12-25 16:25:15,003]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/25 16:25:14
+[2016-12-25 16:25:15,019]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:4000成功
+[2016-12-25 16:25:38,858]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0B 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 16:25:38,858]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:38,860]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:39,460]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:40,060]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:40,660]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 16:25:45,685]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0B 00 00 01 58 01 B0 01 00 00 00 00 00
+[2016-12-25 16:25:45,685]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4003,编号为88,STU为1的第1条肯定回答指令
+[2016-12-25 16:25:50,918]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0B 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 16:25:50,918]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:50,918]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:51,518]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:52,118]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:25:52,718]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 16:26:00,207]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0C 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 16:26:00,207]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:00,207]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:00,807]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:01,407]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:02,007]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 16:26:06,983]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0C 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 16:26:06,983]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:06,984]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:07,584]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:08,184]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 16:26:08,784]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 16:26:21,382]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/25 16:26:21
+[2016-12-25 16:26:21,382]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-25 16:26:21,392]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-25 16:26:21,402]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。
+[2016-12-25 16:30:43,217]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/25 16:30:43
+[2016-12-25 16:30:43,234]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:4000成功
+[2016-12-25 16:32:15,737]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/25 16:32:15
+[2016-12-25 16:32:15,738]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。
+[2016-12-25 16:33:11,347]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/25 16:33:11
+[2016-12-25 16:33:11,363]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:4000成功
+[2016-12-25 16:33:23,417]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/25 16:33:23
+[2016-12-25 16:33:23,418]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。
+[2016-12-25 16:34:08,452]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/25 16:34:08
+[2016-12-25 16:34:08,467]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:4000成功
+[2016-12-25 16:34:18,670]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/25 16:34:18
+[2016-12-25 16:34:18,671]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。
+[2016-12-25 17:10:16,862]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/25 17:10:16
+[2016-12-25 17:10:16,877]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:4000成功
+[2016-12-25 17:10:54,499]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0A 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 17:10:54,499]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4002,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:10:54,501]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4002,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:10:55,101]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4002,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:10:55,701]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4002,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:10:56,301]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 17:11:03,727]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0B 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 17:11:03,727]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4002,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:03,727]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:04,328]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:04,928]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4003,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:05,528]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 17:11:18,021]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】0C 00 00 01 58 01 C0 01 00 00 00 00 00
+[2016-12-25 17:11:18,021]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4002,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:18,021]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:18,621]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:19,221]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4004,编号为88,数码管数字为0,颜色为灯灭,的第1条设置指令
+[2016-12-25 17:11:19,821]  5 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 超时重发超过最大次数
+[2016-12-25 17:12:06,243]  4 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/25 17:12:06
+[2016-12-25 17:12:06,243]  5 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-25 17:12:06,243]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-25 17:12:06,253]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-25 17:12:06,292]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 正在中止线程。

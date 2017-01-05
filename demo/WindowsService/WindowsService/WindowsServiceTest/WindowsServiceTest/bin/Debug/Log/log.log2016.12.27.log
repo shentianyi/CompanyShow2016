@@ -1,0 +1,24 @@
+[2016-12-27 15:48:25,851]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 15:48:25
+[2016-12-27 15:48:25,983]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 在其上下文中，该请求的地址无效。
+[2016-12-27 15:48:52,387]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 15:48:52
+[2016-12-27 15:48:52,415]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-27 15:49:15,851]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 15 01 C0 01 00 09 FF 00 00
+[2016-12-27 15:49:15,852]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,编号为21,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-27 15:49:15,854]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址未在程序中定义
+[2016-12-27 15:50:42,553]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 15:50:42
+[2016-12-27 15:50:42,577]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-27 15:50:51,107]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 15 01 C0 01 00 09 FF 00 00
+[2016-12-27 15:50:51,108]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,编号为21,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-27 15:54:33,187]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 15:54:33
+[2016-12-27 15:54:33,217]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-27 15:54:40,626]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯ip192.168.1.105:4004小车编号6
+[2016-12-27 15:55:09,259]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 15:55:09
+[2016-12-27 15:55:09,281]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-27 15:55:13,638]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯ip192.168.1.105:4004小车编号6
+[2016-12-27 15:56:30,515]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 15:56:30
+[2016-12-27 15:56:30,539]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-27 15:56:38,343]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯ip192.168.1.105:4004
+[2016-12-27 16:05:04,748]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯ip192.168.1.105:4004
+[2016-12-27 16:05:04,760]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 已添加了具有相同键的项。
+[2016-12-27 16:06:35,602]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/27 16:06:35
+[2016-12-27 16:06:35,640]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功

@@ -1,0 +1,57 @@
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.pdb
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\Brilliantech.Framwork.dll
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\log4net.dll
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.csprojResolveAssemblyReference.cache
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.ProjectInstaller.resources
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.csproj.GenerateResource.Cache
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.manifest
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.application
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe.manifest
+F:\Windows Services\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.application
+F:\WindowsServices\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+F:\WindowsServices\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+F:\WindowsServices\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
+C:\Users\ZhangLin\git\IF-Tech\Examples\WindowsServiceDemo\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+C:\Users\ZhangLin\git\IF-Tech\Examples\WindowsServiceDemo\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+C:\Users\ZhangLin\git\IF-Tech\Examples\WindowsServiceDemo\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.manifest
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.application
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.pdb
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\Brilliantech.Framwork.dll
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\log4net.dll
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\ReadMessage.dll
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\Nini.dll
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\Brilliantech.Framwork.pdb
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\ReadMessage.pdb
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.csprojResolveAssemblyReference.cache
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.ProjectInstaller.resources
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.csproj.GenerateResource.Cache
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe.manifest
+F:\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.application
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.manifest
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.application
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.pdb
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\Brilliantech.Framwork.dll
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\log4net.dll
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\ReadMessage.dll
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\Nini.dll
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\Brilliantech.Framwork.pdb
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\ReadMessage.pdb
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.csprojResolveAssemblyReference.cache
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.ProjectInstaller.resources
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.csproj.GenerateResource.Cache
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe.manifest
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\obj\Debug\WindowsServiceTest.application
+F:\WindowsService\WindowsService\WindowsServiceTest\WindowsServiceTest\bin\Debug\App.config

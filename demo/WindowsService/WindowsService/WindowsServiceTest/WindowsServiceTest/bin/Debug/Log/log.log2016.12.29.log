@@ -1,0 +1,720 @@
+[2016-12-29 13:10:49,443]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:10:49
+[2016-12-29 13:10:49,464]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:11:36,148]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.105:4001，无法加入IP池
+[2016-12-29 13:12:55,283]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:12:55
+[2016-12-29 13:12:55,303]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:13:04,591]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.105:4001，无法加入IP池
+[2016-12-29 13:13:25,841]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5灯ip192.168.1.105:4004
+[2016-12-29 13:14:27,236]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:14:27
+[2016-12-29 13:14:27,260]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:26:26,183]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:26:26
+[2016-12-29 13:26:26,203]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:26:31,258]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.105:4004，无法加入IP池
+[2016-12-29 13:29:10,765]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:29:10
+[2016-12-29 13:29:10,785]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:29:31,035]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:29:31
+[2016-12-29 13:29:31,055]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:31:37,673]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:31:37
+[2016-12-29 13:31:37,691]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:31:40,874]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:32:05,040]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:32:05
+[2016-12-29 13:32:05,057]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:32:13,409]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:32:14,994]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:32:34,258]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 D1 01 00 09 00 00 00
+[2016-12-29 13:32:34,258]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:32:34,260]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:33:39,335]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:33:39
+[2016-12-29 13:33:39,353]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:33:45,145]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:33:46,881]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:33:50,274]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 D1 01 00 09 00 00 00
+[2016-12-29 13:33:50,274]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:33:50,277]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:35:04,020]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:35:04
+[2016-12-29 13:35:04,042]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:35:09,465]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:35:11,113]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:35:12,970]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 D1 01 00 09 00 00 00
+[2016-12-29 13:35:12,971]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:35:12,973]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:36:26,236]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:36:29,132]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:36:29,732]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:36:30,332]  13 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 超时重发给神秘小车超过最大次数
+[2016-12-29 13:36:30,332]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 转发给:192.168.1.105:4001,编号为88,STU为1的第1条错误指令,错误原因：WMS无反馈
+[2016-12-29 13:39:46,574]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:39:46
+[2016-12-29 13:39:46,591]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:39:50,655]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:39:52,623]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:39:58,216]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 D1 01 00 09 00 00 00
+[2016-12-29 13:39:58,217]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:39:58,219]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:39:58,220]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:40:19,785]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:40:19,785]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:40:34,576]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:40:34,576]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:40:34,577]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:40:52,995]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:40:52,995]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:41:00,256]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:41:00
+[2016-12-29 13:41:00,273]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:41:05,094]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:41:07,358]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:41:10,570]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:41:10,570]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:41:10,572]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:41:12,700]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:41:12,700]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:43:19,024]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:43:19
+[2016-12-29 13:43:19,043]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:43:25,285]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:43:27,157]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:43:29,082]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:43:29,082]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:43:29,084]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:43:31,011]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:43:31,011]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:43:31,011]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:44:59,787]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:44:59
+[2016-12-29 13:44:59,804]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:45:02,575]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:45:04,212]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:45:15,906]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:45:15,906]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:45:30,402]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:45:30,402]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:45:30,404]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:45:34,461]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:45:34,461]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:48:01,052]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:48:01
+[2016-12-29 13:48:08,754]  8 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:48:36,283]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:48:47,701]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:49:04,569]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:49:04,570]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:49:04,571]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:49:10,459]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:49:10,459]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:49:10,459]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:49:15,399]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:49:15,399]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:50:06,259]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:50:06
+[2016-12-29 13:50:06,277]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:50:08,849]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 13:50:10,257]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:50:12,401]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 58 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:50:12,402]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:50:12,404]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为88,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:50:15,133]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 58 01 B0 01 00 09 00 00 00
+[2016-12-29 13:50:15,133]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:50:15,133]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为88,STU为1的第1条肯定回答指令
+[2016-12-29 13:55:38,433]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 13:55:38
+[2016-12-29 13:55:38,451]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 13:55:38,806]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 13:55:39,707]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 13:55:39,796]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 13:55:39,805]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 13:56:31,924]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 13:56:42,996]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 D1 00 00 00 00 00 00
+[2016-12-29 13:56:42,996]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,数码管数字为0,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:56:42,998]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,STU为0的第1条肯定回答指令
+[2016-12-29 13:56:42,999]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为0,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:56:45,685]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 01 D1 00 00 00 00 00 00
+[2016-12-29 13:56:45,686]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为0,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:56:45,686]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为0的第1条肯定回答指令
+[2016-12-29 13:56:45,686]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为0,颜色为灯灭,的第1条确认指令
+[2016-12-29 13:56:59,353]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:56:59,353]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:56:59,354]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:56:59,371]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 13:56:59,372]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 13:56:59,372]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 13:57:20,556]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 0C 01 C0 01 00 09 FF 00 00
+[2016-12-29 13:57:20,556]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:57:20,556]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:57:20,770]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 01 B0 01 00 00 00 00 00
+[2016-12-29 13:57:20,770]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,STU为1的第1条肯定回答指令
+[2016-12-29 13:57:20,770]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,STU为1的第1条肯定回答指令
+[2016-12-29 13:58:15,574]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 0C 01 0B 01 00 09 FF 00 00
+[2016-12-29 13:58:15,574]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4001,
+[2016-12-29 13:58:15,574]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 13:58:15,700]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 01 B0 01 00 00 00 00 00
+[2016-12-29 13:58:15,700]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,STU为1的第1条肯定回答指令
+[2016-12-29 13:58:15,700]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,STU为1的第1条肯定回答指令
+[2016-12-29 14:00:34,371]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:00:34
+[2016-12-29 14:00:34,389]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:00:34,584]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:00:34,584]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:00:34,594]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:00:34,608]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:04:01,302]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:04:01
+[2016-12-29 14:04:01,319]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:04:02,068]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:04:02,069]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:04:02,072]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:04:02,078]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:04:12,327]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 02 D1 01 00 09 00 00 00
+[2016-12-29 14:04:12,328]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第2条确认指令
+[2016-12-29 14:04:12,330]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第2条肯定回答指令
+[2016-12-29 14:05:04,408]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:05:04
+[2016-12-29 14:05:04,425]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:05:05,304]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:05:05,305]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:05:05,309]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:05:05,312]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:05:11,096]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:05:31,086]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:05:31
+[2016-12-29 14:05:31,103]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:05:31,691]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:05:31,693]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:05:31,715]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:05:31,716]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:05:40,627]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 03 D1 01 00 09 00 00 00
+[2016-12-29 14:05:40,628]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第3条确认指令
+[2016-12-29 14:05:40,630]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第3条肯定回答指令
+[2016-12-29 14:07:22,544]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:07:22
+[2016-12-29 14:07:22,561]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:07:23,010]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:07:23,011]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:07:23,014]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:07:23,022]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:07:26,751]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:07:35,101]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 04 D1 01 00 09 00 00 00
+[2016-12-29 14:07:35,101]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第4条确认指令
+[2016-12-29 14:07:35,104]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第4条肯定回答指令
+[2016-12-29 14:07:35,104]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第4条确认指令
+[2016-12-29 14:07:36,134]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 03 D1 01 00 09 00 00 00
+[2016-12-29 14:07:36,134]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,数码管数字为9,颜色为灯灭,的第3条确认指令
+[2016-12-29 14:07:36,134]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,STU为1的第3条肯定回答指令
+[2016-12-29 14:07:36,135]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为灯灭,的第3条确认指令
+[2016-12-29 14:07:51,491]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 05 D1 01 00 09 00 00 00
+[2016-12-29 14:07:51,492]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第5条确认指令
+[2016-12-29 14:07:51,492]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第5条肯定回答指令
+[2016-12-29 14:07:51,492]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第5条确认指令
+[2016-12-29 14:13:20,068]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:13:20
+[2016-12-29 14:13:20,086]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:13:22,011]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:13:22,012]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:13:22,015]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:13:22,025]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:13:26,564]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 06 D1 01 00 09 00 00 00
+[2016-12-29 14:13:26,564]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第6条确认指令
+[2016-12-29 14:13:26,566]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第6条肯定回答指令
+[2016-12-29 14:13:26,567]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【错误解析】WMS未连接
+[2016-12-29 14:13:37,471]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 59 01 D1 00 00 00 00 00 00
+[2016-12-29 14:13:37,472]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为89,数码管数字为0,颜色为灯灭,的第1条确认指令
+[2016-12-29 14:13:37,472]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为89,STU为0的第1条肯定回答指令
+[2016-12-29 14:13:37,472]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【错误解析】WMS未连接
+[2016-12-29 14:13:41,208]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 59 02 D1 00 00 00 00 00 00
+[2016-12-29 14:13:41,208]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为89,数码管数字为0,颜色为灯灭,的第2条确认指令
+[2016-12-29 14:13:41,208]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为89,STU为0的第2条肯定回答指令
+[2016-12-29 14:13:41,208]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【错误解析】WMS未连接
+[2016-12-29 14:13:46,506]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 4F 01 D1 00 00 00 00 00 00
+[2016-12-29 14:13:46,506]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为79,数码管数字为0,颜色为灯灭,的第1条确认指令
+[2016-12-29 14:13:46,506]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为79,STU为0的第1条肯定回答指令
+[2016-12-29 14:13:46,507]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【错误解析】WMS未连接
+[2016-12-29 14:13:49,669]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:13:54,454]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 07 D1 01 00 09 00 00 00
+[2016-12-29 14:13:54,454]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第7条确认指令
+[2016-12-29 14:13:54,454]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第7条肯定回答指令
+[2016-12-29 14:13:54,454]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第7条确认指令
+[2016-12-29 14:14:00,782]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 08 D1 01 00 09 00 00 00
+[2016-12-29 14:14:00,782]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第8条确认指令
+[2016-12-29 14:14:00,782]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第8条肯定回答指令
+[2016-12-29 14:14:00,782]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第8条确认指令
+[2016-12-29 14:29:43,889]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:29:43
+[2016-12-29 14:29:43,910]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:29:43,980]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:29:43,987]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:29:45,190]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:29:45,740]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:29:45,758]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:29:51,558]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 09 D1 01 00 09 00 00 00
+[2016-12-29 14:29:51,559]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第9条确认指令
+[2016-12-29 14:29:51,561]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第9条肯定回答指令
+[2016-12-29 14:29:51,562]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第9条确认指令
+[2016-12-29 14:31:05,439]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:31:05
+[2016-12-29 14:31:05,458]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:31:07,218]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 14:31:07,220]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 14:31:07,224]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 14:31:07,226]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 14:31:07,781]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:31:18,410]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 0C 0B D1 01 00 09 00 00 00
+[2016-12-29 14:31:18,410]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为12,数码管数字为9,颜色为灯灭,的第11条确认指令
+[2016-12-29 14:31:18,413]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为12,STU为1的第11条肯定回答指令
+[2016-12-29 14:33:10,476]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:33:10
+[2016-12-29 14:33:10,493]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:34:18,484]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:34:20,165]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 14:34:26,191]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 0C 01 0B 01 00 09 FF 00 00
+[2016-12-29 14:34:26,191]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,
+[2016-12-29 14:34:41,621]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 0B 01 00 09 FF 00 00
+[2016-12-29 14:34:41,621]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,
+[2016-12-29 14:34:41,623]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为12,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:34:46,230]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 0C 01 00 09 FF 00 00
+[2016-12-29 14:34:46,230]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,
+[2016-12-29 14:34:46,230]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为12,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:34:53,927]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 0C 01 0C 01 00 09 FF 00 00
+[2016-12-29 14:34:53,927]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,
+[2016-12-29 14:34:53,927]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为12,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:50:37,847]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:50:37
+[2016-12-29 14:50:37,865]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:51:27,949]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:51:36,295]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 14:51:40,689]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:51:40,690]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:51:40,692]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:52:01,619]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:52:01,619]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:52:07,713]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:52:14,031]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:52:14,031]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:52:14,031]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:52:21,220]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:52:21,220]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:52:30,862]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:54:05,728]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:54:05
+[2016-12-29 14:54:05,749]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:54:08,563]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 14:54:10,540]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:54:12,405]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:54:12,405]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:54:12,407]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:54:15,857]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:54:15,857]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:54:23,004]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:55:13,500]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:55:13
+[2016-12-29 14:55:13,517]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:55:23,145]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:55:23
+[2016-12-29 14:55:23,164]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:55:55,680]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:55:55
+[2016-12-29 14:55:55,697]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:55:59,036]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:56:01,700]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 14:56:07,240]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:56:07,240]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:56:07,242]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:56:09,770]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:56:09,770]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:56:11,490]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:56:15,734]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:56:15,734]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:56:15,734]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:56:20,902]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:56:20,902]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:57:07,434]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:57:07
+[2016-12-29 14:57:07,458]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:57:12,586]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 14:57:18,034]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:57:19,552]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:57:19,552]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:57:19,554]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:57:22,003]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:57:22,003]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:57:25,571]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:57:31,994]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 14:57:31,994]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:57:31,994]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 14:57:36,384]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:57:36,384]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:57:36,384]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:58:37,978]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:59:25,079]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:59:25
+[2016-12-29 14:59:25,097]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 14:59:27,970]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 14:59:30,339]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 14:59:34,820]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:59:34,820]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:59:37,401]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:59:37,401]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:59:38,093]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 14:59:38,093]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 14:59:45,469]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 14:59:45
+[2016-12-29 14:59:45,488]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:00:02,132]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:00:02
+[2016-12-29 15:00:02,150]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:00:12,620]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 15:00:16,730]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 15:00:19,315]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:00:19,315]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:00:19,317]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:00:21,966]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:00:21,966]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:00:21,967]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:00:24,161]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:00:24,161]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:00:24,161]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:00:28,038]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:00:28,038]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:00:28,038]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:06:39,945]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:06:39
+[2016-12-29 15:06:39,964]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:06:44,889]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 15:06:46,862]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 15:07:01,393]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:07:01,393]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:07:01,395]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:07:03,843]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:03,843]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:03,844]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:06,559]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:07:06,559]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:07:06,559]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:07:10,178]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:10,178]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:10,178]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:13,936]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:13,936]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:14,447]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:14,447]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:14,839]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:14,839]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:15,050]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:15,050]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:15,231]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:15,231]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:15,382]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:15,382]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:15,563]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:15,563]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:15,895]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:15,895]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:07:44,579]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 09 FF 00 00
+[2016-12-29 15:07:44,579]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:08:56,276]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:08:56
+[2016-12-29 15:08:56,293]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:08:59,876]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 15:09:02,590]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 15:09:05,406]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:09:05,406]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:05,408]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:10,543]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:09:10,543]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:10,543]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:11,535]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:09:11,535]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:11,535]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址未在程序中定义
+[2016-12-29 15:09:47,678]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:09:47,678]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:47,678]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址未在程序中定义
+[2016-12-29 15:09:59,956]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:09:59,956]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.105:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:09:59,956]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 目标地址未在程序中定义
+[2016-12-29 15:12:27,656]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:12:27
+[2016-12-29 15:12:27,673]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:12:43,442]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 15:12:43,444]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:12:43,481]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 15:12:43,492]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:12:49,477]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 15:12:55,244]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：5,灯ip192.168.1.105:4001已连接服务器
+[2016-12-29 15:13:07,749]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:13:07,750]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,转发给:192.168.1.180:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:07,752]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:15,794]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:13:15,794]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:15,794]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:15,911]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:13:15,912]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:13:15,912]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4001,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:13:31,351]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:13:31,351]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:31,351]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:31,423]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:13:31,423]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:13:31,423]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 192.168.1.105:4004已断开链接。
+指令02 00 00 00 07 01 B0 01 00 00 00 00 00未发送。
+指令解析发送给192.168.1.105:4001,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:13:32,012]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:13:32,012]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4001,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:32,012]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:13:32,285]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:13:32,285]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:13:32,285]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 192.168.1.105:4004已断开链接。
+指令02 00 00 00 07 01 B0 01 00 00 00 00 00未发送。
+指令解析发送给192.168.1.105:4001,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:14:00,124]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 未定义的IP地址:192.168.1.105:4004，无法加入IP池
+[2016-12-29 15:15:07,654]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:15:07
+[2016-12-29 15:15:07,671]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:15:19,975]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:15:19
+[2016-12-29 15:15:19,994]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:15:39,837]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 15:15:41,328]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:15:41,699]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 15:15:41,889]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:15:42,041]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 15:15:46,720]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:15:46,721]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:15:46,723]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:15:47,009]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:15:47,009]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:15:47,009]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:15:49,058]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:15:49,058]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:15:49,058]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:15:49,306]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:15:49,306]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:15:49,306]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:17:39,025]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:17:39
+[2016-12-29 15:17:39,042]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:17:43,041]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:17:43,508]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:28:09,952]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:28:09
+[2016-12-29 15:28:09,970]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:28:11,597]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:28:12,065]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 15:28:36,550]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:28:36
+[2016-12-29 15:28:36,566]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:28:38,388]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:28:38,393]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 15:31:51,021]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:31:51
+[2016-12-29 15:31:51,037]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:31:52,437]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:31:52,447]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 15:31:52,450]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 15:31:52,452]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:31:55,836]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- WMS编号：255,灯ip192.168.1.105:4004已连接服务器
+[2016-12-29 15:31:57,538]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 00
+[2016-12-29 15:31:57,538]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:31:57,540]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为蓝色,的第1条设置指令
+[2016-12-29 15:31:57,675]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:31:57,676]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:31:57,676]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:32:05,913]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 FF
+[2016-12-29 15:32:05,913]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为紫色,的第1条设置指令
+[2016-12-29 15:32:05,913]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为紫色,的第1条设置指令
+[2016-12-29 15:32:06,005]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:32:06,005]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:32:06,005]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:32:12,520]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 FF
+[2016-12-29 15:32:12,520]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为紫色,的第1条设置指令
+[2016-12-29 15:32:12,520]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为紫色,的第1条设置指令
+[2016-12-29 15:32:12,612]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:32:12,612]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:32:12,612]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:32:18,931]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 02 D1 01 00 09 00 00 00
+[2016-12-29 15:32:18,931]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,数码管数字为9,颜色为灯灭,的第2条确认指令
+[2016-12-29 15:32:18,932]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,STU为1的第2条肯定回答指令
+[2016-12-29 15:32:18,932]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为灯灭,的第2条确认指令
+[2016-12-29 15:32:26,785]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】02 00 00 00 07 01 C0 01 00 09 FF 00 FF
+[2016-12-29 15:32:26,785]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,数码管数字为9,颜色为紫色,的第1条设置指令
+[2016-12-29 15:32:26,785]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4002,编号为7,数码管数字为9,颜色为紫色,的第1条设置指令
+[2016-12-29 15:32:26,974]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 07 01 B0 01 00 00 00 00 00
+[2016-12-29 15:32:26,974]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:32:26,974]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.105:4004,转发给:192.168.1.180:4002,编号为7,STU为1的第1条肯定回答指令
+[2016-12-29 15:51:18,289]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:51:18
+[2016-12-29 15:51:18,306]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:51:18,889]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:51:19,867]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:51:20,003]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 15:51:20,003]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 15:54:02,592]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 15:54:02
+[2016-12-29 15:54:02,611]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 15:54:02,618]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 15:54:02,664]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 15:54:02,667]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 15:54:02,674]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:06:12,330]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:06:12
+[2016-12-29 16:06:12,362]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:06:12,913]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:06:12,932]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:06:12,943]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:06:12,955]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:07:04,623]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:07:04
+[2016-12-29 16:07:04,653]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:07:06,265]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:07:06,266]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:07:06,301]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:07:06,316]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:07:59,922]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:07:59
+[2016-12-29 16:07:59,940]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:08:01,885]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:08:01,892]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:08:01,892]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:08:01,895]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:08:36,296]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:08:36
+[2016-12-29 16:08:36,314]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:08:38,141]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:08:38,142]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:08:38,151]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:08:38,152]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:08:58,050]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:08:58
+[2016-12-29 16:09:45,590]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:09:51,299]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:09:51
+[2016-12-29 16:09:51,335]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:09:52,221]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:09:52,226]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:09:52,230]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:09:52,231]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:09:56,335]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:09:56
+[2016-12-29 16:11:05,456]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:11:05
+[2016-12-29 16:11:05,472]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:11:07,083]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:11:07,105]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:11:07,108]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:11:07,115]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:11:15,481]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:11:15
+[2016-12-29 16:15:58,619]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:15:58
+[2016-12-29 16:15:58,637]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:15:59,010]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:16:00,060]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:16:00,066]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:16:00,074]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:16:08,637]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:16:08
+[2016-12-29 16:16:59,647]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:16:59
+[2016-12-29 16:16:59,712]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:17:01,498]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:17:01,525]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:17:01,531]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:17:01,533]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:17:09,743]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:17:09
+[2016-12-29 16:18:05,824]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:18:05
+[2016-12-29 16:18:05,841]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:18:08,033]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:18:08,929]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:18:09,479]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:18:10,176]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:18:15,841]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:18:15
+[2016-12-29 16:18:56,266]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:18:56
+[2016-12-29 16:18:56,283]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:18:57,324]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:18:57,326]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:18:57,334]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:18:57,340]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:19:06,284]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:19:06
+[2016-12-29 16:20:07,854]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:20:07
+[2016-12-29 16:20:07,879]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:20:08,625]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:20:08,629]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:20:08,632]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:20:08,635]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:20:17,888]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:20:17
+[2016-12-29 16:21:34,570]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:21:34
+[2016-12-29 16:21:34,635]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:21:36,451]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:21:36,464]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:21:36,470]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:21:36,473]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:21:44,639]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:21:44
+[2016-12-29 16:31:56,750]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:31:56
+[2016-12-29 16:31:56,769]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:31:58,618]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 16:31:58,622]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 16:31:58,626]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 16:31:58,629]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 16:32:11,771]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:32:11
+[2016-12-29 16:33:12,174]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:33:12
+[2016-12-29 16:33:12,194]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:33:33,244]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:33:33
+[2016-12-29 16:35:14,018]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:35:14
+[2016-12-29 16:35:14,034]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:35:29,036]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:35:29
+[2016-12-29 16:37:30,103]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 16:37:30
+[2016-12-29 16:37:30,121]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 16:37:45,134]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 16:37:45
+[2016-12-29 17:02:39,587]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:02:39
+[2016-12-29 17:02:39,679]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:02:54,692]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:02:54
+[2016-12-29 17:03:24,960]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:03:24
+[2016-12-29 17:03:24,977]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:03:29,137]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:03:31,083]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:03:31,086]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:03:31,088]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:03:39,986]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:03:39
+[2016-12-29 17:03:56,588]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:03:56
+[2016-12-29 17:03:56,610]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:03:58,533]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:03:58,537]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:03:58,546]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:03:58,548]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:04:11,611]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:04:11
+[2016-12-29 17:04:11,787]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-29 17:04:33,547]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:04:33
+[2016-12-29 17:04:33,572]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:04:43,738]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:04:43
+[2016-12-29 17:04:43,756]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:04:46,086]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:04:47,451]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:04:49,091]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:04:49,093]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:05:10,665]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:05:10
+[2016-12-29 17:05:30,544]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:05:30
+[2016-12-29 17:05:30,563]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:05:50,452]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:05:50
+[2016-12-29 17:05:50,469]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:06:39,285]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:06:39
+[2016-12-29 17:06:54,609]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:06:54
+[2016-12-29 17:06:54,631]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:07:02,070]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:07:02,071]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:07:02,080]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:07:02,081]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:07:16,677]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:07:16
+[2016-12-29 17:08:06,074]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:08:06
+[2016-12-29 17:08:06,092]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:08:07,226]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:08:07,227]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:08:07,230]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:08:07,240]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:08:26,093]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:08:26
+[2016-12-29 17:08:43,849]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:08:43
+[2016-12-29 17:08:43,869]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:08:45,784]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:08:45,807]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:08:45,816]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:08:45,822]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:09:03,876]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:09:03
+[2016-12-29 17:09:03,933]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-29 17:10:39,719]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:10:39
+[2016-12-29 17:10:39,736]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:10:41,485]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:10:41,488]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:10:43,804]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:10:44,609]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:10:59,739]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:10:59
+[2016-12-29 17:12:21,217]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:12:21
+[2016-12-29 17:12:21,235]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:12:22,180]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:12:22,181]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:12:22,185]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:12:22,194]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:12:43,422]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:12:43
+[2016-12-29 17:12:43,488]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:12:44,233]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:12:45,210]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:12:45,226]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:12:45,227]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:13:03,490]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:13:03
+[2016-12-29 17:13:03,554]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 正在中止线程。
+[2016-12-29 17:13:34,144]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:13:34
+[2016-12-29 17:13:34,161]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:13:35,639]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:13:35,642]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:13:35,645]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:13:35,652]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:13:54,163]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:13:54
+[2016-12-29 17:15:12,259]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:15:12
+[2016-12-29 17:15:12,276]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:15:13,865]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:15:13,874]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:15:13,881]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:15:13,882]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:15:32,284]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:15:32
+[2016-12-29 17:16:19,201]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:16:19
+[2016-12-29 17:16:19,217]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:16:20,327]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:16:20,349]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:16:20,358]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:16:20,364]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:16:39,219]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:16:39
+[2016-12-29 17:17:05,276]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2016/12/29 17:17:05
+[2016-12-29 17:17:05,292]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.105:8001成功
+[2016-12-29 17:17:07,242]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：3,灯ip192.168.1.180:4003已连接服务器
+[2016-12-29 17:17:07,247]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：2,灯ip192.168.1.180:4002已连接服务器
+[2016-12-29 17:17:07,251]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：4,灯ip192.168.1.180:4004已连接服务器
+[2016-12-29 17:17:07,261]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 灯编号：1,灯ip192.168.1.180:4001已连接服务器
+[2016-12-29 17:17:25,294]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStop] -- 【关闭服务】2016/12/29 17:17:25
