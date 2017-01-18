@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="WindowsServiceTest.exe" version="1.0.0.24" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="WindowsServiceTest.exe" version="1.0.0.48" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="WindowsServiceTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -49,7 +49,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tNpk9B+8eRrp7hK438pTxnGXnpUCiOnF9ndJxbi3qeY=</dsig:DigestValue>
+        <dsig:DigestValue>f1hHTkSb3VQYMxVgIqs5N1wRV3+RR7XgI01ivSL9C/o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JW.UHF.dll" size="76288">
+      <assemblyIdentity name="JW.UHF" version="3.0.0.11" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>85j9MdbuEORomdw2kRgAHk+pGAt34g2YlXHAeTlrBnY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,36 +90,114 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadMessage.dll" size="6656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadMessage.dll" size="7680">
       <assemblyIdentity name="ReadMessage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uDRHNbS62GFGgo6Kxtql1EhspA6eDKYurFOD+5U9hq0=</dsig:DigestValue>
+        <dsig:DigestValue>0TzQhcaWsVYOtb6hn81/wu8acLjQD9P5yDmVRQolUko=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceTest.exe" size="13824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestSharp.dll" size="156672">
+      <assemblyIdentity name="RestSharp" version="104.4.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xIEXjLHCd7DayfD85gmLWu5UdNYLdPZiP4wDZxXYofE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScmWcfService.dll" size="46080">
+      <assemblyIdentity name="ScmWcfService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nWmt3VaZh5h3nJFTNK6Y5c2B0d5hEAvNz/zHMKvvTrg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceTest.exe" size="14336">
       <assemblyIdentity name="WindowsServiceTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yfOkNvnv1GL2NJDGTe8KLdzjBpd8quRxococ/5v/JoY=</dsig:DigestValue>
+        <dsig:DigestValue>J9lYrJjzDWQ08MMMrzAb8gg0Mqk85JUogxAgE8DBSpE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="WindowsServiceTest.exe.config" size="1296">
+  <file name="Ini\api.ini" size="584">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>wt0xS2K+qHUwFnpLaX0aD6VjROg/9A4SGTb0vLL8VCs=</dsig:DigestValue>
+      <dsig:DigestValue>M5XG9pH7wVzszR3yLu0gFWJKrRHCz6zRp/J2QRK5dYk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Ini\base.ini" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+X+77Ghmc/q2ZAeJFqw2Z3tnC3Cwoh7tneGhAuqHLaM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Ini\door.ini" size="119">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dRnSMzpXzH0lBrGwsNPdap+qwV+ldR5UDOTK3BpvADw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Ini\rfid.ini" size="417">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nO0xBz3q9QRwOFmna/IDz3+1GuS0CdeEBW+FhiIp+Rk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Ini\rfid.ini.txt" size="984">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6VK7Wq8qIiKLrDEasSXerDTdMeThvP5gbz5Az1YkOOc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Ini\server.ini" size="117">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wfmYE/Yey+d4EBnaK0vwG9f3jmRKSELIxVwJ0mvbI/w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="WindowsServiceTest.exe.config" size="1169">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E+/BEz8y1z1OkrXuzHgCxHS/FH65dN4H4uQ72KukFvc=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -140,11 +140,11 @@ namespace ReadMessage
 
                 switch (MessageBytes[6])
                 {
-                    case (byte)176:
-                        {
-                            mean += "编号为" + LampId + ",STU为" + STU + "的第" + SN + "条肯定回答指令";
-                            break;
-                        }
+                    //case (byte)176:
+                    //    {
+                    //        mean += "编号为" + LampId + ",STU为" + STU + "的第" + SN + "条肯定回答指令";
+                    //        break;
+                    //    }
                     case (byte)192:
                         {
                             mean += "编号为" + LampId + ",数码管数字为" + Num + ",颜色为" + Color + ",的第" + SN + "条设置指令";

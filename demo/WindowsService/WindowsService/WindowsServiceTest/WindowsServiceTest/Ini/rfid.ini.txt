@@ -1,0 +1,18 @@
+﻿[RFID]
+ReaderType = 1 //读写器类型，0是朝为，1是纬锦
+RFIDCOM = COM2 // COM 口
+RFIDBaudRate = 9600 // 波特率，朝为9600，纬锦115200
+RFIDInterVal = 200 // 读写频率，仅朝为使用
+AntennaPort = 0,1,2,3 // 天线端口号，多个逗号分开，仅纬锦使用
+AntennaPower = 30 // 天线功率，仅纬锦使用
+InventoryTime = 0 // 读取时间，0代表持续读，单位为毫秒，仅纬锦使用
+RegionListType = 1 // 工作频段，1是中国，仅纬锦使用
+SpeedModeType = 0 // 读取速率,0是最快，仅纬锦使用
+SearchModeType = 1 // 读取模式，与SessionTarget,Session对应，三个建议使用两种模式1,0,1和0,0,0，仅纬锦使用
+SessionTargetType = 0 //目标标签状态, 仅纬锦使用
+SessionType = 1 //会话形式，仅纬锦使用
+MessageRegex = [A-Z0-9]{24}
+LabelRegex  =^(A\w{3})|^(B[0-9]{3})|^([C-F][0-9]{7})
+OrderCarLabelRegex = ^A\w{3}$
+OrderBoxLabelRegex = ^(B[0-9]{3})|^([C-F][0-9]{7})
+OutAutoLoadPick = true

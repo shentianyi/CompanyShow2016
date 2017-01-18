@@ -1,0 +1,13 @@
+[2017-01-10 13:55:36,377]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/10 13:55:36
+[2017-01-10 13:55:36,418]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2017-01-10 13:56:10,310]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.180:3182，编号255
+[2017-01-10 13:58:46,254]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.180:3188，编号255
+[2017-01-10 14:01:28,812]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/10 14:01:28
+[2017-01-10 14:01:28,845]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2017-01-10 14:01:43,164]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.180:3206，编号255已连接服务器
+[2017-01-10 14:02:36,401]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/10 14:02:36
+[2017-01-10 14:02:36,437]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.184:8001成功
+[2017-01-10 14:03:16,744]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：1,灯ip192.168.1.180:4001已连接服务器
+[2017-01-10 14:03:34,691]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 04 01 C0 01 00 08 FF 00 00
+[2017-01-10 14:03:34,691]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.180:4001,编号为4,数码管数字为8,颜色为蓝色,的第1条设置指令
+[2017-01-10 14:03:34,725]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为4,数码管数字为8,颜色为蓝色,的第1条设置指令

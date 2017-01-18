@@ -9,10 +9,7 @@
       <Value Profile="(Default)">255</Value>
     </Setting>
     <Setting Name="ServerIp" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.1.233</Value>
-    </Setting>
-    <Setting Name="WMSIp" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.1.233</Value>
+      <Value Profile="(Default)">192.168.1.184</Value>
     </Setting>
   </Settings>
 </SettingsFile>

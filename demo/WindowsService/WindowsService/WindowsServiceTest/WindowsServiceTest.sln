@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadMessage", "ReadMessage\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brilliantech.Framwork", "Brilliantech.Framwork\Brilliantech.Framwork.csproj", "{9B5F850A-5136-4095-8955-6C4F7747C48A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScmWcfService", "ScmWcfService\ScmWcfService.csproj", "{C93C0D82-867E-441C-9F9D-E39285F97D4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9B5F850A-5136-4095-8955-6C4F7747C48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5F850A-5136-4095-8955-6C4F7747C48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5F850A-5136-4095-8955-6C4F7747C48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93C0D82-867E-441C-9F9D-E39285F97D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93C0D82-867E-441C-9F9D-E39285F97D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93C0D82-867E-441C-9F9D-E39285F97D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93C0D82-867E-441C-9F9D-E39285F97D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,94 @@
+[2017-01-13 16:06:08,893]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/13 16:06:08
+[2017-01-13 16:06:08,986]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.252:8001成功
+[2017-01-13 16:06:09,469]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:06:09,476]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:06:09,665]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:06:10,331]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:07:06,632]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.111:3486，编号255已连接服务器
+[2017-01-13 16:07:06,645]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 C8 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:07:06,646]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.111:3486,编号为200,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:07:06,648]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.181:4001,编号为200,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:07:06,808]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 C8 01 B0 01 00 00 00 00 00
+[2017-01-13 16:07:06,808]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.181:4001,编号为200,STU为1的第1条肯定回答指令
+[2017-01-13 16:07:06,809]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.111:3486,编号为200,STU为1的第1条肯定回答指令
+[2017-01-13 16:07:06,929]  7 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 您的主机中的软件中止了一个已建立的连接。
+[2017-01-13 16:11:30,977]  13 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:11:30,977]  14 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:11:30,977]  16 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:11:32,927]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:11:32,958]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:11:32,973]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:11:35,969]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:11:45,266]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.189:49286，编号255已连接服务器
+[2017-01-13 16:11:45,282]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 B2 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:11:45,282]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.189:49286,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:11:45,297]  20 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:12:10,039]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:12:27,040]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.189:49289，编号255已连接服务器
+[2017-01-13 16:12:27,040]  22 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 D4 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:12:42,890]  22 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.189:49289,编号为212,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:13:29,430]  22 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:16:05,886]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/13 16:16:05
+[2017-01-13 16:16:05,922]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.252:8001成功
+[2017-01-13 16:16:06,781]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:16:06,789]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:16:06,790]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:16:07,809]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:16:27,101]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.189:49292，编号255已连接服务器
+[2017-01-13 16:16:27,113]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 B2 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:16:31,227]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.189:49292,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:16:31,230]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.181:4001,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:16:31,241]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 B2 01 B0 01 00 00 00 00 00
+[2017-01-13 16:16:32,814]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.181:4001,编号为178,STU为1的第1条肯定回答指令
+[2017-01-13 16:16:32,814]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.189:49292,编号为178,STU为1的第1条肯定回答指令
+[2017-01-13 16:16:32,923]  6 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 您的主机中的软件中止了一个已建立的连接。
+[2017-01-13 16:16:58,991]  12 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:16:59,724]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:16:59,771]  14 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:16:59,771]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:17:00,738]  13 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:17:01,721]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:17:01,721]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:17:08,756]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:17:25,621]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.189:49295，编号255已连接服务器
+[2017-01-13 16:17:25,636]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 8B 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:17:25,636]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.189:49295,编号为139,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:17:25,636]  20 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 192.168.1.181:4001已断开
+[2017-01-13 16:19:11,986]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/1/13 16:19:11
+[2017-01-13 16:19:12,013]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.252:8001成功
+[2017-01-13 16:19:12,673]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:19:12,705]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:19:12,740]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:19:12,757]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:20:14,024]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:20:14,024]  13 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:20:14,024]  14 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:20:23,396]  12 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:20:31,029]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:20:37,973]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:20:38,005]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:20:38,231]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:20:42,615]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.189:49298，编号255已连接服务器
+[2017-01-13 16:20:42,631]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 B2 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:20:42,631]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.189:49298,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:20:42,631]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.181:4001,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:20:42,787]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 B2 01 B0 01 00 00 00 00 00
+[2017-01-13 16:20:42,787]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.181:4001,编号为178,STU为1的第1条肯定回答指令
+[2017-01-13 16:20:42,787]  17 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.189:49298,编号为178,STU为1的第1条肯定回答指令
+[2017-01-13 16:20:42,833]  14 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 您的主机中的软件中止了一个已建立的连接。
+[2017-01-13 16:21:07,965]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:21:08,979]  6 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:21:09,010]  16 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:21:09,010]  17 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-01-13 16:21:09,946]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：7,灯ip192.168.1.181:4003已连接服务器
+[2017-01-13 16:21:09,962]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：8,灯ip192.168.1.181:4004已连接服务器
+[2017-01-13 16:21:09,977]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：5,灯ip192.168.1.181:4001已连接服务器
+[2017-01-13 16:21:15,968]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：6,灯ip192.168.1.181:4002已连接服务器
+[2017-01-13 16:21:22,426]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.189:49301，编号255已连接服务器
+[2017-01-13 16:21:22,442]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】05 00 00 01 B2 01 C0 01 00 00 FF FF 00
+[2017-01-13 16:21:22,442]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.189:49301,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:21:22,442]  20 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToClient] -- 【发送解析】发送给192.168.1.181:4001,编号为178,数码管数字为0,颜色为青色,的第1条设置指令
+[2017-01-13 16:21:22,660]  18 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 00 B2 01 B0 01 00 00 00 00 00
+[2017-01-13 16:21:22,660]  18 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.181:4001,编号为178,STU为1的第1条肯定回答指令
+[2017-01-13 16:21:22,660]  18 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [sendMsgToWMS] -- 【发送解析】发送给192.168.1.189:49301,编号为178,STU为1的第1条肯定回答指令
+[2017-01-13 16:21:22,769]  20 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。

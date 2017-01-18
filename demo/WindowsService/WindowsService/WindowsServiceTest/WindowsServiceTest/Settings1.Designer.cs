@@ -49,25 +49,13 @@ namespace WindowsServiceTest {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.1.233")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.1.184")]
         public string ServerIp {
             get {
                 return ((string)(this["ServerIp"]));
             }
             set {
                 this["ServerIp"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.1.233")]
-        public string WMSIp {
-            get {
-                return ((string)(this["WMSIp"]));
-            }
-            set {
-                this["WMSIp"] = value;
             }
         }
     }

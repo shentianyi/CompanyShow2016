@@ -7,6 +7,7 @@ using Brilliantech.Framwork.Utils.ConvertUtil;
 using System.Net.Sockets;
 using System.Net;
 using System.Threading;
+using ScmWcfService;
 
 namespace WindowsServiceTest
 {
@@ -25,7 +26,7 @@ namespace WindowsServiceTest
         Dictionary<string, Socket> clients = new Dictionary<string, Socket>();
         Dictionary<string, Thread> clientThreads = new Dictionary<string, Thread>();
         private string PTLIp = string.Empty;
-        private string WMSIp = Settings1.Default.WMSIp;
+        private string WMSIp = string.Empty;
         private string PTLKey = string.Empty;
         private string WMSKey = Settings1.Default.WMSKey;
         //private bool IsReceived = false;
@@ -55,15 +56,15 @@ namespace WindowsServiceTest
                 ClientRecieveThread = new Thread(ListenConnnect);
                 ClientRecieveThread.IsBackground = true;
                 ClientRecieveThread.Start();
-                //CheckConnectedThread = new Thread(CheckConnected);
-                //CheckConnectedThread.IsBackground = true;
-                //CheckConnectedThread.Start();
+                ////CheckConnectedThread = new Thread(CheckConnected);
+                ////CheckConnectedThread.IsBackground = true;
+                ////CheckConnectedThread.Start();
 
 
             }
             catch (Exception ee)
             {
-                LogUtil.Logger.Info(ee.Message);
+                LogUtil.Logger.Error(ee.Message);
             }
         }
 
@@ -172,8 +173,8 @@ namespace WindowsServiceTest
             //{
             //    tcpServer.Close();
             //}
-            
-    }
+
+        }
 
 
 
@@ -185,33 +186,33 @@ namespace WindowsServiceTest
         {
             while (runflag)
             {
-                
+
                 Socket client = tcpServer.Accept();
                 try
                 {
-                    string[] justIp = client.RemoteEndPoint.ToString().Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
-                    string realWMSIp = justIp[0];
-                    WMSIp = Settings1.Default.WMSIp;
+                    //string[] justIp = client.RemoteEndPoint.ToString().Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
+                    //string realWMSIp = justIp[0];
+                    //WMSIp = Settings1.Default.WMSIp;
 
-                    if (realWMSIp.Equals(WMSIp))
-                {
-                        string key = WMSKey;
-                        WMSIp = client.RemoteEndPoint.ToString();
-                        if (clients.ContainsKey(key) == false)
-                        {
-                            clients.Add(key, client);
-                        }
-                        LogUtil.Logger.Info("WMS编号：" + key + ",灯ip" + client.RemoteEndPoint.ToString() + "已连接服务器");
-                        Thread clientThread = new Thread(ListenClientMsg);
-                        clientThread.IsBackground = true;
-                        clientThread.Start(client);
-                        if (clientThreads.ContainsKey(key)==false)
-                        {
-                            clientThreads.Add(key, clientThread);
-                        }
-                    }
-                else
-                {
+                    //    if (realWMSIp.Equals(WMSIp))
+                    //{
+                    //        string key = WMSKey;
+                    //        WMSIp = client.RemoteEndPoint.ToString();
+                    //        if (clients.ContainsKey(key) == false)
+                    //        {
+                    //            clients.Add(key, client);
+                    //        }
+                    //        LogUtil.Logger.Info("WMS编号：" + key + ",灯ip" + client.RemoteEndPoint.ToString() + "已连接服务器");
+                    //        Thread clientThread = new Thread(ListenClientMsg);
+                    //        clientThread.IsBackground = true;
+                    //        clientThread.Start(client);
+                    //        if (clientThreads.ContainsKey(key)==false)
+                    //        {
+                    //            clientThreads.Add(key, clientThread);
+                    //        }
+                    //    }
+                    //else
+                    //{
 
 
 
@@ -219,36 +220,52 @@ namespace WindowsServiceTest
 
 
 
-                    if (string.IsNullOrEmpty(key))
+                    if (string.IsNullOrEmpty(key) || key.Equals(WMSKey))
                     {
-                        LogUtil.Logger.Info("未定义的IP地址:" + client.RemoteEndPoint.ToString() + "，无法加入IP池");
+                        key = Settings1.Default.WMSKey;
+                        LogUtil.Logger.Info("客户端IP地址:" + client.RemoteEndPoint.ToString() + "，编号" + key + "已连接服务器");
+                        if (clients.ContainsKey(key))
+                        {
+                            RemoveClient(clients[key].RemoteEndPoint.ToString());
+                            clients.Add(key, client);
+
+                        }
 
 
                     }
+
                     else
                     {
-                            if (clients.ContainsKey(key) == false)
-                            {
-                                clients.Add(key, client);
-                            }
-                            LogUtil.Logger.Info("灯编号：" + key + ",灯ip" + client.RemoteEndPoint.ToString() + "已连接服务器");
-                            Thread clientThread = new Thread(ListenClientMsg);
-                            clientThread.IsBackground = true;
-                            clientThread.Start(client);
-                            if (clientThreads.ContainsKey(key)==false)
-                            {
-                                clientThreads.Add(key, clientThread);
-                            }
-                        
+                        if (clients.ContainsKey(key))
+                        {
+                            RemoveClient(clients[key].RemoteEndPoint.ToString());
+                            clients.Add(key, client);
+
+                        }
+                        LogUtil.Logger.Info("CAN总线编号：" + key + ",灯ip" + client.RemoteEndPoint.ToString() + "已连接服务器");
                     }
-                }
+                    if (clients.ContainsKey(key) == false)
+                    {
+                        clients.Add(key, client);
+                    }
+
+                    Thread clientThread = new Thread(ListenClientMsg);
+                    clientThread.IsBackground = true;
+                    clientThread.Start(client);
+                    if (clientThreads.ContainsKey(key) == false)
+                    {
+                        clientThreads.Add(key, clientThread);
+                    }
 
 
                 }
+
+
+                //}
                 catch (Exception ee)
                 {
                     LogUtil.Logger.Info(ee.Message);
-                    RemoveClient(client.RemoteEndPoint.ToString());
+                    break;
                 }
 
             }
@@ -261,151 +278,216 @@ namespace WindowsServiceTest
 
         private void ListenClientMsg(object cliento)
         {
-            Socket client = cliento as Socket;
-            try
+            object new_cliento = new object();
+            new_cliento = cliento;
+            Socket client = new_cliento as Socket;
+            while (true)
             {
-                while (runflag)
-            {
-                //IsReceived = false;
-
-                byte[] result = new byte[13];
-                int dataLength = client.Receive(result);
-
-                //if (IsSent && (dataLength > 0) && (result[6] != 0))
-                //{
-                //    IsReceived = true;
-                //}
-                //if (IsResp && (result[6] == 254))
-                //{
-                //    IsReceResp = true;
-                //}
-
-                if (dataLength > 0 && result[6] != 0)
+                try
                 {
 
-                    byte[] MessageBytes = result.Take(dataLength).ToArray();
-                    //接收数据解析
-                    string ClientIp = client.RemoteEndPoint.ToString();
-                    string keys = GetKeyByValue(ClientIp);
-                    string Receivemeans = "来自:" + ClientIp + "," + ReadMessage.Parser.readMessage(MessageBytes);
+                    //IsReceived = false;
 
-                    LogUtil.Logger.Info("【接收数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
-                    LogUtil.Logger.Info("【接收解析】" + Receivemeans);
+                    byte[] result = new byte[13];
+                    int dataLength = client.Receive(result);
 
+                    //if (IsSent && (dataLength > 0) && (result[6] != 0))
+                    //{
+                    //    IsReceived = true;
+                    //}
+                    //if (IsResp && (result[6] == 254))
+                    //{
+                    //    IsReceResp = true;
+                    //}
 
-
-                    ///数据转发
-                    if (MessageBytes[0] != 136)
+                    if (dataLength > 0 && result[6] != 0)
                     {
-                        if (MessageBytes[6] != 176)
+
+                        byte[] MessageBytes = result.Take(dataLength).ToArray();
+                        //接收数据解析
+                        string ClientIp = client.RemoteEndPoint.ToString();
+                        string keys = GetKeyByValue(ClientIp);
+                        string Receivemeans = "来自:" + ClientIp + "," + ReadMessage.Parser.readMessage(MessageBytes);
+                        LogUtil.Logger.Info("【接收数据】" + ScaleConvertor.HexBytesToString(MessageBytes));
+                        if (string.IsNullOrEmpty(ReadMessage.Parser.readMessage(MessageBytes)) == false)
                         {
-                            byte[] ResponeBytes = Transmit(MessageBytes);//指令内容
-                            WMSIp = client.RemoteEndPoint.ToString();
-
-                            PTLKey = MessageBytes[0].ToString();//目标灯Ip
-                            sendMsgToClient(PTLKey, ResponeBytes);
-
-                            //while (IsReceived == false && IsReSent == true)
-                            //{
-                            //    sendMsgToClient(PTLKey, ResponeBytes);
-
-                            //}
-                            //IsReSent = false;
+                           
+                            LogUtil.Logger.Info("【接收解析】" + Receivemeans);
                         }
 
-                    }
-                    else
-                    {
 
-                        switch (result[6])
+                        ///数据转发
+                        if (MessageBytes[0] != 136)
                         {
-                            case (byte)176:
-                                {
-                                    if (string.IsNullOrEmpty(PTLKey))
+                            if (MessageBytes[6] != 176)
+                            {
+                                byte[] ResponeBytes = Transmit(MessageBytes);//指令内容
+                                WMSIp = client.RemoteEndPoint.ToString();
+
+                                PTLKey = MessageBytes[0].ToString();//目标灯Ip
+                                sendMsgToClient(PTLKey, ResponeBytes);
+
+                                //while (IsReceived == false && IsReSent == true)
+                                //{
+                                //    sendMsgToClient(PTLKey, ResponeBytes);
+
+                                //}
+                                //IsReSent = false;
+                            }
+
+                        }
+                        else
+                        {
+
+                            switch (result[6])
+                            {
+                                case (byte)176:
                                     {
+                                        if (string.IsNullOrEmpty(PTLKey))
+                                        {
+                                            break;
+                                        }
+                                        MessageBytes[0] = Convert.ToByte(PTLKey);
+                                        sendMsgToWMS(WMSKey, MessageBytes);
+                                        PTLKey = string.Empty;
                                         break;
                                     }
-                                    MessageBytes[0] = Convert.ToByte(PTLKey);
-                                    sendMsgToWMS(WMSKey, MessageBytes);
-                                    PTLKey = string.Empty;
-                                    break;
-                                }
-                            ///缺货报警
-                            case (byte)209:
-                                {
-                                    byte[] ResponeBytes = Responese(true, MessageBytes);
-                                    sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
-                                    MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
-                                   
-                                        sendMsgToWMS(WMSKey, MessageBytes);
-                                    
-                                    //while (IsReceResp == false && IsReResp == true)
-                                    //{
-                                    //    sendMsgToWMS(WMSKey, MessageBytes);
-                                    //}
+                                ///缺货报警
+                                case (byte)209:
+                                    {
+                                        byte[] ResponeBytes = Responese(true, MessageBytes);
+                                        sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
+                                        MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
+
+                                        //sendMsgToWMS(WMSKey, MessageBytes);
+                                        if (((MessageBytes[8] << 8 | MessageBytes[9]) != 0)&&MessageBytes[7]==0 )
+                                        {
+                                            
+                                            OrderService os = new OrderService();
+                                            var q = os.CreateOrderByLed(client.RemoteEndPoint.ToString(), MessageBytes[4].ToString(), (MessageBytes[8] << 8 | MessageBytes[9]));
+                                            if (q.Success)
+                                            {
+                                                string order = "创建要货单成功，订单编号:" + q.data.id + "\n";
+                                                LogUtil.Logger.Info(order);
+                                                byte[] OrderresponseMessage = OrderResponese(MessageBytes);
+                                                sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+
+                                            }
+                                            else
+                                            {
+
+                                                string order = "创建要货单失败\n";
+                                                LogUtil.Logger.Info(order);
+                                                //LogUtil.Logger.Error(q.Message.ToString());
+                                                byte[] OrderresponseMessage = OrderResponese(MessageBytes);
+                                                sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+                                                //byte[] OrderresponseMessage = DeleteOrderResponese(MessageBytes);
+                                                //sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+
+                                            }
+                                        }
+                                        else if (((MessageBytes[8] << 8 | MessageBytes[9]) != 0) && MessageBytes[7] != 0)
+                                        {
+
+                                            byte[] OrderresponseMessage = OrderResponese(MessageBytes);
+                                            sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+
+                                        }
+                                        else
+                                        {
+                                            byte[] OrderresponseMessage = DeleteOrderResponese(MessageBytes);
+                                            sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+                                        }
 
 
-                                    break;
-                                }
-                            case (byte)210:
-                                {
-                                    byte[] ResponeBytes = Responese(true, MessageBytes);
-                                    sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
-                                    MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
-                                    sendMsgToWMS(WMSKey, MessageBytes);
-                                    //while (IsReceResp == false && IsReResp == true)
-                                    //{
-                                    //    sendMsgToWMS(WMSKey, MessageBytes);
-                                    //}
-                                    break;
-                                }
-                            default: break;
+                                        //while (IsReceResp == false && IsReResp == true)
+                                        //{
+                                        //    sendMsgToWMS(WMSKey, MessageBytes);
+                                        //}
 
+
+                                        break;
+                                    }
+                                case (byte)210:
+                                    {
+                                        byte[] ResponeBytes = Responese(true, MessageBytes);
+                                        sendMsgToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes);
+                                        MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
+                                        //OrderService os = new OrderService();
+                                        //var q = os.CreateOrderByLed(client.RemoteEndPoint.ToString(), MessageBytes[4].ToString(), (MessageBytes[8] << 8 | MessageBytes[9]));
+                                        //if (q.Success == true)
+                                        //{
+                                        //    string order = "取消要货单成功，订单编号:" + q.data.id + "\n";
+                                        //    LogUtil.Logger.Info(order);
+                                        //    byte[] OrderresponseMessage = DeleteOrderResponese(MessageBytes);
+                                        //    sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+
+                                        //}
+                                        //else
+                                        //{
+                                            string order = "取消要货单失败\n";
+                                            LogUtil.Logger.Info(order);
+                                            byte[] OrderresponseMessage = DeleteOrderResponese(MessageBytes);
+                                            sendMsgToClient(MessageBytes[0].ToString(), OrderresponseMessage);
+                                        //}
+                                        ////sendMsgToWMS(WMSKey, MessageBytes);
+                                        ////while (IsReceResp == false && IsReResp == true)
+                                        ////{
+                                        ////    sendMsgToWMS(WMSKey, MessageBytes);
+                                        ////}
+                                        break;
+                                    }
+                                default: break;
+
+                            }
                         }
+
+
                     }
+                    //else
+                    //{
+                    //    if (IsReSent)
+                    //    {
 
+                    //    }
+                    //}
+                    //IsSent = false;
+                    //IsReSent = false;
+                    //IsReceived = false;
+                    //ReSentCount = 0;
+                    //IsReResp = false;
+                    //IsResp = false;
+                    //IsReceResp = false;
+                    //RespCount = 0;
 
                 }
-                //else
-                //{
-                //    if (IsReSent)
-                //    {
-
-                //    }
-                //}
-                //IsSent = false;
-                //IsReSent = false;
-                //IsReceived = false;
-                //ReSentCount = 0;
-                //IsReResp = false;
-                //IsResp = false;
-                //IsReceResp = false;
-                //RespCount = 0;
-            }
-            }
-            catch (SocketException)
-            {
-                if (runflag)
+                catch (SocketException ee)
                 {
-                    RemoveClient(client.RemoteEndPoint.ToString());
-                    LogUtil.Logger.Info(client.RemoteEndPoint.ToString() + "已断开连接");
-                }
-              
-                
-            }
-           
-            catch(System.ObjectDisposedException)
-            {
-                LogUtil.Logger.Info( "已释放连接");
-            }
-            catch (Exception ee)
-            {
-                LogUtil.Logger.Info(ee.Message);
-                if (runflag)
-                {
-                    RemoveClient(client.RemoteEndPoint.ToString());
+
+                    //RemoveClient(client.RemoteEndPoint.ToString());
+                    LogUtil.Logger.Error(ee.Message);
+                    break;
+
+
                 }
 
+                catch (System.ObjectDisposedException)
+                {
+                    //LogUtil.Logger.Info("已释放连接");
+                    break;
+                }
+                catch (Exception ee)
+                {
+                    LogUtil.Logger.Info(ee.Message);
+                    break;
+                    //    //if (runflag)
+                    //    //{
+                    //    //    //RemoveClient(client.RemoteEndPoint.ToString());
+
+                    //    //}
+
+
+                }
             }
         }
 
@@ -488,14 +570,24 @@ namespace WindowsServiceTest
             //}
             //else
             //{
-                if (!clients.Keys.Contains(clientIP))
-                {
-                    LogUtil.Logger.Info("目标地址"+clientIP+"未连接");
-                    return;
-                }
+            if (!clients.Keys.Contains(clientIP))
+            {
+                LogUtil.Logger.Info("目标地址" + ReadMessage.Parser.GetIpByValue(clientIP) + "未连接");
+                return;
+            }
+            if (clients[clientIP].Connected)
+            {
                 clients[clientIP].Send(msg, msg.Length, SocketFlags.None);
                 string SendMeans = "发送给" + ReadMessage.Parser.GetIpByValue(clientIP) + "," + ReadMessage.Parser.readMessage(msg);
-                LogUtil.Logger.Info("【发送解析】" + SendMeans);
+                if (string.IsNullOrEmpty(ReadMessage.Parser.readMessage(msg)) == false)
+                {
+                    LogUtil.Logger.Info("【发送解析】" + SendMeans);
+                }
+            }
+            else
+            {
+                LogUtil.Logger.Error(clients[clientIP].RemoteEndPoint.ToString() + "已断开");
+            }
             //    IsSent = true;
             //    SetTimer();
 
@@ -539,8 +631,10 @@ namespace WindowsServiceTest
                 if (clients[IPKey].Connected)
                 {
                     clients[IPKey].Send(msg, msg.Length, SocketFlags.None);
-
-                    LogUtil.Logger.Info("【发送解析】" + SendMeans);
+                    if (string.IsNullOrEmpty(ReadMessage.Parser.readMessage(msg)) == false)
+                    {
+                        LogUtil.Logger.Info("【发送解析】" + SendMeans);
+                    }
                     //    IsResp = true;
                     //    SetReTimer();
 
@@ -560,19 +654,19 @@ namespace WindowsServiceTest
             {
                 LogUtil.Logger.Info("【错误解析】" + "WMS未连接");
             }
-            
+
             //}
 
-        
+
         }
 
         /// <summary>
         /// 移除Client
         /// </summary>
         /// <param name="client"></param>
-        private void RemoveClient(string clientIp)
+        private void RemoveClient(string IPKey)
         {
-            string key = GetKeyByValue(clientIp);
+            string key = GetKeyByValue(IPKey);
             if (this.clients.Keys.Contains(key))
             {
                 if (this.clients[key].Connected)
@@ -586,12 +680,11 @@ namespace WindowsServiceTest
 
             if (this.clientThreads.Keys.Contains(key))
             {
-                if (this.clientThreads[key].IsAlive)
-                {
-                    Thread thisThread = this.clientThreads[key];
-                    this.clientThreads.Remove(key);
-                    //thisThread.Abort();
-                }
+
+                Thread thisThread = this.clientThreads[key];
+                this.clientThreads.Remove(key);
+                //thisThread.Abort();
+
 
             }
         }
@@ -607,20 +700,21 @@ namespace WindowsServiceTest
         /// <returns></returns>
         private string GetKeyByValue(string value)
         {
-            if (value.Equals(WMSIp))
+            if (string.IsNullOrWhiteSpace(ReadMessage.Parser.GetValueByIp(value)))
             {
-                return WMSKey;
+                return Settings1.Default.WMSKey;
             }
             else
             {
                 return ReadMessage.Parser.GetValueByIp(value);
             }
+
         }
 
 
 
-       
-      
+
+
 
         /// <summary>
         /// 主动汇报或取消时 发送回复
@@ -664,7 +758,7 @@ namespace WindowsServiceTest
         /// </summary>
         /// <param name="msg"></param>
         /// <returns></returns>
-        public byte[] TransmitToErrorMsg(string Ipkey,byte[] msg,int ErrorNr)
+        public byte[] TransmitToErrorMsg(string Ipkey, byte[] msg, int ErrorNr)
         {
             if (msg.Count() == 13)
             {
@@ -722,9 +816,62 @@ namespace WindowsServiceTest
             }
         }
 
+        public byte[] OrderResponese(byte[] msg)
+        {
+            if (msg.Count() == 13)
+            {
+                string mean = string.Empty;
+
+                int LampId = msg[4];
 
 
-     
+                string back = string.Format("88{0}{1}C001{2}{3}0000FF",
+                   ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),                                  
+                   ScaleConvertor.DecimalToHexString(msg[5], true, 2),
+                    ScaleConvertor.DecimalToHexString(msg[8], true, 2),
+                   ScaleConvertor.DecimalToHexString(msg[9], true, 2)
+                  );
+
+                byte[] bback = ScaleConvertor.HexStringToHexByte(back);
+
+                return bback;
+            }
+
+
+            else
+            {
+                return null;
+            }
+        }
+
+
+        public byte[] DeleteOrderResponese(byte[] msg)
+        {
+            if (msg.Count() == 13)
+            {
+                string mean = string.Empty;
+
+                int LampId = msg[4];
+
+
+                string back = string.Format("88{0}{1}C0000000000000",
+                   ScaleConvertor.DecimalToHexString(LampId + 256, true, 8),
+                   ScaleConvertor.DecimalToHexString(msg[5], true, 2)                
+
+                  );
+
+                byte[] bback = ScaleConvertor.HexStringToHexByte(back);
+
+                return bback;
+            }
+
+
+            else
+            {
+                return null;
+            }
+        }
+
 
     }
 
