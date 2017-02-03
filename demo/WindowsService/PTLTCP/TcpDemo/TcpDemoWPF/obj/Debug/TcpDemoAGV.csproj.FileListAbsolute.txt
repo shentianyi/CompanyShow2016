@@ -95,3 +95,6 @@ F:\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\TcpDemoWPF.Properties.Reso
 F:\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\TcpDemoAGV.csproj.GenerateResource.Cache
 F:\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\TcpDemoWPF.exe.manifest
 F:\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\TcpDemoWPF.application
+C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\bin\Debug\TcpDemoWPF.exe.config
+C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\TcpDemoWPF.exe
+C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\TcpDemoWPF.pdb

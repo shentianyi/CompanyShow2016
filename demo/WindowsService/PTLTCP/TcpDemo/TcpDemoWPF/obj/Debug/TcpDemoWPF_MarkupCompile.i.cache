@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\
+C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\obj\Debug\
 TcpDemoWPF
 none
 false
 DEBUG;TRACE
-F:\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\App.xaml
+C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\PTLTCP\TcpDemo\TcpDemoWPF\App.xaml
 2177347783
 
 111170652348
-161432097241
+16450743833
 ClientWindow.xaml;MainWindow.xaml;
 
-False
+True
 
