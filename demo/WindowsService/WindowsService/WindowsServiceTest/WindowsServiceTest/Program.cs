@@ -23,7 +23,7 @@ namespace WindowsServiceTest
             ServiceBase.Run(ServicesToRun);
 
 
-            //test code
+            ////test code
             //ServiceTest st = new ServiceTest();
             //st.OnStart();
             //Thread.Sleep(10000);

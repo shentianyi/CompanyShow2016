@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadMessage.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadMessage.dll" size="9216">
       <assemblyIdentity name="ReadMessage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0TzQhcaWsVYOtb6hn81/wu8acLjQD9P5yDmVRQolUko=</dsig:DigestValue>
+        <dsig:DigestValue>C/fAQ64MZzb3a2C1tfm0/32OViIsG1EU3xRilIWUmU8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -126,14 +126,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceTest.exe" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceTest.exe" size="13824">
       <assemblyIdentity name="WindowsServiceTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J9lYrJjzDWQ08MMMrzAb8gg0Mqk85JUogxAgE8DBSpE=</dsig:DigestValue>
+        <dsig:DigestValue>e45hlf7JOFhNWCt3G7mb8AK2DpKoDH/6SpBHg46Gefo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -191,13 +191,13 @@
       <dsig:DigestValue>wfmYE/Yey+d4EBnaK0vwG9f3jmRKSELIxVwJ0mvbI/w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WindowsServiceTest.exe.config" size="1169">
+  <file name="WindowsServiceTest.exe.config" size="1168">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>E+/BEz8y1z1OkrXuzHgCxHS/FH65dN4H4uQ72KukFvc=</dsig:DigestValue>
+      <dsig:DigestValue>LN8Hi637qv23AO8lMbdea/qEMHdYCHYQEGz7kNcdKog=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

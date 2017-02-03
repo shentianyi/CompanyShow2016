@@ -18,6 +18,10 @@ namespace ReadMessage
         {
             int EnumValueNum = int.Parse(EnumValue);
             string name = typeof(NumForIp).GetEnumName(EnumValueNum);
+            if(string.IsNullOrEmpty(name))
+            {
+                return null;
+            }
             FieldInfo fieldinfo = typeof(NumForIp).GetField(name);
             Object obj = fieldinfo.GetCustomAttribute(typeof(DescriptionAttribute), false);
             DescriptionAttribute ds = (DescriptionAttribute)obj;

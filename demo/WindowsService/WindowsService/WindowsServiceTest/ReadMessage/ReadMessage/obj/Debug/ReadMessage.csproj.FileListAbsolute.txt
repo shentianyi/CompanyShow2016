@@ -49,3 +49,11 @@ C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\WindowsService\Windows
 C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\WindowsService\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.csprojResolveAssemblyReference.cache
 C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\WindowsService\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.dll
 C:\Users\ZhangLin\git\CompanyShow2016\demo\WindowsService\WindowsService\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.pdb
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\bin\Debug\ReadMessage.dll
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\bin\Debug\ReadMessage.pdb
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Framwork.dll
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\bin\Debug\Nini.dll
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Framwork.pdb
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.csprojResolveAssemblyReference.cache
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.dll
+F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.pdb
