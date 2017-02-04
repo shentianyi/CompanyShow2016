@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>C/fAQ64MZzb3a2C1tfm0/32OViIsG1EU3xRilIWUmU8=</dsig:DigestValue>
+        <dsig:DigestValue>xu2Rx/ek1wLjqlAzEPzgSS8hzAu2v0GAxlhPkYqn9Ao=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -121,19 +121,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nWmt3VaZh5h3nJFTNK6Y5c2B0d5hEAvNz/zHMKvvTrg=</dsig:DigestValue>
+        <dsig:DigestValue>UWow030kAsMNzhz0qr/CvGoGNfJIwS29dx7R1CvicfE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceTest.exe" size="13824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceTest.exe" size="14336">
       <assemblyIdentity name="WindowsServiceTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>e45hlf7JOFhNWCt3G7mb8AK2DpKoDH/6SpBHg46Gefo=</dsig:DigestValue>
+        <dsig:DigestValue>+Asg0Cis+1MjdGZBooX0Tn/DIzXeguNxfrqlTnpUIxI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

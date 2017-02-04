@@ -34,10 +34,10 @@ namespace WindowsServiceTest
         private bool IsReSent = false;
         private int ReSentCount = 0;
         private bool IsSent = false;
-        private bool IsResp = false;
-        private bool IsReResp = false;
-        private bool IsReceResp = false;
-        private int RespCount = 0;
+        private bool IsWMSReceived = false;
+        private bool IsWMSReSent = false;
+        private int WMSReSentCount = 0;
+        private bool IsWMSSent = false;
 
 
 
@@ -238,15 +238,8 @@ namespace WindowsServiceTest
                     byte[] result = new byte[13];
                     int dataLength = client.Receive(result);
 
-                    if (IsSent && (dataLength > 0) && (result[6] == 176))//指令已经发送 并且收到了B0的回应
-                    {
-                        IsReceived = true;
-
-                    }
-                    else
-                    {
-                        IsReceived = false;
-                    }
+                   
+                   
 
 
                     if (dataLength > 0 && result[6] != 0)
@@ -280,6 +273,17 @@ namespace WindowsServiceTest
 
 
                             }
+                            else
+                            {
+                                if(IsWMSSent)
+                                {                                                                 
+                                IsWMSReceived = true;
+                                }
+                                else
+                                {
+                                    IsWMSReceived = false;
+                                }
+                            }
 
                         }
                         else
@@ -289,12 +293,22 @@ namespace WindowsServiceTest
                             {
                                 case (byte)176:
                                     {
+                                        if (IsSent)//指令已经发送 并且收到了B0的回应
+                                        {
+                                            IsReceived = true;
+                                          
+
+                                        }
+                                        else
+                                        {
+                                            IsReceived = false;
+                                        }
                                         if (string.IsNullOrEmpty(PTLKey))
                                         {
                                             break;
                                         }
                                         MessageBytes[0] = Convert.ToByte(PTLKey);
-                                        SendToClient(WMSKey, MessageBytes,false);
+                                        SendToClient(WMSKey, MessageBytes,true);
                                         PTLKey = string.Empty;
                                         break;
                                     }
@@ -305,7 +319,7 @@ namespace WindowsServiceTest
                                         SendToClient(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()), ResponeBytes, false);
                                         MessageBytes[0] = Convert.ToByte(ReadMessage.Parser.GetValueByIp(client.RemoteEndPoint.ToString()));
 
-                                        //sendToWMS(WMSKey, MessageBytes);
+                                       
                                         if (((MessageBytes[8] << 8 | MessageBytes[9]) != 0) && MessageBytes[7] == 0)
                                         {
 
@@ -324,7 +338,7 @@ namespace WindowsServiceTest
 
                                                 string order = "创建要货单失败\n";
                                                 LogUtil.Logger.Info(order);
-                                                //LogUtil.Logger.Error(q.Message.ToString());
+                                               
 
                                                 byte[] OrderresponseMessage = ReadMessage.MessageByteProcessing.OrderResponese(MessageBytes);
                                                 SendToClient(MessageBytes[0].ToString(), OrderresponseMessage, false);
@@ -390,21 +404,7 @@ namespace WindowsServiceTest
 
 
                     }
-                    //else
-                    //{
-                    //    if (IsReSent)
-                    //    {
-
-                    //    }
-                    //}
-                    //IsSent = false;
-                    //IsReSent = false;
-                    //IsReceived = false;
-                    //ReSentCount = 0;
-                    //IsReResp = false;
-                    //IsResp = false;
-                    //IsReceResp = false;
-                    //RespCount = 0;
+                 
 
                 }
                 catch (SocketException ee)
@@ -443,44 +443,45 @@ namespace WindowsServiceTest
         /// </summary>
         private void SetTimer()
         {
-            if (IsSent)
-            {
-                IsReSent = false;
-                Thread.Sleep(4000);
-
-                if (IsReceived)
+           
+                if (IsSent)
                 {
                     IsReSent = false;
+                    Thread.Sleep(4000);
+
+                    if (IsReceived)
+                    {
+                        IsReSent = false;
+                    }
+                    else
+                    {
+                        IsReSent = true;
+
+                    }
+                }
+            
+        }
+
+
+        private void SetWMSTimer()
+        {
+            if (IsWMSSent)
+            {
+                IsWMSReSent = false;
+                Thread.Sleep(1000);
+
+                if (IsWMSReceived)
+                {
+                    IsWMSReSent = false;
                 }
                 else
                 {
-                    IsReSent = true;
+                    IsWMSReSent = true;
 
                 }
             }
 
         }
-
-
-        //private void SetReTimer()
-        //{
-        //    if (IsResp)
-        //    {
-        //        IsReResp = false;
-        //        Thread.Sleep(600);
-
-        //        if (IsReceResp)
-        //        {
-        //            IsReResp = false;
-        //        }
-        //        else
-        //        {
-        //            IsReResp = true;
-
-        //        }
-        //    }
-
-        //}
 
 
         /// <summary>
@@ -491,6 +492,14 @@ namespace WindowsServiceTest
         /// <param name="ResentBtn"></param>
         private void SendToClient(string ClientIpKey, byte[] msg, bool ResentBtn)
         {
+            IsSent = false;
+            IsReceived = false;
+            ReSentCount = 0;
+            IsReSent = false;
+            IsWMSSent = false;
+            IsWMSReceived = false;
+            WMSReSentCount = 0;
+            IsWMSReSent = false;
             Thread SendToPtlThread = new Thread(() => SendMsgToClient(ClientIpKey, msg, ResentBtn));
             SendToPtlThread.Start();
         }
@@ -504,47 +513,83 @@ namespace WindowsServiceTest
 
         private void SendMsgToClient(string ClientIpKey, byte[] msg, bool ResentBtn)
         {
+            byte[] tempmsg = new byte[13] ;
+            tempmsg = msg;
             if (ResentBtn)
             {
                 SendMsgToClient(ClientIpKey, msg, false);
-                IsSent = true;
-                SetTimer();
-
-
-                if (IsReSent == true) //是否已发送
+                if (ClientIpKey != Settings1.Default.WMSKey)
                 {
-                    ReSentCount++;
+                    IsSent = true;
+                    SetTimer();
+
+
+                    if (IsReSent == true) //是否已发送
+                    {
+                        ReSentCount++;
+                    }
+                    else
+                    {
+                        ReSentCount = 0;
+                    }
+                    if (ReSentCount > 2)
+                    {
+                        LogUtil.Logger.Error("ptl超时重发超过最大次数");
+                        
+                        if (ClientIpKey != Settings1.Default.WMSKey)
+                        {
+                            byte[] ErrorMsg = ReadMessage.MessageByteProcessing.TransmitToErrorMsg(WMSKey, msg, 1);
+                            SendMsgToClient(WMSKey, ErrorMsg, false);
+                        }
+                        IsReceived = false;
+                        IsSent = false;
+                        IsReSent = false;
+                        ReSentCount = 0;
+
+
+                    }
+                    else
+                    {
+                        while (IsSent == true && IsReceived == false)
+                        {
+                            SendMsgToClient(ClientIpKey, msg, true);
+                        }
+
+                    }
                 }
                 else
                 {
-                    ReSentCount = 0;
-                }
-                if (ReSentCount > 2)
-                {
-                    LogUtil.Logger.Error("超时重发超过最大次数");
-                    IsReceived = false;
-                    IsSent = false;
-                    IsReSent = false;
-                    ReSentCount = 0;
-                    if (ClientIpKey != Settings1.Default.WMSKey)
-                    {
-                        byte[] ErrorMsg = ReadMessage.MessageByteProcessing.TransmitToErrorMsg(WMSKey, msg, 1);
-                        SendToClient(WMSKey, ErrorMsg,false);
-                    }
-                    IsReResp = false;
-                    IsResp = false;
-                    IsReceResp = false;
-                    RespCount = 0;
+                    IsWMSSent = true;
+                    SetWMSTimer();
 
-                }
-                else
-                {
-                    while (IsSent == true && IsReceived == false)
-                    {
-                        SendMsgToClient(ClientIpKey, msg, true);
-                    }
 
+                    if (IsWMSReSent == true) //是否已发送
+                    {
+                        WMSReSentCount++;
+                    }
+                    else
+                    {
+                        WMSReSentCount = 0;
+                    }
+                    if (WMSReSentCount > 2)
+                    {
+                        LogUtil.Logger.Error("wms超时重发超过最大次数");
+                        IsWMSReceived = false;
+                        IsWMSSent = false;
+                        IsWMSReSent = false;
+                        WMSReSentCount = 0;
+                       
+                    }
+                    else
+                    {
+                        while (IsWMSSent == true && IsWMSReceived == false)
+                        {
+                            SendMsgToClient(ClientIpKey, msg, true);
+                        }
+
+                    }
                 }
+
             }
             else//不开启重发机制
             {
@@ -572,7 +617,7 @@ namespace WindowsServiceTest
                 }
                 else
                 {
-                   
+
                     LogUtil.Logger.Info(clients[ClientIpKey].RemoteEndPoint.ToString() + "已断开链接。\n" +
                        "指令" + ScaleConvertor.HexBytesToString(msg) + "未发送。\n"
                   );
