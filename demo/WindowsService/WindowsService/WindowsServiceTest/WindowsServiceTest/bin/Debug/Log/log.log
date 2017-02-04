@@ -289,3 +289,106 @@
 [2017-02-04 11:49:15,079]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
 [2017-02-04 11:49:16,021]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 09 01 B0 01 00 09 FF 00 FF
 [2017-02-04 11:49:28,030]  17 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- wms超时重发超过最大次数
+[2017-02-04 12:04:26,850]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/2/4 12:04:26
+[2017-02-04 12:04:26,993]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.54:8001成功
+[2017-02-04 12:04:32,900]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：1,灯ip192.168.1.180:4001已连接服务器
+[2017-02-04 12:05:09,910]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.52:35643，编号255已连接服务器
+[2017-02-04 12:05:17,841]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:05:17,842]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:35643,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:05:17,867]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:05:21,653]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 09 01 B0 01 00 09 FF 00 FF
+[2017-02-04 12:05:24,660]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- wms超时重发超过最大次数
+[2017-02-04 12:05:25,889]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 B0 01 00 00 FF FF FF
+[2017-02-04 12:07:25,378]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:07:25,379]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:35643,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:07:25,385]  16 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:07:29,330]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 09 01 B0 01 00 09 FF 00 FF
+[2017-02-04 12:07:30,065]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 B0 01 00 00 FF FF FF
+[2017-02-04 12:09:00,899]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:09:00,899]  7 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:35643,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:09:00,907]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:09:04,919]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:09:05,915]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 09 01 B0 01 00 09 FF 00 FF
+[2017-02-04 12:09:08,928]  16 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- wms超时重发超过最大次数
+[2017-02-04 12:22:33,335]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/2/4 12:22:33
+[2017-02-04 12:22:33,367]  10 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.54:8001成功
+[2017-02-04 12:22:39,248]  12 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.52:54240，编号255已连接服务器
+[2017-02-04 12:22:41,563]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:22:41,563]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:54240,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:22:41,574]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 01 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:22:41,575]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:54240,编号为9,STU为1的第1条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:22:45,575]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 01 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:22:45,575]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:54240,编号为9,STU为1的第1条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:22:49,575]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 01 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:22:49,575]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:54240,编号为9,STU为1的第1条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:22:53,576]  14 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- ptl超时重发超过最大次数
+[2017-02-04 12:22:53,577]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:54240,编号为9,STU为1的第1条错误指令,错误原因：CAN无反馈信息
+[2017-02-04 12:25:11,272]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 【开启服务】2017/2/4 12:25:11
+[2017-02-04 12:25:11,323]  11 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [OnStart] -- 启动监听192.168.1.54:8001成功
+[2017-02-04 12:25:13,576]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- 客户端IP地址:192.168.1.52:59390，编号255已连接服务器
+[2017-02-04 12:25:14,788]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:25:14,789]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:59390,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:25:14,874]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 01 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:25:14,888]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第1条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:25:18,890]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 02 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:25:18,890]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第2条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:25:22,891]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 03 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:25:22,891]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第3条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:25:26,892]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- ptl超时重发超过最大次数
+[2017-02-04 12:25:26,893]  15 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第4条错误指令,错误原因：CAN无反馈信息
+[2017-02-04 12:25:54,422]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:25:54,422]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:59390,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:27:04,002]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 01 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:27:40,582]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第1条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:29:52,770]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 02 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:30:01,108]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第2条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:30:33,155]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- CAN总线地址192.168.1.180:4001未连接/n指令88 00 00 01 09 03 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:30:48,332]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第3条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:31:20,659]  6 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- ptl超时重发超过最大次数
+[2017-02-04 12:31:52,698]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第4条错误指令,错误原因：CAN无反馈信息
+[2017-02-04 12:39:28,472]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:39:28,472]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:59390,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:39:46,192]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：1,灯ip192.168.1.180:4001已连接服务器
+[2017-02-04 12:39:46,228]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:39:46,578]  9 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 您的主机中的软件中止了一个已建立的连接。
+[2017-02-04 12:39:50,228]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第2条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:39:50,228]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 192.168.1.180:4001已断开链接。
+指令88 00 00 01 09 02 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:39:54,231]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第3条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:39:54,231]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 192.168.1.180:4001已断开链接。
+指令88 00 00 01 09 03 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:39:56,218]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：1,灯ip192.168.1.180:4001已连接服务器
+[2017-02-04 12:39:58,236]  3 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- ptl超时重发超过最大次数
+[2017-02-04 12:39:58,236]  3 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第4条错误指令,错误原因：CAN无反馈信息
+[2017-02-04 12:40:57,394]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:40:57,394]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:59390,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:40:57,404]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:40:57,432]  15 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 远程主机强迫关闭了一个现有的连接。
+[2017-02-04 12:40:58,598]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：1,灯ip192.168.1.180:4001已连接服务器
+[2017-02-04 12:41:01,404]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第2条设置指令
+[2017-02-04 12:41:05,405]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第3条设置指令
+[2017-02-04 12:41:09,405]  9 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- ptl超时重发超过最大次数
+[2017-02-04 12:41:09,405]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第4条错误指令,错误原因：CAN无反馈信息
+[2017-02-04 12:41:29,614]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】01 00 00 01 09 01 C0 01 00 00 FF FF FF
+[2017-02-04 12:41:29,614]  14 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收解析】来自:192.168.1.52:59390,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:41:29,620]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第1条设置指令
+[2017-02-04 12:41:29,640]  3 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 您的主机中的软件中止了一个已建立的连接。
+[2017-02-04 12:41:33,620]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.52:59390,编号为9,STU为1的第2条错误指令,错误原因：CAN未成功连接
+[2017-02-04 12:41:33,620]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 192.168.1.180:4001已断开链接。
+指令88 00 00 01 09 02 C0 01 00 00 FF FF FF未发送。
+
+[2017-02-04 12:41:35,091]  13 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenConnnect] -- CAN总线编号：1,灯ip192.168.1.180:4001已连接服务器
+[2017-02-04 12:41:37,621]  9 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- 【发送解析】发送给192.168.1.180:4001,编号为9,数码管数字为0,颜色为白色,的第3条设置指令
+[2017-02-04 12:41:41,019]  6 -- INFO  -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [ListenClientMsg] -- 【接收数据】88 00 00 01 09 01 B0 01 00 09 FF 00 FF
+[2017-02-04 12:41:53,026]  7 -- ERROR -- Brilliantech.Framwork.Utils.LogUtil.LogUtil [SendMsgToClient] -- wms超时重发超过最大次数

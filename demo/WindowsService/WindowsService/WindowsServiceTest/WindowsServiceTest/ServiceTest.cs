@@ -69,28 +69,28 @@ namespace WindowsServiceTest
 
 
 
-        //public void OnStart()
-        //{
+        public void OnStart()
+        {
 
 
-        //    LogUtil.Logger.Info("【开启服务】" + DateTime.Now);
-        //    IPAddress ip = IPAddress.Parse(Settings1.Default.ServerIp);
-        //    int port = int.Parse(Settings1.Default.ServerPort);
-        //    tcpServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        //    tcpServer.Bind(new IPEndPoint(ip, port));  //绑定IP地址：端口  
-        //    tcpServer.Listen(10);    //设定最多10个排队连接请求  
-        //    LogUtil.Logger.Info(string.Format("启动监听{0}成功", tcpServer.LocalEndPoint.ToString()));
-        //    ClientRecieveThread = new Thread(ListenConnnect);
-        //    ClientRecieveThread.IsBackground = true;
-        //    ClientRecieveThread.Start();
+            LogUtil.Logger.Info("【开启服务】" + DateTime.Now);
+            IPAddress ip = IPAddress.Parse(Settings1.Default.ServerIp);
+            int port = int.Parse(Settings1.Default.ServerPort);
+            tcpServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            tcpServer.Bind(new IPEndPoint(ip, port));  //绑定IP地址：端口  
+            tcpServer.Listen(10);    //设定最多10个排队连接请求  
+            LogUtil.Logger.Info(string.Format("启动监听{0}成功", tcpServer.LocalEndPoint.ToString()));
+            ClientRecieveThread = new Thread(ListenConnnect);
+            ClientRecieveThread.IsBackground = true;
+            ClientRecieveThread.Start();
 
-        //    while (true)
-        //    {
-        //        string a = "Starting";
-        //    }
+            while (true)
+            {
+                string a = "Starting";
+            }
 
 
-        //}
+        }
 
         //public void OnStop()
         //{
@@ -275,6 +275,7 @@ namespace WindowsServiceTest
                             }
                             else
                             {
+                               
                                 if(IsWMSSent)
                                 {                                                                 
                                 IsWMSReceived = true;
@@ -447,7 +448,7 @@ namespace WindowsServiceTest
                 if (IsSent)
                 {
                     IsReSent = false;
-                    Thread.Sleep(1000);
+                    Thread.Sleep(4000);
 
                     if (IsReceived)
                     {
@@ -468,7 +469,7 @@ namespace WindowsServiceTest
             if (IsWMSSent)
             {
                 IsWMSReSent = false;
-                Thread.Sleep(1000);
+                Thread.Sleep(4000);
 
                 if (IsWMSReceived)
                 {
@@ -527,6 +528,7 @@ namespace WindowsServiceTest
                     if (IsReSent == true) //是否已发送
                     {
                         ReSentCount++;
+                        msg[5]++;
                     }
                     else
                     {
@@ -566,6 +568,7 @@ namespace WindowsServiceTest
                     if (IsWMSReSent == true) //是否已发送
                     {
                         WMSReSentCount++;
+                        msg[5]++;
                     }
                     else
                     {
@@ -598,10 +601,14 @@ namespace WindowsServiceTest
                     if (ClientIpKey == Settings1.Default.WMSKey)
                     {
                         LogUtil.Logger.Error("WMS未连接/n");
+                        
                     }
                     else
                     {
-                        LogUtil.Logger.Info("CAN总线地址" + ReadMessage.Parser.GetIpByValue(ClientIpKey) + "未连接/n");
+                        LogUtil.Logger.Info("CAN总线地址" + ReadMessage.Parser.GetIpByValue(ClientIpKey) + "未连接/n" +
+                       "指令" + ScaleConvertor.HexBytesToString(msg) + "未发送。\n");
+                        byte[] ErrorMsg = ReadMessage.MessageByteProcessing.TransmitToErrorMsg(WMSKey, msg, 2);
+                        SendMsgToClient(WMSKey, ErrorMsg, false);
                     }
                     return;
                 }
@@ -617,10 +624,12 @@ namespace WindowsServiceTest
                 }
                 else
                 {
-
+                    byte[] ErrorMsg = ReadMessage.MessageByteProcessing.TransmitToErrorMsg(WMSKey, msg, 2);
+                    SendMsgToClient(WMSKey, ErrorMsg, false);
                     LogUtil.Logger.Info(clients[ClientIpKey].RemoteEndPoint.ToString() + "已断开链接。\n" +
                        "指令" + ScaleConvertor.HexBytesToString(msg) + "未发送。\n"
                   );
+                    
                 }
             }
 

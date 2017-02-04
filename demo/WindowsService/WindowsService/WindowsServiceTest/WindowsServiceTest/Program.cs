@@ -15,17 +15,17 @@ namespace WindowsServiceTest
         /// </summary>
        public static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
-            {
-                new ServiceTest()
-            };
-            ServiceBase.Run(ServicesToRun);
+            //ServiceBase[] ServicesToRun;
+            //ServicesToRun = new ServiceBase[]
+            //{
+            //    new ServiceTest()
+            //};
+            //ServiceBase.Run(ServicesToRun);
 
 
             ////test code
-            //ServiceTest st = new ServiceTest();
-            //st.OnStart();
+            ServiceTest st = new ServiceTest();
+            st.OnStart();
             //Thread.Sleep(10000);
             //st.OnStop();
 

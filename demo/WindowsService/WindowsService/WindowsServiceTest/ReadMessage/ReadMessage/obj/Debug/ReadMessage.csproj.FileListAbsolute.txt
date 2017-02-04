@@ -57,3 +57,11 @@ F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\
 F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.csprojResolveAssemblyReference.cache
 F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.dll
 F:\WindowsService\WindowsServiceTest递归重发完成一半\WindowsServiceTest\ReadMessage\ReadMessage\obj\Debug\ReadMessage.pdb
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\bin\Debug\ReadMessage.dll
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\bin\Debug\ReadMessage.pdb
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Framwork.dll
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\bin\Debug\Nini.dll
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\bin\Debug\Brilliantech.Framwork.pdb
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\obj\Debug\ReadMessage.csprojResolveAssemblyReference.cache
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\obj\Debug\ReadMessage.dll
+F:\WindowsService\WindowsServiceTest_New\ReadMessage\ReadMessage\obj\Debug\ReadMessage.pdb

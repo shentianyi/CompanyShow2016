@@ -174,9 +174,12 @@ namespace ReadMessage
                             switch (MessageBytes[8])
                             {
                                 case (byte)1:
-                                    mean += "PTL灯无反馈";
+                                    mean += "CAN无反馈信息";
                                     break;
                                 case (byte)2:
+                                    mean += "CAN未成功连接";
+                                    break;
+                                case (byte)3:
                                     mean += "WMS无反馈";
                                     break;
                                 default: break;
