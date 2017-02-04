@@ -72,7 +72,7 @@ namespace WindowsServiceTest
         public void OnStart()
         {
 
-
+           
             LogUtil.Logger.Info("【开启服务】" + DateTime.Now);
             IPAddress ip = IPAddress.Parse(Settings1.Default.ServerIp);
             int port = int.Parse(Settings1.Default.ServerPort);
@@ -361,10 +361,7 @@ namespace WindowsServiceTest
                                         }
 
 
-                                        //while (IsReceResp == false && IsReResp == true)
-                                        //{
-                                        //    sendMToWMS(WMSKey, MessageBytes);
-                                        //}
+                                      
 
 
                                         break;
@@ -391,11 +388,7 @@ namespace WindowsServiceTest
                                         byte[] OrderresponseMessage = ReadMessage.MessageByteProcessing.DeleteOrderResponese(MessageBytes);
                                         SendToClient(MessageBytes[0].ToString(), OrderresponseMessage, false);
                                         //}
-                                        ////sendToWMS(WMSKey, MessageBytes);
-                                        ////while (IsReceResp == false && IsReResp == true)
-                                        ////{
-                                        ////    sendToWMS(WMSKey, MessageBytes);
-                                        ////}
+                                      
                                         break;
                                     }
                                 default: break;
@@ -411,7 +404,7 @@ namespace WindowsServiceTest
                 catch (SocketException ee)
                 {
 
-                    //RemoveClient(client.RemoteEndPoint.ToString());
+                  
                     LogUtil.Logger.Error(ee.Message);
                     break;
 
@@ -427,11 +420,7 @@ namespace WindowsServiceTest
                 {
                     LogUtil.Logger.Info(ee.Message);
                     break;
-                    //    //if (runflag)
-                    //    //{
-                    //    //    //RemoveClient(client.RemoteEndPoint.ToString());
-
-                    //    //}
+                  
 
 
                 }
@@ -493,16 +482,18 @@ namespace WindowsServiceTest
         /// <param name="ResentBtn"></param>
         private void SendToClient(string ClientIpKey, byte[] msg, bool ResentBtn)
         {
-            IsSent = false;
-            IsReceived = false;
-            ReSentCount = 0;
-            IsReSent = false;
-            IsWMSSent = false;
-            IsWMSReceived = false;
-            WMSReSentCount = 0;
-            IsWMSReSent = false;
-            Thread SendToPtlThread = new Thread(() => SendMsgToClient(ClientIpKey, msg, ResentBtn));
-            SendToPtlThread.Start();
+           
+                IsSent = false;
+                IsReceived = false;
+                ReSentCount = 0;
+                IsReSent = false;
+                IsWMSSent = false;
+                IsWMSReceived = false;
+                WMSReSentCount = 0;
+                IsWMSReSent = false;
+                Thread SendToPtlThread = new Thread(() => SendMsgToClient(ClientIpKey, msg, ResentBtn));
+                SendToPtlThread.Start();
+            
         }
 
         /// <summary>
@@ -519,7 +510,7 @@ namespace WindowsServiceTest
             if (ResentBtn)
             {
                 SendMsgToClient(ClientIpKey, msg, false);
-                if (ClientIpKey != Settings1.Default.WMSKey)
+                if (ClientIpKey != Settings1.Default.WMSKey)//PTL
                 {
                     IsSent = true;
                     SetTimer();
@@ -559,7 +550,7 @@ namespace WindowsServiceTest
 
                     }
                 }
-                else
+                else//WMS
                 {
                     IsWMSSent = true;
                     SetWMSTimer();
@@ -567,8 +558,10 @@ namespace WindowsServiceTest
 
                     if (IsWMSReSent == true) //是否已发送
                     {
-                        WMSReSentCount++;
-                        msg[5]++;
+                        
+                            WMSReSentCount++;
+                            msg[5]++;
+                        
                     }
                     else
                     {
@@ -609,6 +602,7 @@ namespace WindowsServiceTest
                        "指令" + ScaleConvertor.HexBytesToString(msg) + "未发送。\n");
                         byte[] ErrorMsg = ReadMessage.MessageByteProcessing.TransmitToErrorMsg(WMSKey, msg, 2);
                         SendMsgToClient(WMSKey, ErrorMsg, false);
+                       
                     }
                     return;
                 }
