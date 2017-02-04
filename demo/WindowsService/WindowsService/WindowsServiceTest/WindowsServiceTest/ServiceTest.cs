@@ -447,7 +447,7 @@ namespace WindowsServiceTest
                 if (IsSent)
                 {
                     IsReSent = false;
-                    Thread.Sleep(4000);
+                    Thread.Sleep(1000);
 
                     if (IsReceived)
                     {
